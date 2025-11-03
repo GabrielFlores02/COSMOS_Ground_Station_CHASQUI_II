@@ -1,0 +1,16 @@
+current directory: C:/COSMOS/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+C:/COSMOS/Vendor/Ruby/bin/ruby.exe -I C:/COSMOS/Vendor/Ruby/lib/ruby/site_ruby/2.5.0 extconf.rb
+creating Makefile
+
+current directory: C:/COSMOS/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20221217-10932-vws7gv sitelibdir\=./.gem.20221217-10932-vws7gv clean
+
+current directory: C:/COSMOS/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20221217-10932-vws7gv sitelibdir\=./.gem.20221217-10932-vws7gv
+generating websocket_mask-x64-mingw32.def
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: C:/COSMOS/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/websocket-driver-0.6.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20221217-10932-vws7gv sitelibdir\=./.gem.20221217-10932-vws7gv install
+/usr/bin/install -c -m 0755 websocket_mask.so ./.gem.20221217-10932-vws7gv

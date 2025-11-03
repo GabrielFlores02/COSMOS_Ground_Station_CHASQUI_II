@@ -1,0 +1,65 @@
+have_header: checking for CommonCrypto/CommonDigest.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/x64-mingw32 -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/ruby/backward -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/COSMOS/Vendor/Ruby/lib -L. -pipe -s -fstack-protector-strong     -lx64-msvcrt-ruby250  -lgmp -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return 0;
+8: }
+/* end */
+
+"x86_64-w64-mingw32-gcc -E -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/x64-mingw32 -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/ruby/backward -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong  conftest.c -o conftest.i"
+conftest.c:5:10: fatal error: CommonCrypto/CommonDigest.h: No such file or directory
+    5 | #include <CommonCrypto/CommonDigest.h>
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <CommonCrypto/CommonDigest.h>
+/* end */
+
+--------------------
+
+have_type: checking for u_int8_t... -------------------- no
+
+"x86_64-w64-mingw32-gcc -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/x64-mingw32 -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/ruby/backward -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong   -c conftest.c"
+conftest.c:7:9: error: unknown type name 'u_int8_t'
+    7 | typedef u_int8_t conftest_type;
+      |         ^~~~~~~~
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: 
+6: /*top*/
+7: typedef u_int8_t conftest_type;
+8: int conftestval[sizeof(conftest_type)?1:-1];
+/* end */
+
+--------------------
+
+have_header: checking for sys/cdefs.h... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -E -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/x64-mingw32 -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/ruby/backward -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <sys/cdefs.h>
+/* end */
+
+--------------------
+

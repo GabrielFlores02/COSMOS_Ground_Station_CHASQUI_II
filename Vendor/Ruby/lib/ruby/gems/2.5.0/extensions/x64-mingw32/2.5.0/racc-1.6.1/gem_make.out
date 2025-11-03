@@ -1,0 +1,18 @@
+current directory: C:/COSMOS/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/racc-1.6.1/ext/racc/cparse
+C:/COSMOS/Vendor/Ruby/bin/ruby.exe -I C:/COSMOS/Vendor/Ruby/lib/ruby/site_ruby/2.5.0 extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: C:/COSMOS/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/racc-1.6.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20221217-7544-nh2eqr sitelibdir\=./.gem.20221217-7544-nh2eqr clean
+
+current directory: C:/COSMOS/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/racc-1.6.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20221217-7544-nh2eqr sitelibdir\=./.gem.20221217-7544-nh2eqr
+generating cparse-x64-mingw32.def
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: C:/COSMOS/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/racc-1.6.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20221217-7544-nh2eqr sitelibdir\=./.gem.20221217-7544-nh2eqr install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20221217-7544-nh2eqr/racc

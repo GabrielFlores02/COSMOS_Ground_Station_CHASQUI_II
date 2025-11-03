@@ -1,0 +1,14 @@
+current directory: C:/COSMOS/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/nio4r-2.5.8/ext/nio4r
+C:/COSMOS/Vendor/Ruby/bin/ruby.exe -I C:/COSMOS/Vendor/Ruby/lib/ruby/site_ruby/2.5.0 extconf.rb
+
+current directory: C:/COSMOS/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/nio4r-2.5.8/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20221217-10932-1a3rahg sitelibdir\=./.gem.20221217-10932-1a3rahg clean
+make: *** No rule to make target 'clean'.  Stop.
+
+current directory: C:/COSMOS/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/nio4r-2.5.8/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20221217-10932-1a3rahg sitelibdir\=./.gem.20221217-10932-1a3rahg
+make: Nothing to be done for 'all'.
+
+current directory: C:/COSMOS/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/nio4r-2.5.8/ext/nio4r
+make DESTDIR\= sitearchdir\=./.gem.20221217-10932-1a3rahg sitelibdir\=./.gem.20221217-10932-1a3rahg install
+make: Nothing to be done for 'install'.

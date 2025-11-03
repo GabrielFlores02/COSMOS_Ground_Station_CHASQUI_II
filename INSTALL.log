@@ -1,0 +1,33 @@
+COSMOS Windows Installer Version 2.6 
+Installing to: C:\COSMOS 
+COSMOS_VERSION="LATEST" 
+PATH=C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files\MATLAB\R2022b\runtime\win64;C:\Program Files\MATLAB\R2022b\bin;C:\Users\Ram\AppData\Local\Microsoft\WindowsApps;D:\Miktex\miktex\bin\x64\ 
+PROTOCOL=https 
+RUBY_INSTALLER=rubyinstaller-devkit-2.5.8-1-x64.exe 
+RUBY_INSTALLER_PATH=//github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.5.8-1/ 
+RUBY_ABI_VERSION=2.5.0 
+WKHTMLTOPDF=wkhtmltox-0.12.6-1.msvc2015-win64.exe 
+WKHTMLPATHWITHPROTOCOL=https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/ 
+QTBINDINGS_QT_VERSION=4.8.6.4 
+USERDNSDOMAIN= 
+BALL=0 
+SSL_CERT_FILE= 
+ADMIN=1 
+PROCESSOR_ARCHITECTURE=AMD64 
+ 
+Successfully downloaded 64-bit Ruby from: https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.5.8-1/rubyinstaller-devkit-2.5.8-1-x64.exe 
+Successfully installed 64-bit Ruby 
+Successfully downloaded WkHtmlToPdf from: https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox-0.12.6-1.msvc2015-win64.exe 
+Successfully installed WkHtmlToPdf 
+Successfully downloaded COSMOS Windows files from: https://github.com/BallAerospace/COSMOS/blob/cosmos4/vendor/installers/windows/COSMOS_Windows_Install.zip?raw=true 
+Successfully unzipped COSMOS Windows files 
+Successfully installed cosmos gem 
+Successfully moved qt dlls 
+Successfully fixed ruby stubs 
+Successfully created cosmos Basic 
+Successfully created cosmos Demo 
+Successfully created desktop shortcut 
+Successfully created COSMOS_DIR environment variable 
+Successfully created COSMOS_DIR environment variable 
+Successfully created desktop shortcut 
+Successfully created COSMOS_DIR environment variable 

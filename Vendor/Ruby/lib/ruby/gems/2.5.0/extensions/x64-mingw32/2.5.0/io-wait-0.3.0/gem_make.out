@@ -1,0 +1,11 @@
+current directory: C:/COSMOS/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/io-wait-0.3.0/ext/io/wait
+C:/COSMOS/Vendor/Ruby/bin/ruby.exe -I C:/COSMOS/Vendor/Ruby/lib/ruby/site_ruby/2.5.0 extconf.rb
+
+current directory: C:/COSMOS/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/io-wait-0.3.0/ext/io/wait
+make DESTDIR\= sitearchdir\=./.gem.20221217-10932-1dhag4s sitelibdir\=./.gem.20221217-10932-1dhag4s clean
+
+current directory: C:/COSMOS/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/io-wait-0.3.0/ext/io/wait
+make DESTDIR\= sitearchdir\=./.gem.20221217-10932-1dhag4s sitelibdir\=./.gem.20221217-10932-1dhag4s
+
+current directory: C:/COSMOS/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/io-wait-0.3.0/ext/io/wait
+make DESTDIR\= sitearchdir\=./.gem.20221217-10932-1dhag4s sitelibdir\=./.gem.20221217-10932-1dhag4s install

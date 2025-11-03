@@ -1,0 +1,21 @@
+current directory: C:/COSMOS/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/puma-3.12.6/ext/puma_http11
+C:/COSMOS/Vendor/Ruby/bin/ruby.exe -I C:/COSMOS/Vendor/Ruby/lib/ruby/site_ruby/2.5.0 extconf.rb
+checking for BIO_read() in -lcrypto... no
+checking for BIO_read() in -llibeay32... no
+creating Makefile
+
+current directory: C:/COSMOS/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/puma-3.12.6/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20221217-7544-153q8f8 sitelibdir\=./.gem.20221217-7544-153q8f8 clean
+
+current directory: C:/COSMOS/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/puma-3.12.6/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20221217-7544-153q8f8 sitelibdir\=./.gem.20221217-7544-153q8f8
+generating puma_http11-x64-mingw32.def
+compiling http11_parser.c
+compiling io_buffer.c
+compiling mini_ssl.c
+compiling puma_http11.c
+linking shared-object puma/puma_http11.so
+
+current directory: C:/COSMOS/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/puma-3.12.6/ext/puma_http11
+make DESTDIR\= sitearchdir\=./.gem.20221217-7544-153q8f8 sitelibdir\=./.gem.20221217-7544-153q8f8 install
+/usr/bin/install -c -m 0755 puma_http11.so ./.gem.20221217-7544-153q8f8/puma

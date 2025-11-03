@@ -1,0 +1,221 @@
+find_header: checking for yaml.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -o conftest.exe -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/x64-mingw32 -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/ruby/backward -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong conftest.c  -L. -LC:/COSMOS/Vendor/Ruby/lib -L. -pipe -s -fstack-protector-strong     -lx64-msvcrt-ruby250  -lgmp -lshell32 -lws2_32 -liphlpapi -limagehlp -lshlwapi  "
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: int main(int argc, char **argv)
+6: {
+7:   return 0;
+8: }
+/* end */
+
+"x86_64-w64-mingw32-gcc -E -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/x64-mingw32 -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/ruby/backward -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0 -I. -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong  conftest.c -o conftest.i"
+conftest.c:5:10: fatal error: yaml.h: No such file or directory
+    5 | #include <yaml.h>
+      |          ^~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <yaml.h>
+/* end */
+
+--------------------
+
+have_macro: checking for _WIN32... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/x64-mingw32 -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/ruby/backward -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0 -I. -I./yaml -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -O3 -fno-fast-math -fstack-protector-strong   -c conftest.c"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: /*top*/
+6: #ifndef _WIN32
+7: # error
+8: |:/ === _WIN32 undefined === /:|
+9: #endif
+/* end */
+
+--------------------
+
+have_header: checking for dlfcn.h... -------------------- no
+
+"x86_64-w64-mingw32-gcc -E -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/x64-mingw32 -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/ruby/backward -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0 -I. -I./yaml -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DYAML_DECLARE_STATIC -DHAVE_CONFIG_H -O3 -fno-fast-math -fstack-protector-strong  conftest.c -o conftest.i"
+conftest.c:5:10: fatal error: dlfcn.h: No such file or directory
+    5 | #include <dlfcn.h>
+      |          ^~~~~~~~~
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <dlfcn.h>
+/* end */
+
+--------------------
+
+have_header: checking for inttypes.h... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -E -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/x64-mingw32 -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/ruby/backward -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0 -I. -I./yaml -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DYAML_DECLARE_STATIC -DHAVE_CONFIG_H -O3 -fno-fast-math -fstack-protector-strong  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <inttypes.h>
+/* end */
+
+--------------------
+
+have_header: checking for memory.h... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -E -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/x64-mingw32 -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/ruby/backward -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0 -I. -I./yaml -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DYAML_DECLARE_STATIC -DHAVE_CONFIG_H -O3 -fno-fast-math -fstack-protector-strong  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <memory.h>
+/* end */
+
+--------------------
+
+have_header: checking for stdint.h... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -E -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/x64-mingw32 -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/ruby/backward -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0 -I. -I./yaml -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DYAML_DECLARE_STATIC -DHAVE_CONFIG_H -O3 -fno-fast-math -fstack-protector-strong  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <stdint.h>
+/* end */
+
+--------------------
+
+have_header: checking for stdlib.h... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -E -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/x64-mingw32 -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/ruby/backward -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0 -I. -I./yaml -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DYAML_DECLARE_STATIC -DHAVE_CONFIG_H -O3 -fno-fast-math -fstack-protector-strong  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <stdlib.h>
+/* end */
+
+--------------------
+
+have_header: checking for strings.h... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -E -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/x64-mingw32 -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/ruby/backward -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0 -I. -I./yaml -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DYAML_DECLARE_STATIC -DHAVE_CONFIG_H -O3 -fno-fast-math -fstack-protector-strong  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <strings.h>
+/* end */
+
+--------------------
+
+have_header: checking for string.h... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -E -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/x64-mingw32 -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/ruby/backward -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0 -I. -I./yaml -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DYAML_DECLARE_STATIC -DHAVE_CONFIG_H -O3 -fno-fast-math -fstack-protector-strong  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <string.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/stat.h... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -E -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/x64-mingw32 -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/ruby/backward -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0 -I. -I./yaml -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DYAML_DECLARE_STATIC -DHAVE_CONFIG_H -O3 -fno-fast-math -fstack-protector-strong  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <sys/stat.h>
+/* end */
+
+--------------------
+
+have_header: checking for sys/types.h... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -E -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/x64-mingw32 -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/ruby/backward -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0 -I. -I./yaml -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DYAML_DECLARE_STATIC -DHAVE_CONFIG_H -O3 -fno-fast-math -fstack-protector-strong  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <sys/types.h>
+/* end */
+
+--------------------
+
+have_header: checking for unistd.h... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -E -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/x64-mingw32 -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/ruby/backward -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0 -I. -I./yaml -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DYAML_DECLARE_STATIC -DHAVE_CONFIG_H -O3 -fno-fast-math -fstack-protector-strong  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <unistd.h>
+/* end */
+
+--------------------
+
+find_header: checking for yaml.h... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -E -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/x64-mingw32 -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/ruby/backward -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0 -I. -I./yaml -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DYAML_DECLARE_STATIC -DHAVE_CONFIG_H -O3 -fno-fast-math -fstack-protector-strong  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <yaml.h>
+/* end */
+
+--------------------
+
+have_header: checking for config.h... -------------------- yes
+
+"x86_64-w64-mingw32-gcc -E -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/x64-mingw32 -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0/ruby/backward -IC:/COSMOS/Vendor/Ruby/include/ruby-2.5.0 -I. -I./yaml -D__USE_MINGW_ANSI_STDIO=1 -DFD_SETSIZE=2048 -D_WIN32_WINNT=0x0501 -D__MINGW_USE_VC2005_COMPAT -D_FILE_OFFSET_BITS=64  -DYAML_DECLARE_STATIC -DHAVE_CONFIG_H -O3 -fno-fast-math -fstack-protector-strong  conftest.c -o conftest.i"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <winsock2.h>
+4: #include <windows.h>
+5: #include <config.h>
+/* end */
+
+--------------------
+

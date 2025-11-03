@@ -1,0 +1,669 @@
+2022-01-09  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* README.md: Added section "Attention : Version 2 is now available"
+	* Updated using latest gl.xml.
+
+2021-10-31  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2021-07-23  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated gl.xml.
+
+2021-05-29  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2021-03-20  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* 2020 -> 2021
+
+2021-01-20  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2020-12-20  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* sample/glfw_build.sh: Modified to build x86_64 and arm64 universal binary for Apple Silicon macOS.
+	* Updated using latest gl.xml.
+
+2020-11-08  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2020-07-25  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2020-05-24  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* glfw.rb: Added platform-specific API
+
+2020-04-25  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2020-03-14  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2020-01-26  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2019-11-24  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2019-10-25  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2019-09-01  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2019-07-28  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2019-06-09  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2019-04-28  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* glfw.rb: Added GLFW 3.3 features.
+	* Updated using latest gl.xml.
+
+2019-04-07  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2019-03-31  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2019-02-28  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2019-02-24  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* glfw.rb: Added GLFW 3.3 features.
+
+2019-02-23  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2019-01-19  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* glfw.rb: Added GLFW 3.3 features.
+
+2019-01-05  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Happy new year!
+
+2018-12-23  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* sample/glfwmaster_build_dylib.sh: Added.
+
+2018-12-22  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2018-09-29  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2018-08-29  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2018-04-21  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* glfw.rb: Added GLFW 3.3 features.
+	* Updated gl.xml.
+
+2018-03-21  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2018-02-15  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Fix NoMethodError when calling wglGetProcAddress ( Thanks: https://github.com/larskanis )
+
+2018-01-01  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2017-11-23  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2017-10-29  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2017-08-13  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* glfw.rb: Added GLFW 3.3 features.
+
+2017-08-05  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2017-08-01  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* OpenGL 4.6
+
+2017-06-27  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2017-06-11  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2017-04-29  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2017-03-04  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2017-02-25  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+	* generator/aux_generate_typemap.rb, aux_typemap.rb (VULKANPROCNV): Added VULKANPROCNV support.
+	* generator/get_gl_xml.rb: Fixed URL to fetch 'gl.xml'.
+
+2017-02-18  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2017-02-11  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2017-01-30  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2017-01-28  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2016-12-25  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Tested on ruby 2.4.0p0.
+	* sample/util/setup_dll.rb: Add path for Ubuntu Linux.
+
+2016-10-29  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2016-10-15  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2016-09-20  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2016-09-18  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* sample/report_env.rb: Now shows GL_VENDOR, GL_RENDERER and GL_SHADING_LANGUAGE_VERSION.
+
+2016-08-27  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* sample/glfw32_build_dylib.sh: GLFW 3.2.1 build script for Mac OS X.
+
+2016-08-07  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2016-07-17  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2016-06-12  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2016-06-03  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* opengl-bindings.gemspec: Fixed invalid license value (zlib/libpng -> Zlib). See http://spdx.org/licenses .
+	* sample/glfw32_build_dylib.sh: GLFW 3.2 build script for Mac OS X.
+
+2016-06-01  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2016-05-26  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2016-05-05  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* glfw.rb: Added GLFW 3.2 features.
+
+2016-04-22  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* sample/Gosu/lesson01.rb: Added.
+
+2016-04-20  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2016-04-12  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+	* lib/glfw.rb: Now usable for GLFW 3.0, 3.1 and 3.2.
+	* lib/glfw30.rb, lib/glfw31.rb, lib/glfw32.rb: Removed.
+
+2016-04-11  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2016-04-09  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* README.md: Tested on Windows 10 and NVIDIA GeForce GTX 960.
+
+2016-04-08  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* glfw.rb: Just an alias of glfw.rb.
+	* glfw32.rb: GLFW binding for version 3.2 (renamed from previous glfw.rb).
+
+2016-04-01  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* glfw.rb: Added GLFW 3.2 features.
+
+2016-03-22  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* glfw.rb: Added GLFW 3.2 features.
+	* glfw31.rb: Previous version of 'glfw.rb' is available as 'glfw31.rb'.
+
+2016-02-06  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* README.md: Added projects using this gem.
+
+2016-01-09  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2016-01-03  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* LICENSE.txt: Updated copyright year.
+
+2015-12-29  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* lib/glfw.rb, lib/glfw30.rb, lib/glut.rb: 'create_callback' now creates
+	callback functions as an instance of Fiddle::Closure::BlockCaller. Old
+	methods are still available (renamed to create_callback_function').
+
+2015-11-14  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* lib/opengl_linux.rb (glXGetCurrentDisplay): Fixed wrong signature.
+
+2015-11-07  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* lib/opengl_macosx.rb, lib/opengl_linux.rb: Added.
+
+2015-11-03  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* sample/DebugOutput/debug_output.rb: Fidex '$debug_log_callback' to '$debug_log_callback.to_i' (now runnable both C edition and pure-Ruby edition).
+
+2015-10-24  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+	* sample/NamaspaceMigration: Fixed warning.
+
+2015-10-19  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* lib/opengl_ext.rb: Now tries to find C Edition.
+	* generator: Refactoring
+
+2015-10-18  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* generator: Refactoring
+
+2015-10-17  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+	* sample/GLFW/heightmap.rb : Added.
+
+2015-10-16  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* sample/GLFW/boing.rb, sample/util/rmath3d_plain.rb : Added.
+
+2015-10-15  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* sample/glfw31_build_dylib.sh: Now uses GLFW 3.1.2.
+
+2015-10-14  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* lib/opengl.rb: Now tries to find C Edition.
+
+2015-10-13  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2015-10-12  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* generator: Fixed typo.
+
+2015-10-03  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* ext/opengl_c: Added some experimental codes.
+
+2015-10-01  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* sample: Unkind buffer string notations like "'        '" are rewriten into "' ' * 8" format.
+
+2015-09-24  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* sample/Extension/test_dds_texture.rb: Added.
+	* sample/NamespaceMigration/test_dds_texture.rb: Added.
+	* sample/SDL2/testgl_sdl2-bindings.rb: Added.
+
+2015-09-23  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Extension setup routines are divided into the module OpenGLExt.
+	* lib/opengl_ext_common.rb (get_extension_enum_symbols, get_extension_command_symbols): Return array of enum/method symbols. Now you can know what symbols will be appended in the OpenGL module before setting up extensions.
+	* lib/opengl_ext_common.rb (setup_extension): Added new argument 'skip_check'. You can skip availability check by setting true to 'skip_check'.
+	* sample/NamespaceMigration/namespace_gl.rb, etc.: Demonstrates how to modify OpenGL prefix into that of ruby-opengl1/2.
+
+2015-09-19  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* sample/SDL2/testgl_ruby-sdl2.rb: Added.
+
+2015-09-04  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2015-08-27  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* sample/NeHe/nehe_lesson36.rb : Fixed random abort on Mac OS X.
+
+2015-08-22  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* generator: Eliminated the use of Nokogiri.
+
+2015-08-16  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* sample/report_env.rb: Now gives GLFW some window hints to create a more higher OpenGL level context available.
+
+2015-08-10  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* OpenGL ES 3.2
+
+2015-08-09  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* sample/gles.rb, sample/report_env_es.rb: Added some window handle check in preparation for context creation failure.
+
+2015-08-08  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2015-08-06  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2015-07-30  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* sample/util/setup_dll.rb, README.md: This library is tested on Linux. (Thanks: @cedlemo (https://github.com/cedlemo))
+	* lib/opengl_common.rb, etc. (self.load_lib): All load_dll's are renamed to load_lib. (Thanks: @cedlemo (https://github.com/cedlemo))
+
+2015-07-21  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2015-07-16  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* glfw.rb, glfw30.rb (glfwGetCursorPos): Fixed signature ((void*, void*, void*) -> (void*, double*, double*))
+
+2015-07-08  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2015-05-14  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2015-05-09  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2015-04-29  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2015-04-11  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2015-03-29  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2015-03-27  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2015-03-15  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2015-02-03  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2015-01-27  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2015-01-25  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* glfw.rb: Added GLFW 3.1 features ( http://www.glfw.org/docs/latest/news.html#news_31 ).
+	* glfw30.rb: Previous version of 'glfw.rb' is available as 'glfw30.rb'.
+
+2015-01-22  vaiorabbit  <http://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2015-01-14  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2015-01-06  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2014-11-19  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2014-10-04  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+	* Applied the changes by hramrach (https://github.com/vaiorabbit/ruby-opengl/pull/4).
+
+2014-09-10  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2014-08-12  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* OpenGL 4.5
+	* generator : [BUGFIX] 'const' arguments aren't handled correctly ('const GLfloat buffer' of glClearNamedFramebufferfi).
+	* generator : [BUGFIX] Array arguments aren't handled correctly ('GLuint baseAndCount[2]' of glPathGlyphIndexRangeNV).
+
+2014-07-28  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2014-07-24  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2014-07-16  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2014-06-18  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2014-06-14  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2014-05-18  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2014-05-15  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2014-04-04  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2014-03-21  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2014-03-18  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* OpenGL ES 3.1
+
+2014-03-15  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2014-02-17  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* sample/GLUT/glut_gears.rb: Added.
+
+2014-02-15  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* sample/DebugOutput: Added.
+
+2014-02-14  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* samples: Fixed Array#pack abuse to improve performance.
+
+2014-02-09  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* sample/GLExcess/glxs_glut.rb : Added.
+
+2014-02-08  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* README.md: Added links to freeglut.
+	* sample/README.md: Updated.
+
+2014-02-02  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* sample/simple_glut.rb: Added.
+	* glut.rb: Fixed wrong glutTimerFunc signature.
+
+2014-01-31  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2014-01-01  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* glut.rb: Now supports API Level 4 (GLUT_API_VERSION = 4).
+	* generator : [BUGFIX] some enums aren't extracted correctly.
+	* opengl_ext_common.rb : Added OpenGL.setup_extension_all().
+
+2013-12-31  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2013-12-14  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* Updated using latest gl.xml.
+
+2013-11-27  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* opengl_ext_command.rb, opengl_ext_enum.rb: Updated using latest gl.xml.
+
+2013-11-02  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* opengl_es.rb: Aded OpenGL ES 2.0/3.0 support.
+	* sample/GLES: Aded.
+	* opengl_command.rb, opengl_ext_command.rb, opengl_ext_enum.rb: Updated using latest gl.xml.
+	* generator/Rakefile: Supported new task 'clean'.
+
+2013-10-20  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* glut.rb (:GLUTPassiveMotionFunc): Fixed signature definition (Thanks: Дмитрий Краснов).
+
+2013-10-19  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* opengl_command.rb, opengl_ext_command.rb, opengl_ext_enum.rb: Updated using latest gl.xml.
+
+2013-10-06  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* opengl_ext.rb (OpenGL.check_extension): Now compatible with OpenGL 3.0 and later (glGetString(GL_EXTENSIONS) was deprecated).
+
+2013-10-05  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* opengl_command.rb, opengl_ext_command.rb, opengl_ext_enum.rb: Updated using latest gl.xml.
+
+2013-09-21  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* glut.rb: Minimal GLUT wrapper.
+	* sample/GLUT: Added.
+	* glfw.rb, glut.rb (load_dll): Now searches dll/dylib/so from current execution path.
+
+2013-09-16  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* lib/glfw.rb (GLFW.create_callback): Now accepts Proc object. (ex.) "method(:key_callback).to_proc".
+
+2013-09-15  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* opengl-bindings.gemspec: Added to make RubyGems package.
+	* Changed directory structure more RubyGems-compliant.
+
+2013-09-14  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* generator/aux_generate_typemap.rb: Fixed to handle signed/unsinged correctly.
+	* sample/GLExcess: Added.
+	* opengl_ext_enum.rb, generator/generate_ext_enum.rb: Now checks if same constant is already defined before cosnt_set.
+
+2013-09-08  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* opengl_ext_command.rb, opengl_ext_enum.rb, opengl_ext.rb: Added for OpenGL extension support.
+	* sample/report_env.rb: Reports the names of supported extensions.
+	* sample/Extension/nvpr_hello_world.rb: Added.
+
+2013-09-07  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* opengl_command.rb: Updated using latest gl.xml.
+	* opengl_command.rb: Fixed some bugs.
+	* opengl_command.rb, glu.rb (load_dll): Updated platform detection.
+	* sample/report_env.rb : Added.
+	* opengl_common.rb (check_extension): Added.
+
+2013-09-05  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* sample/ComputeShader: Added.
+
+2013-09-03  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* opengl_platform.rb, opengl_windows.rb: Added.
+
+2013-08-28  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* glu.rb: Added.
+
+2013-08-28  vaiorabbit  <https://twitter.com/vaiorabbit>
+
+	* (Announce) First release.
+

@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="UTF-8">
+
+<title>package.rb.orig - RDoc Documentation</title>
+
+<script type="text/javascript">
+  var rdoc_rel_prefix = "../../";
+  var index_rel_prefix = "../../";
+</script>
+
+<script src="../../js/navigation.js" defer></script>
+<script src="../../js/search.js" defer></script>
+<script src="../../js/search_index.js" defer></script>
+<script src="../../js/searcher.js" defer></script>
+<script src="../../js/darkfish.js" defer></script>
+
+<link href="../../css/fonts.css" rel="stylesheet">
+<link href="../../css/rdoc.css" rel="stylesheet">
+
+
+
+<body id="top" role="document" class="file">
+<nav role="navigation">
+  <div id="project-navigation">
+    <div id="home-section" role="region" title="Quick navigation" class="nav-section">
+  <h2>
+    <a href="../../index.html" rel="home">Home</a>
+  </h2>
+
+  <div id="table-of-contents-navigation">
+    <a href="../../table_of_contents.html#pages">Pages</a>
+    <a href="../../table_of_contents.html#classes">Classes</a>
+    <a href="../../table_of_contents.html#methods">Methods</a>
+  </div>
+</div>
+
+    <div id="search-section" role="search" class="project-section initially-hidden">
+  <form action="#" method="get" accept-charset="utf-8">
+    <div id="search-field-wrapper">
+      <input id="search-field" role="combobox" aria-label="Search"
+             aria-autocomplete="list" aria-controls="search-results"
+             type="text" name="search" placeholder="Search" spellcheck="false"
+             title="Type to search, Up and Down to navigate, Enter to load">
+    </div>
+
+    <ul id="search-results" aria-label="Search Results"
+        aria-busy="false" aria-expanded="false"
+        aria-atomic="false" class="initially-hidden"></ul>
+  </form>
+</div>
+
+  </div>
+
+  
+
+  <div id="project-metadata">
+    <div id="fileindex-section" class="nav-section">
+  <h3>Pages</h3>
+
+  <ul class="link-list">
+  
+    <li><a href="../../NEWS.html">NEWS</a>
+  
+    <li><a href="../../NEWS-1_8_7.html">NEWS-1.8.7</a>
+  
+    <li><a href="../../NEWS-1_9_1.html">NEWS-1.9.1</a>
+  
+    <li><a href="../../NEWS-1_9_2.html">NEWS-1.9.2</a>
+  
+    <li><a href="../../NEWS-1_9_3.html">NEWS-1.9.3</a>
+  
+    <li><a href="../../NEWS-2_0_0.html">NEWS-2.0.0</a>
+  
+    <li><a href="../../NEWS-2_1_0.html">NEWS-2.1.0</a>
+  
+    <li><a href="../../NEWS-2_2_0.html">NEWS-2.2.0</a>
+  
+    <li><a href="../../NEWS-2_3_0.html">NEWS-2.3.0</a>
+  
+    <li><a href="../../NEWS-2_4_0.html">NEWS-2.4.0</a>
+  
+    <li><a href="../../README_ja_md.html">README.ja</a>
+  
+    <li><a href="../../README_md.html">README</a>
+  
+    <li><a href="../../contributing_rdoc.html">contributing</a>
+  
+    <li><a href="../../contributors_rdoc.html">contributors</a>
+  
+    <li><a href="../../dtrace_probes_rdoc.html">dtrace_probes</a>
+  
+    <li><a href="../../extension_ja_rdoc.html">extension.ja</a>
+  
+    <li><a href="../../extension_rdoc.html">extension</a>
+  
+    <li><a href="../../globals_rdoc.html">globals</a>
+  
+    <li><a href="../../keywords_rdoc.html">keywords</a>
+  
+    <li><a href="../../lib/racc/rdoc/grammar_en_rdoc.html">grammar.en</a>
+  
+    <li><a href="../../lib/rubygems/package_rb_orig.html">package.rb.orig</a>
+  
+    <li><a href="../../maintainers_rdoc.html">maintainers</a>
+  
+    <li><a href="../../marshal_rdoc.html">marshal</a>
+  
+    <li><a href="../../regexp_rdoc.html">regexp</a>
+  
+    <li><a href="../../security_rdoc.html">security</a>
+  
+    <li><a href="../../standard_library_rdoc.html">standard_library</a>
+  
+    <li><a href="../../syntax_rdoc.html">syntax</a>
+  
+    <li><a href="../../syntax/assignment_rdoc.html">assignment</a>
+  
+    <li><a href="../../syntax/calling_methods_rdoc.html">calling_methods</a>
+  
+    <li><a href="../../syntax/control_expressions_rdoc.html">control_expressions</a>
+  
+    <li><a href="../../syntax/exceptions_rdoc.html">exceptions</a>
+  
+    <li><a href="../../syntax/literals_rdoc.html">literals</a>
+  
+    <li><a href="../../syntax/methods_rdoc.html">methods</a>
+  
+    <li><a href="../../syntax/miscellaneous_rdoc.html">miscellaneous</a>
+  
+    <li><a href="../../syntax/modules_and_classes_rdoc.html">modules_and_classes</a>
+  
+    <li><a href="../../syntax/precedence_rdoc.html">precedence</a>
+  
+    <li><a href="../../syntax/refinements_rdoc.html">refinements</a>
+  
+  </ul>
+</div>
+
+  </div>
+</nav>
+
+<main role="main" aria-label="Page lib/rubygems/package.rb.orig">
+
+<p>#– # Copyright (C) 2004 Mauricio Julio Fernández Pradier # See LICENSE.txt
+for additional licensing information. #++ # # Example using a Gem::Package
+# # Builds a .gem file given a <a
+href="../../Gem/Specification.html">Gem::Specification</a>. A .gem file is
+a tarball # which contains a data.tar.gz and metadata.gz, and possibly
+signatures. # #   require &#39;rubygems&#39; #   require
+&#39;rubygems/package&#39; # #   spec = <a
+href="../../Gem/Specification.html#method-c-new">Gem::Specification.new</a>
+do |s| #     s.summary = “Ruby based make-like utility.” #     s.name =
+&#39;rake&#39; #     s.version = PKG_VERSION #     s.requirements &lt;&lt;
+&#39;none&#39; #     s.files = PKG_FILES #     s.description = &lt;&lt;-EOF
+#   Rake is a Make-like program implemented in Ruby. Tasks #   and
+dependencies are specified in standard Ruby syntax. #     EOF #   end # #  
+<a href="../../Gem/Package.html#method-c-build">Gem::Package.build</a> spec
+# # Reads a .gem file. # #   require &#39;rubygems&#39; #   require
+&#39;rubygems/package&#39; # #   the_gem = <a
+href="../../Gem/Package.html#method-c-new">Gem::Package.new</a> #  
+the_gem.contents # get the files in the gem #   the_gem.extract_files
+destination_directory # extract the gem into a directory #   the_gem.spec #
+get the spec out of the gem #   the_gem.verify # check the gem is OK
+(contains valid gem specification, contains a not corrupt contents archive)
+# # files are the files in the .gem tar file, not the Ruby files in the gem
+# extract_files and contents automatically call verify</p>
+
+<p>require &#39;rubygems/security&#39; require
+&#39;rubygems/specification&#39; require
+&#39;rubygems/user_interaction&#39; require &#39;zlib&#39;</p>
+
+<p>class Gem::Package</p>
+
+<pre>include Gem::UserInteraction
+
+class Error &lt; Gem::Exception; end
+
+class FormatError &lt; Error
+  attr_reader :path
+
+  def initialize message, source = nil
+    if source
+      @path = source.path
+
+      message = message + &quot; in #{path}&quot; if path
+    end
+
+    super message
+  end
+
+end
+
+class PathError &lt; Error
+  def initialize destination, destination_dir
+    super &quot;installing into parent path %s of %s is not allowed&quot; %
+            [destination, destination_dir]
+  end
+end
+
+class NonSeekableIO &lt; Error; end
+
+class TooLongFileName &lt; Error; end
+
+##
+# Raised when a tar file is corrupt
+
+class TarInvalidError &lt; Error; end
+
+attr_accessor :build_time # :nodoc:
+
+##
+# Checksums for the contents of the package
+
+attr_reader :checksums
+
+##
+# The files in this package.  This is not the contents of the gem, just the
+# files in the top-level container.
+
+attr_reader :files
+
+##
+# The security policy used for verifying the contents of this package.
+
+attr_accessor :security_policy
+
+##
+# Sets the Gem::Specification to use to build this package.
+
+attr_writer :spec
+
+def self.build spec, skip_validation=false
+  gem_file = spec.file_name
+
+  package = new gem_file
+  package.spec = spec
+  package.build skip_validation
+
+  gem_file
+end
+
+##
+# Creates a new Gem::Package for the file at +gem+. +gem+ can also be
+# provided as an IO object.
+#
+# If +gem+ is an existing file in the old format a Gem::Package::Old will be
+# returned.
+
+def self.new gem, security_policy = nil
+  gem = if gem.is_a?(Gem::Package::Source)
+          gem
+        elsif gem.respond_to? :read
+          Gem::Package::IOSource.new gem
+        else
+          Gem::Package::FileSource.new gem
+        end
+
+  return super unless Gem::Package == self
+  return super unless gem.present?
+
+  return super unless gem.start
+  return super unless gem.start.include? &#39;MD5SUM =&#39;
+
+  Gem::Package::Old.new gem
+end
+
+##
+# Creates a new package that will read or write to the file +gem+.
+
+def initialize gem, security_policy # :notnew:
+  @gem = gem
+
+  @build_time      = Time.now
+  @checksums       = {}
+  @contents        = nil
+  @digests         = Hash.new { |h, algorithm| h[algorithm] = {} }
+  @files           = nil
+  @security_policy = security_policy
+  @signatures      = {}
+  @signer          = nil
+  @spec            = nil
+end
+
+##
+# Copies this package to +path+ (if possible)
+
+def copy_to path
+  FileUtils.cp @gem.path, path unless File.exist? path
+end
+
+##
+# Adds a checksum for each entry in the gem to checksums.yaml.gz.
+
+def add_checksums tar
+  Gem.load_yaml
+
+  checksums_by_algorithm = Hash.new { |h, algorithm| h[algorithm] = {} }
+
+  @checksums.each do |name, digests|
+    digests.each do |algorithm, digest|
+      checksums_by_algorithm[algorithm][name] = digest.hexdigest
+    end
+  end
+
+  tar.add_file_signed &#39;checksums.yaml.gz&#39;, 0444, @signer do |io|
+    gzip_to io do |gz_io|
+      YAML.dump checksums_by_algorithm, gz_io
+    end
+  end
+end
+
+##
+# Adds the files listed in the packages&#39;s Gem::Specification to data.tar.gz
+# and adds this file to the +tar+.
+
+def add_contents tar # :nodoc:
+  digests = tar.add_file_signed &#39;data.tar.gz&#39;, 0444, @signer do |io|
+    gzip_to io do |gz_io|
+      Gem::Package::TarWriter.new gz_io do |data_tar|
+        add_files data_tar
+      end
+    end
+  end
+
+  @checksums[&#39;data.tar.gz&#39;] = digests
+end
+
+##
+# Adds files included the package&#39;s Gem::Specification to the +tar+ file
+
+def add_files tar # :nodoc:
+  @spec.files.each do |file|
+    stat = File.lstat file
+
+    if stat.symlink?
+      relative_dir = File.dirname(file).sub(&quot;#{Dir.pwd}/&quot;, &#39;&#39;)
+      target_path = File.join(relative_dir, File.readlink(file))
+      tar.add_symlink file, target_path, stat.mode
+    end
+
+    next unless stat.file?
+
+    tar.add_file_simple file, stat.mode, stat.size do |dst_io|
+      File.open file, &#39;rb&#39; do |src_io|
+        dst_io.write src_io.read 16384 until src_io.eof?
+      end
+    end
+  end
+end
+
+##
+# Adds the package&#39;s Gem::Specification to the +tar+ file
+
+def add_metadata tar # :nodoc:
+  digests = tar.add_file_signed &#39;metadata.gz&#39;, 0444, @signer do |io|
+    gzip_to io do |gz_io|
+      gz_io.write @spec.to_yaml
+    end
+  end
+
+  @checksums[&#39;metadata.gz&#39;] = digests
+end
+
+##
+# Builds this package based on the specification set by #spec=
+
+def build skip_validation = false
+  Gem.load_yaml
+  require &#39;rubygems/security&#39;
+
+  @spec.mark_version
+  @spec.validate unless skip_validation
+
+  setup_signer
+
+  @gem.with_write_io do |gem_io|
+    Gem::Package::TarWriter.new gem_io do |gem|
+      add_metadata gem
+      add_contents gem
+      add_checksums gem
+    end
+  end
+
+  say &lt;&lt;-EOM
+Successfully built RubyGem
+Name: #{@spec.name}
+Version: #{@spec.version}
+File: #{File.basename @spec.cache_file}</pre>
+
+<p>EOM</p>
+
+<pre>ensure
+  @signer = nil
+end
+
+##
+# A list of file names contained in this gem
+
+def contents
+  return @contents if @contents
+
+  verify unless @spec
+
+  @contents = []
+
+  @gem.with_read_io do |io|
+    gem_tar = Gem::Package::TarReader.new io
+
+    gem_tar.each do |entry|
+      next unless entry.full_name == &#39;data.tar.gz&#39;
+
+      open_tar_gz entry do |pkg_tar|
+        pkg_tar.each do |contents_entry|
+          @contents &lt;&lt; contents_entry.full_name
+        end
+      end
+
+      return @contents
+    end
+  end
+end
+
+##
+# Creates a digest of the TarEntry +entry+ from the digest algorithm set by
+# the security policy.
+
+def digest entry # :nodoc:
+  algorithms = if @checksums then
+                 @checksums.keys
+               else
+                 [Gem::Security::DIGEST_NAME].compact
+               end
+
+  algorithms.each do |algorithm|
+    digester =
+      if defined?(OpenSSL::Digest) then
+        OpenSSL::Digest.new algorithm
+      else
+        Digest.const_get(algorithm).new
+      end
+
+    digester &lt;&lt; entry.read(16384) until entry.eof?
+
+    entry.rewind
+
+    @digests[algorithm][entry.full_name] = digester
+  end
+
+  @digests
+end
+
+##
+# Extracts the files in this package into +destination_dir+
+#
+# If +pattern+ is specified, only entries matching that glob will be
+# extracted.
+
+def extract_files destination_dir, pattern = &quot;*&quot;
+  verify unless @spec
+
+  FileUtils.mkdir_p destination_dir
+
+  @gem.with_read_io do |io|
+    reader = Gem::Package::TarReader.new io
+
+    reader.each do |entry|
+      next unless entry.full_name == &#39;data.tar.gz&#39;
+
+      extract_tar_gz entry, destination_dir, pattern
+
+      return # ignore further entries
+    end
+  end
+end
+
+##
+# Extracts all the files in the gzipped tar archive +io+ into
+# +destination_dir+.
+#
+# If an entry in the archive contains a relative path above
+# +destination_dir+ or an absolute path is encountered an exception is
+# raised.
+#
+# If +pattern+ is specified, only entries matching that glob will be
+# extracted.
+
+def extract_tar_gz io, destination_dir, pattern = &quot;*&quot; # :nodoc:
+  open_tar_gz io do |tar|
+    tar.each do |entry|
+      next unless File.fnmatch pattern, entry.full_name, File::FNM_DOTMATCH
+
+      destination = install_location entry.full_name, destination_dir
+
+      FileUtils.rm_rf destination
+
+      mkdir_options = {}
+      mkdir_options[:mode] = entry.header.mode if entry.directory?
+      mkdir =
+        if entry.directory? then
+          destination
+        else
+          File.dirname destination
+        end
+
+      mkdir_p_safe mkdir, mkdir_options, destination_dir, entry.full_name
+
+      File.open destination, &#39;wb&#39; do |out|
+        out.write entry.read
+        FileUtils.chmod entry.header.mode, destination
+      end if entry.file?
+
+      File.symlink(entry.header.linkname, destination) if entry.symlink?
+
+      verbose destination
+    end
+  end
+end
+
+##
+# Gzips content written to +gz_io+ to +io+.
+#--
+# Also sets the gzip modification time to the package build time to ease
+# testing.
+
+def gzip_to io # :yields: gz_io
+  gz_io = Zlib::GzipWriter.new io, Zlib::BEST_COMPRESSION
+  gz_io.mtime = @build_time
+
+  yield gz_io
+ensure
+  gz_io.close
+end
+
+##
+# Returns the full path for installing +filename+.
+#
+# If +filename+ is not inside +destination_dir+ an exception is raised.
+
+def install_location filename, destination_dir # :nodoc:
+  raise Gem::Package::PathError.new(filename, destination_dir) if
+    filename.start_with? &#39;/&#39;
+
+  destination_dir = realpath destination_dir
+  destination_dir = File.expand_path destination_dir
+
+  destination = File.join destination_dir, filename
+  destination = File.expand_path destination
+
+  raise Gem::Package::PathError.new(destination, destination_dir) unless
+    destination.start_with? destination_dir + &#39;/&#39;
+
+  begin
+    real_destination = File.expand_path(File.realpath(destination))
+  rescue
+    # it&#39;s fine if the destination doesn&#39;t exist, because rm -rf&#39;ing it can&#39;t cause any damage
+    nil
+  else
+    raise Gem::Package::PathError.new(real_destination, destination_dir) unless
+      real_destination.start_with? destination_dir + &#39;/&#39;
+  end
+
+  destination.untaint
+  destination
+end
+
+def mkdir_p_safe mkdir, mkdir_options, destination_dir, file_name
+  destination_dir = realpath File.expand_path(destination_dir)
+  parts = mkdir.split(File::SEPARATOR)
+  parts.reduce do |path, basename|
+    path = realpath path  unless path == &quot;&quot;
+    path = File.expand_path(path + File::SEPARATOR + basename)
+    lstat = File.lstat path rescue nil
+    if !lstat || !lstat.directory?
+      unless path.start_with? destination_dir and (FileUtils.mkdir path, mkdir_options rescue false)
+        raise Gem::Package::PathError.new(file_name, destination_dir)
+      end
+    end
+    path
+  end
+end
+
+##
+# Loads a Gem::Specification from the TarEntry +entry+
+
+def load_spec entry # :nodoc:
+  case entry.full_name
+  when &#39;metadata&#39; then
+    @spec = Gem::Specification.from_yaml entry.read
+  when &#39;metadata.gz&#39; then
+    args = [entry]
+    args &lt;&lt; { :external_encoding =&gt; Encoding::UTF_8 } if
+      Object.const_defined?(:Encoding) &amp;&amp;
+        Zlib::GzipReader.method(:wrap).arity != 1
+
+    Zlib::GzipReader.wrap(*args) do |gzio|
+      @spec = Gem::Specification.from_yaml gzio.read
+    end
+  end
+end
+
+##
+# Opens +io+ as a gzipped tar archive
+
+def open_tar_gz io # :nodoc:
+  Zlib::GzipReader.wrap io do |gzio|
+    tar = Gem::Package::TarReader.new gzio
+
+    yield tar
+  end
+end
+
+##
+# Reads and loads checksums.yaml.gz from the tar file +gem+
+
+def read_checksums gem
+  Gem.load_yaml
+
+  @checksums = gem.seek &#39;checksums.yaml.gz&#39; do |entry|
+    Zlib::GzipReader.wrap entry do |gz_io|
+      Gem::SafeYAML.safe_load gz_io.read
+    end
+  end
+end
+
+##
+# Prepares the gem for signing and checksum generation.  If a signing
+# certificate and key are not present only checksum generation is set up.
+
+def setup_signer
+  passphrase = ENV[&#39;GEM_PRIVATE_KEY_PASSPHRASE&#39;]
+  if @spec.signing_key then
+    @signer = Gem::Security::Signer.new @spec.signing_key, @spec.cert_chain, passphrase
+    @spec.signing_key = nil
+    @spec.cert_chain = @signer.cert_chain.map { |cert| cert.to_s }
+  else
+    @signer = Gem::Security::Signer.new nil, nil, passphrase
+    @spec.cert_chain = @signer.cert_chain.map { |cert| cert.to_pem } if
+      @signer.cert_chain
+  end
+end
+
+##
+# The spec for this gem.
+#
+# If this is a package for a built gem the spec is loaded from the
+# gem and returned.  If this is a package for a gem being built the provided
+# spec is returned.
+
+def spec
+  verify unless @spec
+
+  @spec
+end
+
+##
+# Verifies that this gem:
+#
+# * Contains a valid gem specification
+# * Contains a contents archive
+# * The contents archive is not corrupt
+#
+# After verification the gem specification from the gem is available from
+# #spec
+
+def verify
+  @files     = []
+  @spec      = nil
+
+  @gem.with_read_io do |io|
+    Gem::Package::TarReader.new io do |reader|
+      read_checksums reader
+
+      verify_files reader
+    end
+  end
+
+  verify_checksums @digests, @checksums
+
+  @security_policy.verify_signatures @spec, @digests, @signatures if
+    @security_policy
+
+  true
+rescue Gem::Security::Exception
+  @spec = nil
+  @files = []
+  raise
+rescue Errno::ENOENT =&gt; e
+  raise Gem::Package::FormatError.new e.message
+rescue Gem::Package::TarInvalidError =&gt; e
+  raise Gem::Package::FormatError.new e.message, @gem
+end
+
+##
+# Verifies the +checksums+ against the +digests+.  This check is not
+# cryptographically secure.  Missing checksums are ignored.
+
+def verify_checksums digests, checksums # :nodoc:
+  return unless checksums
+
+  checksums.sort.each do |algorithm, gem_digests|
+    gem_digests.sort.each do |file_name, gem_hexdigest|
+      computed_digest = digests[algorithm][file_name]
+
+      unless computed_digest.hexdigest == gem_hexdigest then
+        raise Gem::Package::FormatError.new \
+          &quot;#{algorithm} checksum mismatch for #{file_name}&quot;, @gem
+      end
+    end
+  end
+end
+
+##
+# Verifies +entry+ in a .gem file.
+
+def verify_entry entry
+  file_name = entry.full_name
+  @files &lt;&lt; file_name
+
+  case file_name
+  when /\.sig$/ then
+    @signatures[$`] = entry.read if @security_policy
+    return
+  else
+    digest entry
+  end
+
+  case file_name
+  when /^metadata(.gz)?$/ then
+    load_spec entry
+  when &#39;data.tar.gz&#39; then
+    verify_gz entry
+  end
+rescue =&gt; e
+  message = &quot;package is corrupt, exception while verifying: &quot; +
+            &quot;#{e.message} (#{e.class})&quot;
+  raise Gem::Package::FormatError.new message, @gem
+end
+
+##
+# Verifies the files of the +gem+
+
+def verify_files gem
+  gem.each do |entry|
+    verify_entry entry
+  end
+
+  unless @spec then
+    raise Gem::Package::FormatError.new &#39;package metadata is missing&#39;, @gem
+  end
+
+  unless @files.include? &#39;data.tar.gz&#39; then
+    raise Gem::Package::FormatError.new \
+            &#39;package content (data.tar.gz) is missing&#39;, @gem
+  end
+
+  if duplicates = @files.group_by {|f| f }.select {|k,v| v.size &gt; 1 }.map(&amp;:first) and duplicates.any?
+    raise Gem::Security::Exception, &quot;duplicate files in the package: (#{duplicates.map(&amp;:inspect).join(&#39;, &#39;)})&quot;
+  end
+end
+
+##
+# Verifies that +entry+ is a valid gzipped file.
+
+def verify_gz entry # :nodoc:
+  Zlib::GzipReader.wrap entry do |gzio|
+    gzio.read 16384 until gzio.eof? # gzip checksum verification
+  end
+rescue Zlib::GzipFile::Error =&gt; e
+  raise Gem::Package::FormatError.new(e.message, entry.full_name)
+end
+
+if File.respond_to? :realpath
+  def realpath file
+    File.realpath file
+  end
+else
+  def realpath file
+    file
+  end
+end</pre>
+
+<p>end</p>
+
+<p>require &#39;rubygems/package/digest_io&#39; require
+&#39;rubygems/package/source&#39; require
+&#39;rubygems/package/file_source&#39; require
+&#39;rubygems/package/io_source&#39; require &#39;rubygems/package/old&#39;
+require &#39;rubygems/package/tar_header&#39; require
+&#39;rubygems/package/tar_reader&#39; require
+&#39;rubygems/package/tar_reader/entry&#39; require
+&#39;rubygems/package/tar_writer&#39;</p>
+</main>
+
+
+
+<footer id="validator-badges" role="contentinfo">
+  <p><a href="https://validator.w3.org/check/referer">Validate</a>
+  <p>Generated by <a href="https://ruby.github.io/rdoc/">RDoc</a> 6.0.1.1.
+  <p>Based on <a href="http://deveiate.org/projects/Darkfish-RDoc/">Darkfish</a> by <a href="http://deveiate.org">Michael Granger</a>.
+</footer>
+
