@@ -3,7 +3,7 @@ SCREEN 800 700 1.0
 SCROLLWINDOW
 
   # Change the title font to 10 pt courier without bold and make it italic
-  TITLE "INST Other Widget Examples" courier 10 normal true
+  TITLE " Other Widget Examples" courier 10 normal true
 
   HORIZONTAL
     LABEL "TestText"
