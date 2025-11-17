@@ -1,0 +1,300 @@
+###############################################################################
+# CHASQUI_II Telemetry Screen - PARAMETERS (Overview Style) - UPDATED
+# Static and Dynamic Configuration Parameters (Memory Pointers + Streams 4/5 added)
+###############################################################################
+
+SCREEN AUTO AUTO 0.5
+GLOBAL_SETTING LABELVALUELIMITSBAR COLORBLIND TRUE
+
+SCROLLWINDOW
+  VERTICAL 5
+    SETTING BACKCOLOR 240 242 245
+
+    ###########################################################################
+    # HEADER (mismo estilo que OVERVIEW)
+    ###########################################################################
+    HORIZONTALBOX
+      SETTING BACKCOLOR 15 76 129
+      SETTING BORDERCOLOR 10 50 90
+
+      HORIZONTAL 12
+        CANVAS 70 70
+          CANVASIMAGE "logo-chasqui.jpg" 0 0
+        END
+
+        VERTICAL 3 FALSE
+          SPACER 0 6
+          TITLE "COSPAR-I CONFIGURATION PARAMETERS"
+            SETTING TEXTCOLOR 255 255 255
+            SETTING BACKCOLOR 15 76 129
+          LABEL "Static and Dynamic System Configuration"
+            SETTING TEXTCOLOR 180 200 220
+            SETTING BACKCOLOR 15 76 129
+          SPACER 0 6
+        END
+      END
+    END
+
+    SPACER 0 8
+
+    ###########################################################################
+    # TABBOOK - STATIC & DYNAMIC PARAMETERS (estilo overview)
+    ###########################################################################
+    VERTICALBOX "PARAMETER GROUPS"
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+      SETTING MARGIN 4
+
+      TABBOOK
+        SETTING BACKCOLOR 245 247 250
+
+        #######################################################################
+        # STATIC PARAMETERS TAB
+        #######################################################################
+        TABITEM "Static Parameters"
+          VERTICAL 4
+            SETTING BACKCOLOR 255 255 255
+            SETTING BORDERCOLOR 200 210 220
+            SETTING MARGIN 4
+
+            VERTICALBOX "Read Intervals (ms)"
+              SETTING BACKCOLOR 248 250 252
+              SETTING BORDERCOLOR 220 225 230
+              MATRIXBYCOLUMNS 2 10 6
+                LABELVALUE CHASQUI_II StaticPars EpsReadInterval
+                LABELVALUE CHASQUI_II StaticPars UhfReadInterval
+                LABELVALUE CHASQUI_II StaticPars PlReadInterval
+              END
+            END
+
+            VERTICALBOX "Packet Configuration"
+              SETTING BACKCOLOR 248 250 252
+              SETTING BORDERCOLOR 220 225 230
+              LABELVALUE CHASQUI_II StaticPars PktInterval
+              LABEL "Active Packet Streams (40 elements):"
+                SETTING TEXTCOLOR 90 90 0
+              LABEL "Array visualization — individual stream status"
+                SETTING TEXTCOLOR 100 100 100
+              LABEL "Packet Save Intervals (40 elements):"
+                SETTING TEXTCOLOR 90 90 0
+              LABEL "Time intervals for each stream"
+                SETTING TEXTCOLOR 100 100 100
+            END
+
+            VERTICALBOX "Deployment Configuration"
+              SETTING BACKCOLOR 248 250 252
+              SETTING BORDERCOLOR 220 225 230
+              HORIZONTAL 6
+                LABEL "Deployments Active:"
+                  SETTING TEXTCOLOR 80 80 80
+                VALUE CHASQUI_II StaticPars DeploymentsActive CONVERTED 10
+                LIMITSCOLOR CHASQUI_II StaticPars DeploymentsActive CONVERTED 10
+              END
+              LABELVALUE CHASQUI_II StaticPars SP1DepInterval
+              LABELVALUE CHASQUI_II StaticPars SP2DepInterval
+              LABELVALUE CHASQUI_II StaticPars AntDepInterval
+            END
+
+            VERTICALBOX "System Timeouts"
+              SETTING BACKCOLOR 248 250 252
+              SETTING BORDERCOLOR 220 225 230
+              LABELVALUE CHASQUI_II StaticPars FlashTimeout
+              LABELVALUE CHASQUI_II StaticPars CltTimeout
+            END
+
+            VERTICALBOX "Mode Control Configuration"
+              SETTING BACKCOLOR 248 250 252
+              SETTING BORDERCOLOR 220 225 230
+              HORIZONTAL 6
+                LABEL "Mode Override:"
+                VALUE CHASQUI_II StaticPars ModeOverrideFlag CONVERTED 10
+                LIMITSCOLOR CHASQUI_II StaticPars ModeOverrideFlag CONVERTED 10
+              END
+              LABELVALUE CHASQUI_II StaticPars SafeExitThresh
+              LABELVALUE CHASQUI_II StaticPars SafeEnterThresh
+            END
+
+            VERTICALBOX "Battery Heater Control"
+              SETTING BACKCOLOR 248 250 252
+              SETTING BORDERCOLOR 220 225 230
+              HORIZONTAL 6
+                LABEL "Heater Override:"
+                VALUE CHASQUI_II StaticPars BattHtrOverrideFlag CONVERTED 10
+                LIMITSCOLOR CHASQUI_II StaticPars BattHtrOverrideFlag CONVERTED 10
+              END
+              LABELVALUE CHASQUI_II StaticPars BattHtrOnThresh
+              LABELVALUE CHASQUI_II StaticPars BattHtrOffThresh
+            END
+
+            VERTICALBOX "System Boot"
+              SETTING BACKCOLOR 248 250 252
+              SETTING BORDERCOLOR 220 225 230
+              LABELVALUE CHASQUI_II StaticPars Bootcounter
+            END
+          END
+        END
+
+        #######################################################################
+        # DYNAMIC PARAMETERS TAB (con Memory Pointers y Streams 4/5)
+        #######################################################################
+        TABITEM "Dynamic Parameters"
+          VERTICAL 4
+            SETTING BACKCOLOR 255 255 255
+            SETTING BORDERCOLOR 200 210 220
+            SETTING MARGIN 4
+
+            VERTICALBOX "System Clock"
+              SETTING BACKCOLOR 248 250 252
+              SETTING BORDERCOLOR 220 225 230
+              MATRIXBYCOLUMNS 3 10 6
+                LABELVALUE CHASQUI_II Dynamicpars SysClk_Day
+                LABELVALUE CHASQUI_II Dynamicpars SysClk_Ms
+                LABELVALUE CHASQUI_II Dynamicpars ObcTime
+              END
+            END
+
+            VERTICALBOX "Command Statistics"
+              SETTING BACKCOLOR 248 250 252
+              SETTING BORDERCOLOR 220 225 230
+              MATRIXBYCOLUMNS 2 10 6
+                LABELVALUE CHASQUI_II Dynamicpars ValidCmds
+                LABELVALUE CHASQUI_II Dynamicpars InvalidCmds
+              END
+              HORIZONTAL 6
+                LABEL "Current Mode:"
+                VALUE CHASQUI_II Dynamicpars CurrMode CONVERTED 10
+                LIMITSCOLOR CHASQUI_II Dynamicpars CurrMode CONVERTED 10
+              END
+            END
+
+            VERTICALBOX "Last Activity Timestamps"
+              SETTING BACKCOLOR 248 250 252
+              SETTING BORDERCOLOR 220 225 230
+              LABEL "Last Command Time:"
+              HORIZONTAL 4
+                LABELVALUE CHASQUI_II Dynamicpars LastCmdTime_Day
+                LABELVALUE CHASQUI_II Dynamicpars LastCmdTime_Ms
+              END
+              LABEL "Last EPS Read:"
+              HORIZONTAL 4
+                LABELVALUE CHASQUI_II Dynamicpars LastEpsTime_Day
+                LABELVALUE CHASQUI_II Dynamicpars LastEpsTime_Ms
+              END
+              LABEL "Last UHF Read:"
+              HORIZONTAL 4
+                LABELVALUE CHASQUI_II Dynamicpars LastUhfReadTime_Day
+                LABELVALUE CHASQUI_II Dynamicpars LastUhfReadTime_Ms
+              END
+              LABEL "Last Payload Read:"
+              HORIZONTAL 4
+                LABELVALUE CHASQUI_II Dynamicpars LastPlReadTime_Day
+                LABELVALUE CHASQUI_II Dynamicpars LastPlReadTime_Ms
+              END
+              LABEL "Last Packet Send:"
+              HORIZONTAL 4
+                LABELVALUE CHASQUI_II Dynamicpars LastPktSendTime_Day
+                LABELVALUE CHASQUI_II Dynamicpars LastPktSendTime_Ms
+              END
+            END
+
+            VERTICALBOX "Packet Save Times"
+              SETTING BACKCOLOR 248 250 252
+              SETTING BORDERCOLOR 220 225 230
+
+              # Stream 1
+              LABEL "Stream 1:"
+                SETTING TEXTCOLOR 90 90 0
+              HORIZONTAL
+                LABELVALUE CHASQUI_II Dynamicpars LastPktSaveTime_Day_1
+                LABELVALUE CHASQUI_II Dynamicpars LastPktSaveTime_Ms_1
+              END
+
+              # Stream 2
+              LABEL "Stream 2:"
+                SETTING TEXTCOLOR 90 90 0
+              HORIZONTAL
+                LABELVALUE CHASQUI_II Dynamicpars LastPktSaveTime_Day_2
+                LABELVALUE CHASQUI_II Dynamicpars LastPktSaveTime_Ms_2
+              END
+
+              # Stream 3
+              LABEL "Stream 3:"
+                SETTING TEXTCOLOR 90 90 0
+              HORIZONTAL
+                LABELVALUE CHASQUI_II Dynamicpars LastPktSaveTime_Day_3
+                LABELVALUE CHASQUI_II Dynamicpars LastPktSaveTime_Ms_3
+              END
+
+              # Stream 4 (agregado)
+              LABEL "Stream 4:"
+                SETTING TEXTCOLOR 90 90 0
+              HORIZONTAL
+                LABELVALUE CHASQUI_II Dynamicpars LastPktSaveTime_Day_4
+                LABELVALUE CHASQUI_II Dynamicpars LastPktSaveTime_Ms_4
+              END
+
+              # Stream 5 (agregado)
+              LABEL "Stream 5:"
+                SETTING TEXTCOLOR 90 90 0
+              HORIZONTAL
+                LABELVALUE CHASQUI_II Dynamicpars LastPktSaveTime_Day_5
+                LABELVALUE CHASQUI_II Dynamicpars LastPktSaveTime_Ms_5
+              END
+
+            END
+
+            VERTICALBOX "Memory Pointers"
+              SETTING BACKCOLOR 240 240 245
+              SETTING BORDERCOLOR 220 225 230
+
+              LABEL "Packet Write Pointers (160 elements):"
+                SETTING TEXTCOLOR 100 100 0
+              LABEL "Note: Array of 160 uint32 pointers for write operations (index = stream id)."
+                SETTING TEXTCOLOR 120 120 120
+
+              LABEL "Packet Read Pointers (160 elements):"
+                SETTING TEXTCOLOR 100 100 0
+              LABEL "Note: Array of 160 uint32 pointers for read operations (index = stream id)."
+                SETTING TEXTCOLOR 120 120 120
+
+              SPACER 0 4
+
+              HORIZONTAL 6
+                LABEL "Memory Management Status:"
+                  SETTING TEXTCOLOR 80 80 80
+                LABEL "NOMINAL"
+                  SETTING TEXTCOLOR 0 150 0
+              END
+            END
+
+            VERTICALBOX "Playback Status"
+              SETTING BACKCOLOR 248 250 252
+              SETTING BORDERCOLOR 220 225 230
+              HORIZONTAL 6
+                LABEL "Playback Flag:"
+                VALUE CHASQUI_II Dynamicpars PbFlag CONVERTED 10
+                LIMITSCOLOR CHASQUI_II Dynamicpars PbFlag CONVERTED 10
+              END
+              HORIZONTAL 6
+                LABEL "Playback Partition:"
+                VALUE CHASQUI_II Dynamicpars PbPartition CONVERTED 10
+              END
+              LABELVALUE CHASQUI_II Dynamicpars PbPkts
+            END
+
+            VERTICALBOX "Packet Header Information"
+              SETTING BACKCOLOR 248 250 252
+              SETTING BORDERCOLOR 220 225 230
+              MATRIXBYCOLUMNS 3 10 6
+                LABELVALUE CHASQUI_II Dynamicpars Seq_Number
+                LABELVALUE CHASQUI_II Dynamicpars Packet_Size
+                LABELVALUE CHASQUI_II Dynamicpars Obc_Time_Hdr
+              END
+            END
+
+          END
+        END
+      END
+    END
+  END
+END

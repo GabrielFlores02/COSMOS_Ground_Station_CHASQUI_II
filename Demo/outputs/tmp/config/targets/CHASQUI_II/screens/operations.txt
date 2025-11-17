@@ -1,0 +1,263 @@
+###############################################################################
+# CHASQUI_II Telemetry Screen - OPERATIONS (Light Theme)
+# Satellite Operations Control - Compact Enhanced UI (Final Version)
+###############################################################################
+
+SCREEN AUTO AUTO 0.5
+GLOBAL_SETTING LABELVALUELIMITSBAR COLORBLIND TRUE
+
+SCROLLWINDOW
+  VERTICAL 6
+    SETTING BACKCOLOR 240 242 245
+    SETTING TEXTCOLOR 30 30 30
+
+    ###########################################################################
+    # HEADER
+    ###########################################################################
+    HORIZONTALBOX
+      SETTING BACKCOLOR 15 76 129
+      SETTING BORDERCOLOR 10 50 90
+
+      HORIZONTAL 12
+        CANVAS 60 60
+          CANVASIMAGE "logo-chasqui.jpg" 0 0
+        END
+
+        VERTICAL 2 FALSE
+          TITLE "COSPAR-I OPERATIONS CONTROL"
+            SETTING TEXTCOLOR 255 255 255
+            SETTING BACKCOLOR 15 76 129
+          LABEL "Satellite Operational Modes & System Management"
+            SETTING TEXTCOLOR 180 200 220
+            SETTING BACKCOLOR 15 76 129
+        END
+
+        SPACER 20 0 EXPANDING MINIMUM
+      END
+    END
+
+    SPACER 0 8
+
+    ###########################################################################
+# COMBINED SYSTEM STATUS VIEW
+###########################################################################
+HORIZONTALBOX "SYSTEM STATUS OVERVIEW"
+  SETTING BACKCOLOR 255 255 255
+  SETTING BORDERCOLOR 200 210 220
+  MATRIXBYCOLUMNS 4 10 8
+
+  #######################################################################
+  # MODE MANAGEMENT
+  #######################################################################
+  VERTICALBOX "Mode Management"
+    SETTING BACKCOLOR 248 250 252
+    LABEL "CURRENT MODE:"
+      SETTING TEXTCOLOR 80 80 80
+    VALUE CHASQUI_II Beacon Sat_Curr_Mode CONVERTED
+      SETTING TEXTCOLOR 15 76 129
+      LIMITSCOLOR CHASQUI_II Beacon Sat_Curr_Mode CONVERTED 10 NIL
+    SPACER 0 4
+    LABELVALUE CHASQUI_II Beacon Safe_Exit_Threshold
+    LABELVALUE CHASQUI_II Beacon Safe_Enter_Threshold
+  END
+
+  #######################################################################
+  # PACKET HEADER INFO
+  #######################################################################
+  VERTICALBOX "Packet Header Info"
+    SETTING BACKCOLOR 248 250 252
+    LABELVALUE CHASQUI_II Beacon Version
+    LABELVALUE CHASQUI_II Beacon ApID
+    LABELVALUE CHASQUI_II Beacon Seq_Number
+    LABELVALUE CHASQUI_II Beacon Packet_Size
+  END
+
+  #######################################################################
+  # BEACON TIMING
+  #######################################################################
+  VERTICALBOX "Beacon Timing"
+    SETTING BACKCOLOR 248 250 252
+    LABELVALUE CHASQUI_II Beacon Beac_Threshold_Time
+    LABELVALUE CHASQUI_II Beacon Beacon_Timeout_Threshold_Time
+    LABELVALUE CHASQUI_II Beacon Beacon_Timer_Countdown_Time
+    HORIZONTAL 6
+      LABEL "Countdown:"
+        SETTING TEXTCOLOR 80 80 80
+      VALUE CHASQUI_II Beacon Beacon_Timer_Countdown_Time CONVERTED
+    END
+  END
+
+  #######################################################################
+  # SYSTEM CLOCKS
+  #######################################################################
+  VERTICALBOX "System Clocks"
+    SETTING BACKCOLOR 248 250 252
+    LABELVALUE CHASQUI_II Beacon Obc_Time
+    LABELVALUE CHASQUI_II Beacon Obc_Time_Hdr
+    LABELVALUE CHASQUI_II Beacon Boot_Counter
+    HORIZONTAL 6
+      LABEL "Uptime:"
+        SETTING TEXTCOLOR 80 80 80
+      VALUE CHASQUI_II Beacon Obc_Time CONVERTED
+      LABEL " s"
+    END
+  END
+END
+END
+
+
+    SPACER 0 8
+
+    ###########################################################################
+    # FLASH MEMORY STATUS
+    ###########################################################################
+    HORIZONTALBOX "FLASH MEMORY MANAGEMENT"
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+
+      MATRIXBYCOLUMNS 4 10 6
+        VERTICALBOX "Beacon Flash"
+          SETTING BACKCOLOR 248 250 252
+          LABELVALUE CHASQUI_II Beacon Beacon_Flash_Write_Ptr
+          LABELVALUE CHASQUI_II Beacon Beacon_Flash_Read_Ptr
+          HORIZONTAL 6
+            LABEL "Used:"
+              SETTING TEXTCOLOR 80 80 80
+            VALUE CHASQUI_II Beacon Beacon_Flash_Write_Ptr CONVERTED
+          END
+        END
+
+        VERTICALBOX "Payload Flash"
+          SETTING BACKCOLOR 248 250 252
+          LABELVALUE CHASQUI_II Beacon Payload_Flash_Write_Ptr
+          LABELVALUE CHASQUI_II Beacon Payload_Flash_Read_Ptr
+          HORIZONTAL 6
+            LABEL "Used:"
+              SETTING TEXTCOLOR 80 80 80
+            VALUE CHASQUI_II Beacon Payload_Flash_Write_Ptr CONVERTED
+          END
+        END
+
+        VERTICALBOX "PL Packet Flash"
+          SETTING BACKCOLOR 248 250 252
+          LABELVALUE CHASQUI_II Beacon Payload_Packet_Flash_Write_Ptr
+          LABELVALUE CHASQUI_II Beacon Payload_Packet_Flash_Read_Ptr
+          HORIZONTAL 6
+            LABEL "Used:"
+              SETTING TEXTCOLOR 80 80 80
+            VALUE CHASQUI_II Beacon Payload_Packet_Flash_Write_Ptr CONVERTED
+          END
+        END
+
+        VERTICALBOX "Memory Status"
+          SETTING BACKCOLOR 248 250 252
+          LABELVALUE CHASQUI_II Beacon Current_SD
+          HORIZONTAL 6
+            LABEL "I2C Error:"
+              SETTING TEXTCOLOR 80 80 80
+            LIMITSCOLOR CHASQUI_II Beacon I2c_Error_Flag CONVERTED 8
+          END
+          LABEL "Flash Ops: Nominal"
+            SETTING TEXTCOLOR 0 120 0
+        END
+      END
+    END
+
+    SPACER 0 8
+
+    ###########################################################################
+    # COMMAND INTERFACE (with graph)
+    ###########################################################################
+    HORIZONTALBOX "COMMAND INTERFACE"
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+
+      MATRIXBYCOLUMNS 2 10 8
+        VERTICALBOX "Command Statistics"
+          SETTING BACKCOLOR 248 250 252
+          HORIZONTAL 6
+            LABEL "Last OpCode:"
+              SETTING TEXTCOLOR 80 80 80
+            VALUE CHASQUI_II Beacon Last_Command_Opcode CONVERTED
+          END
+          LABELVALUE CHASQUI_II Beacon Command_Accept_Counter
+          LABELVALUE CHASQUI_II Beacon Command_Reject_Counter
+          HORIZONTAL 6
+            LABEL "Success Rate:"
+              SETTING TEXTCOLOR 80 80 80
+            VALUE CHASQUI_II Beacon Command_Accept_Counter CONVERTED
+            LABEL " / "
+            VALUE CHASQUI_II Beacon Command_Reject_Counter CONVERTED
+          END
+        END
+
+        VERTICALBOX "Command Accept History"
+          SETTING BACKCOLOR 248 250 252
+          LINEGRAPH CHASQUI_II Beacon Command_Accept_Counter 250 900 180 CONVERTED
+            SETTING BACKCOLOR 255 255 255
+            SETTING BORDERCOLOR 220 225 230
+        END
+      END
+    END
+
+    SPACER 0 8
+
+    ###########################################################################
+    # DEPLOYMENT STATUS
+    ###########################################################################
+    HORIZONTALBOX "DEPLOYMENT STATUS"
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+
+      MATRIXBYCOLUMNS 3 10 6
+        VERTICALBOX "PSLV Deployment"
+          SETTING BACKCOLOR 248 250 252
+          HORIZONTAL 6
+            LABEL "Status:"
+              SETTING TEXTCOLOR 80 80 80
+            LIMITSCOLOR CHASQUI_II Beacon PSLV_Deployment_Flag CONVERTED 8
+          END
+        END
+
+        VERTICALBOX "Antenna Deployment"
+          SETTING BACKCOLOR 248 250 252
+          HORIZONTAL 6
+            LABEL "Retry Flag:"
+              SETTING TEXTCOLOR 80 80 80
+            LIMITSCOLOR CHASQUI_II Beacon Antenna_Panels_Deployment_Retry_Flag CONVERTED 8
+          END
+        END
+
+        VERTICALBOX "Storage"
+          SETTING BACKCOLOR 248 250 252
+          HORIZONTAL 6
+            LABEL "Active SD:"
+              SETTING TEXTCOLOR 80 80 80
+            VALUE CHASQUI_II Beacon Current_SD CONVERTED
+          END
+        END
+      END
+    END
+
+    SPACER 0 8
+
+    ###########################################################################
+    # OPERATIONS LOG
+    ###########################################################################
+    HORIZONTALBOX "OPERATIONS LOG"
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+
+      VERTICAL 2
+        LABEL "Mission Phase: Nominal Operations"
+          SETTING TEXTCOLOR 0 120 0
+        LABEL "Last Update: Telemetry received and processed"
+          SETTING TEXTCOLOR 50 50 50
+        LABEL "Status: All systems nominal"
+          SETTING TEXTCOLOR 0 120 0
+      END
+    END
+
+    SPACER 0 12
+  END
+END

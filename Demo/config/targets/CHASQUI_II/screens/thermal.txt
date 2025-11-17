@@ -1,0 +1,330 @@
+###############################################################################
+# CHASQUI_II Telemetry Screen - THERMAL (Compact + Overview Style)
+# Thermal Control System - Compact Visualization (estilo OVERVIEW)
+###############################################################################
+
+SCREEN AUTO AUTO 0.5
+GLOBAL_SETTING LABELVALUELIMITSBAR COLORBLIND TRUE
+
+VERTICAL 5
+  SETTING BACKCOLOR 240 242 245
+
+  ###########################################################################
+  # HEADER (mismo estilo que OVERVIEW)
+  ###########################################################################
+  HORIZONTALBOX
+    SETTING BACKCOLOR 15 76 129
+    SETTING BORDERCOLOR 10 50 90
+
+    HORIZONTAL 12
+      CANVAS 70 70
+        CANVASIMAGE "logo-chasqui.jpg" 0 0
+      END
+
+      VERTICAL 3 FALSE
+        SPACER 0 6
+        TITLE "COSPAR-I THERMAL CONTROL SYSTEM"
+          SETTING TEXTCOLOR 255 255 255
+          SETTING BACKCOLOR 15 76 129
+        LABEL "Thermal Health, Regulation and Trending Overview"
+          SETTING TEXTCOLOR 180 200 220
+          SETTING BACKCOLOR 15 76 129
+        SPACER 0 6
+      END
+
+      SPACER 12 0 EXPANDING MINIMUM
+
+      # Pequeño resumen (opcional)
+      VERTICAL 3
+        HORIZONTAL 6
+          LABEL "Thermal Status:"
+            SETTING TEXTCOLOR 255 255 255
+            SETTING BACKCOLOR 15 76 129
+          LIMITSCOLOR CHASQUI_II Beacon Temp_Bat_TH1 CONVERTED 12 NIL
+        END
+      END
+    END
+  END
+
+  SPACER 0 8
+
+  ###########################################################################
+  # THERMAL STATUS OVERVIEW - COMPACT (cajas blancas y bordes como overview)
+  ###########################################################################
+  HORIZONTALBOX "THERMAL STATUS OVERVIEW"
+    SETTING BACKCOLOR 255 255 255
+    SETTING BORDERCOLOR 200 210 220
+    MATRIXBYCOLUMNS 3 8 6
+
+      VERTICALBOX "Solar Panels"
+        SETTING BACKCOLOR 248 250 252
+        SETTING BORDERCOLOR 220 225 230
+        SETTING MARGIN 2
+
+        HORIZONTAL 6
+          LABEL "Temp_SP0:"
+            SETTING TEXTCOLOR 80 80 80
+          VALUE CHASQUI_II Beacon Temp_SP0 CONVERTED 10
+            SETTING TEXTCOLOR 15 76 129
+          LABEL "°C"
+            SETTING TEXTCOLOR 100 100 100
+        END
+
+        HORIZONTAL 6
+          LABEL "Temp_SP1:"
+            SETTING TEXTCOLOR 80 80 80
+          VALUE CHASQUI_II Beacon Temp_SP1 CONVERTED 10
+            SETTING TEXTCOLOR 15 76 129
+          LABEL "°C"
+            SETTING TEXTCOLOR 100 100 100
+        END
+
+        HORIZONTAL 6
+          LABEL "Temp_SP2:"
+            SETTING TEXTCOLOR 80 80 80
+          VALUE CHASQUI_II Beacon Temp_SP2 CONVERTED 10
+            SETTING TEXTCOLOR 15 76 129
+          LABEL "°C"
+            SETTING TEXTCOLOR 100 100 100
+        END
+      END
+
+      VERTICALBOX "Battery Pack"
+        SETTING BACKCOLOR 248 250 252
+        SETTING BORDERCOLOR 220 225 230
+        SETTING MARGIN 2
+
+        HORIZONTAL 6
+          LABEL "Temp_Bat_TH1:"
+            SETTING TEXTCOLOR 80 80 80
+          VALUE CHASQUI_II Beacon Temp_Bat_TH1 CONVERTED 10
+            SETTING TEXTCOLOR 15 76 129
+          LABEL "°C"
+            SETTING TEXTCOLOR 100 100 100
+        END
+
+        HORIZONTAL 6
+          LABEL "Temp_Bat_TH2:"
+            SETTING TEXTCOLOR 80 80 80
+          VALUE CHASQUI_II Beacon Temp_Bat_TH2 CONVERTED 10
+            SETTING TEXTCOLOR 15 76 129
+          LABEL "°C"
+            SETTING TEXTCOLOR 100 100 100
+        END
+
+        HORIZONTAL 6
+          LABEL "Heater Current:"
+            SETTING TEXTCOLOR 80 80 80
+          VALUE CHASQUI_II Beacon Batt_Htr_Curr CONVERTED 10
+            SETTING TEXTCOLOR 15 76 129
+          LABEL "A"
+            SETTING TEXTCOLOR 100 100 100
+        END
+      END
+
+      VERTICALBOX "Electronics"
+        SETTING BACKCOLOR 248 250 252
+        SETTING BORDERCOLOR 220 225 230
+        SETTING MARGIN 2
+
+        HORIZONTAL 6
+          LABEL "Temp_CDH:"
+            SETTING TEXTCOLOR 80 80 80
+          VALUE CHASQUI_II Beacon Temp_CDH CONVERTED 10
+            SETTING TEXTCOLOR 15 76 129
+          LABEL "°C"
+            SETTING TEXTCOLOR 100 100 100
+        END
+
+        HORIZONTAL 6
+          LABEL "Temp_IF_card:"
+            SETTING TEXTCOLOR 80 80 80
+          VALUE CHASQUI_II Beacon Temp_IF_card CONVERTED 10
+            SETTING TEXTCOLOR 15 76 129
+          LABEL "°C"
+            SETTING TEXTCOLOR 100 100 100
+        END
+
+        HORIZONTAL 6
+          LABEL "Temp_EPS:"
+            SETTING TEXTCOLOR 80 80 80
+          VALUE CHASQUI_II Beacon Temp_EPS CONVERTED 10
+            SETTING TEXTCOLOR 15 76 129
+          LABEL "°C"
+            SETTING TEXTCOLOR 100 100 100
+        END
+      END
+
+    END
+  END
+
+  SPACER 0 8
+
+  ###########################################################################
+  # THERMAL TRENDING - TABBOOK (un parámetro por tab; compacto)
+  ###########################################################################
+  VERTICALBOX "THERMAL TRENDING (10 MINUTES)"
+    SETTING BACKCOLOR 255 255 255
+    SETTING BORDERCOLOR 200 210 220
+    SETTING MARGIN 4
+
+    TABBOOK
+      SETTING BACKCOLOR 240 240 245
+
+      TABITEM "Solar Panel 0"
+        HORIZONTAL 6
+          VERTICAL 2
+            LABEL "Temp_SP0"
+              SETTING TEXTCOLOR 80 80 80
+            LINEGRAPH CHASQUI_II Beacon Temp_SP0 450 900 160 CONVERTED
+              SETTING BACKCOLOR 255 255 255
+              SETTING BORDERCOLOR 220 225 230
+          END
+        END
+      END
+
+      TABITEM "Solar Panel 1"
+        HORIZONTAL 6
+          VERTICAL 2
+            LABEL "Temp_SP1"
+              SETTING TEXTCOLOR 80 80 80
+            LINEGRAPH CHASQUI_II Beacon Temp_SP1 450 900 160 CONVERTED
+              SETTING BACKCOLOR 255 255 255
+              SETTING BORDERCOLOR 220 225 230
+          END
+        END
+      END
+
+      TABITEM "Solar Panel 2"
+        HORIZONTAL 6
+          VERTICAL 2
+            LABEL "Temp_SP2"
+              SETTING TEXTCOLOR 80 80 80
+            LINEGRAPH CHASQUI_II Beacon Temp_SP2 450 900 160 CONVERTED
+              SETTING BACKCOLOR 255 255 255
+              SETTING BORDERCOLOR 220 225 230
+          END
+        END
+      END
+
+      TABITEM "Battery TH1"
+        HORIZONTAL 6
+          VERTICAL 2
+            LABEL "Temp_Bat_TH1"
+              SETTING TEXTCOLOR 80 80 80
+            LINEGRAPH CHASQUI_II Beacon Temp_Bat_TH1 450 900 160 CONVERTED
+              SETTING BACKCOLOR 255 255 255
+              SETTING BORDERCOLOR 220 225 230
+          END
+        END
+      END
+
+      TABITEM "Battery TH2"
+        HORIZONTAL 6
+          VERTICAL 2
+            LABEL "Temp_Bat_TH2"
+              SETTING TEXTCOLOR 80 80 80
+            LINEGRAPH CHASQUI_II Beacon Temp_Bat_TH2 450 900 160 CONVERTED
+              SETTING BACKCOLOR 255 255 255
+              SETTING BORDERCOLOR 220 225 230
+          END
+        END
+      END
+
+      TABITEM "CDH"
+        HORIZONTAL 6
+          VERTICAL 2
+            LABEL "Temp_CDH"
+              SETTING TEXTCOLOR 80 80 80
+            LINEGRAPH CHASQUI_II Beacon Temp_CDH 450 900 160 CONVERTED
+              SETTING BACKCOLOR 255 255 255
+              SETTING BORDERCOLOR 220 225 230
+          END
+        END
+      END
+
+      TABITEM "IF Card"
+        HORIZONTAL 6
+          VERTICAL 2
+            LABEL "Temp_IF_card"
+              SETTING TEXTCOLOR 80 80 80
+            LINEGRAPH CHASQUI_II Beacon Temp_IF_card 450 900 160 CONVERTED
+              SETTING BACKCOLOR 255 255 255
+              SETTING BORDERCOLOR 220 225 230
+          END
+        END
+      END
+
+      TABITEM "EPS"
+        HORIZONTAL 6
+          VERTICAL 2
+            LABEL "Temp_EPS"
+              SETTING TEXTCOLOR 80 80 80
+            LINEGRAPH CHASQUI_II Beacon Temp_EPS 450 900 160 CONVERTED
+              SETTING BACKCOLOR 255 255 255
+              SETTING BORDERCOLOR 220 225 230
+          END
+        END
+      END
+
+    END
+  END
+
+  SPACER 0 8
+
+  ###########################################################################
+  # THERMAL LIMITS SUMMARY (compact table)
+  ###########################################################################
+  VERTICALBOX "THERMAL LIMITS SUMMARY"
+    SETTING BACKCOLOR 255 255 255
+    SETTING BORDERCOLOR 200 210 220
+    SETTING MARGIN 4
+
+    MATRIXBYCOLUMNS 3 8 6
+      LABEL "Sensor"
+        SETTING BACKCOLOR 15 76 129
+        SETTING TEXTCOLOR 255 255 255
+      LABEL "Value (°C)"
+        SETTING BACKCOLOR 15 76 129
+        SETTING TEXTCOLOR 255 255 255
+      LABEL "Status"
+        SETTING BACKCOLOR 15 76 129
+        SETTING TEXTCOLOR 255 255 255
+
+      LABEL "Temp_SP0"
+      VALUE CHASQUI_II Beacon Temp_SP0 CONVERTED
+      LIMITSCOLOR CHASQUI_II Beacon Temp_SP0 CONVERTED 12
+
+      LABEL "Temp_SP1"
+      VALUE CHASQUI_II Beacon Temp_SP1 CONVERTED
+      LIMITSCOLOR CHASQUI_II Beacon Temp_SP1 CONVERTED 12
+
+      LABEL "Temp_SP2"
+      VALUE CHASQUI_II Beacon Temp_SP2 CONVERTED
+      LIMITSCOLOR CHASQUI_II Beacon Temp_SP2 CONVERTED 12
+
+      LABEL "Temp_Bat_TH1"
+      VALUE CHASQUI_II Beacon Temp_Bat_TH1 CONVERTED
+      LIMITSCOLOR CHASQUI_II Beacon Temp_Bat_TH1 CONVERTED 12
+
+      LABEL "Temp_Bat_TH2"
+      VALUE CHASQUI_II Beacon Temp_Bat_TH2 CONVERTED
+      LIMITSCOLOR CHASQUI_II Beacon Temp_Bat_TH2 CONVERTED 12
+
+      LABEL "Temp_CDH"
+      VALUE CHASQUI_II Beacon Temp_CDH CONVERTED
+      LIMITSCOLOR CHASQUI_II Beacon Temp_CDH CONVERTED 12
+
+      LABEL "Temp_IF_card"
+      VALUE CHASQUI_II Beacon Temp_IF_card CONVERTED
+      LIMITSCOLOR CHASQUI_II Beacon Temp_IF_card CONVERTED 12
+
+      LABEL "Temp_EPS"
+      VALUE CHASQUI_II Beacon Temp_EPS CONVERTED
+      LIMITSCOLOR CHASQUI_II Beacon Temp_EPS CONVERTED 12
+    END
+  END
+
+  SPACER 0 10
+
+END

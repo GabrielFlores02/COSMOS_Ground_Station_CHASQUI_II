@@ -1,0 +1,244 @@
+###############################################################################
+# CHASQUI_II Telemetry Screen - POWER (Compact Enhanced UI/UX)
+# Electrical Power System - Monitoreo Completo
+###############################################################################
+
+SCREEN AUTO AUTO 0.5
+GLOBAL_SETTING LABELVALUELIMITSBAR COLORBLIND TRUE
+
+SCROLLWINDOW
+  VERTICAL 6
+    SETTING BACKCOLOR 240 242 245
+    SETTING TEXTCOLOR 30 30 30
+
+    ###########################################################################
+    # HEADER
+    ###########################################################################
+    HORIZONTALBOX
+      SETTING BACKCOLOR 15 76 129
+      SETTING BORDERCOLOR 10 50 90
+
+      HORIZONTAL 12
+        CANVAS 60 60
+          CANVASIMAGE "logo-chasqui.jpg" 0 0
+        END
+
+        VERTICAL 2 FALSE
+          TITLE "COSPAR-I ELECTRICAL POWER SYSTEM"
+            SETTING TEXTCOLOR 255 255 255
+            SETTING BACKCOLOR 15 76 129
+          LABEL "Comprehensive EPS Monitoring & Analysis"
+            SETTING TEXTCOLOR 180 200 220
+            SETTING BACKCOLOR 15 76 129
+        END
+
+        SPACER 20 0 EXPANDING MINIMUM
+
+        VERTICAL 4
+          HORIZONTAL 6
+            LABEL "Power Status:"
+              SETTING TEXTCOLOR 255 255 255
+            LIMITSCOLOR CHASQUI_II Beacon Main_Batt_Volt CONVERTED 14 NIL
+          END
+        END
+      END
+    END
+
+    SPACER 0 8
+
+    ###########################################################################
+    # SOLAR PANELS - TABS
+    ###########################################################################
+    VERTICALBOX "SOLAR ARRAY MONITORING"
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+
+      TABBOOK
+
+        #######################################################################
+        # TABITEM: PANEL +X
+        #######################################################################
+        TABITEM "Panel +X"
+          HORIZONTAL 8
+            VERTICALBOX "Telemetry"
+              SETTING BACKCOLOR 248 250 252
+              SETTING BORDERCOLOR 220 225 230
+              
+              LABELVALUELIMITSBAR CHASQUI_II Beacon Panel0_Curr CONVERTED 12
+              LABELVALUELIMITSBAR CHASQUI_II Beacon Panel0_Volt CONVERTED 12
+              LABELVALUE CHASQUI_II Beacon Temp_SP0 CONVERTED 12
+            END
+
+            LINEGRAPH CHASQUI_II Beacon Panel0_Curr 250 900 180 CONVERTED
+              SETTING BACKCOLOR 255 255 255
+              SETTING BORDERCOLOR 220 225 230
+          END
+        END
+
+        #######################################################################
+        # TABITEM: PANEL +Y
+        #######################################################################
+        TABITEM "Panel +Y"
+          HORIZONTAL 8
+            VERTICALBOX "Telemetry"
+              SETTING BACKCOLOR 248 250 252
+              SETTING BORDERCOLOR 220 225 230
+              
+              LABELVALUELIMITSBAR CHASQUI_II Beacon Panel1_Curr CONVERTED 12
+              LABELVALUELIMITSBAR CHASQUI_II Beacon Panel1_Volt CONVERTED 12
+              LABELVALUE CHASQUI_II Beacon Temp_SP1 CONVERTED 12
+            END
+
+            LINEGRAPH CHASQUI_II Beacon Panel1_Curr 250 900 180 CONVERTED
+              SETTING BACKCOLOR 255 255 255
+              SETTING BORDERCOLOR 220 225 230
+          END
+        END
+
+        #######################################################################
+        # TABITEM: PANEL -X
+        #######################################################################
+        TABITEM "Panel -X"
+          HORIZONTAL 8
+            VERTICALBOX "Telemetry"
+              SETTING BACKCOLOR 248 250 252
+              SETTING BORDERCOLOR 220 225 230
+              
+              LABELVALUELIMITSBAR CHASQUI_II Beacon Panel2_Curr CONVERTED 12
+              LABELVALUELIMITSBAR CHASQUI_II Beacon Panel2_Volt CONVERTED 12
+              LABELVALUE CHASQUI_II Beacon Temp_SP2 CONVERTED 12
+            END
+
+            LINEGRAPH CHASQUI_II Beacon Panel2_Curr 250 900 180 CONVERTED
+              SETTING BACKCOLOR 255 255 255
+              SETTING BORDERCOLOR 220 225 230
+          END
+        END
+
+      END
+    END
+
+    SPACER 0 10
+
+    ###########################################################################
+    # POWER DISTRIBUTION - CURRENT & VOLTAGE
+    ###########################################################################
+    HORIZONTALBOX "POWER DISTRIBUTION"
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+
+      MATRIXBYCOLUMNS 2 10 8
+        VERTICALBOX "Current Monitoring"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 220 225 230
+          LABELVALUELIMITSBAR CHASQUI_II Beacon CDH_3v3_Curr CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II Beacon UHF_6v_Curr CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II Beacon ADCS_12v_Curr CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II Beacon PL_12v_Curr CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II Beacon Batt_Htr_Curr CONVERTED 12
+        END
+
+        VERTICALBOX "Voltage Monitoring"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 220 225 230
+          LABELVALUELIMITSBAR CHASQUI_II Beacon CDH_3v3_Volt CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II Beacon UHF_6v_Volt CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II Beacon ADCS_12v_Volt CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II Beacon PL_12v_Volt CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II Beacon Batt_Htr_Volt CONVERTED 12
+        END
+      END
+    END
+
+    SPACER 0 10
+
+    ###########################################################################
+    # BATTERY MANAGEMENT
+    ###########################################################################
+    HORIZONTALBOX "BATTERY MANAGEMENT SYSTEM"
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+
+      MATRIXBYCOLUMNS 3 10 8
+
+        VERTICALBOX "Battery Telemetry"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 220 225 230
+          LABELVALUELIMITSBAR CHASQUI_II Beacon Main_Batt_Volt CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II Beacon Main_Batt_Curr CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II Beacon Battery_charge_Volt CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II Beacon Battery_charge_Curr CONVERTED 12
+        END
+
+        VERTICALBOX "State of Charge"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 220 225 230
+          LABELVALUELIMITSBAR CHASQUI_II Beacon EPS_FG1_SoC CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II Beacon EPS_FG2_SoC CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II Beacon EPS_FG3_SoC CONVERTED 12
+
+          SPACER 0 4
+
+          HORIZONTAL 6
+            LABEL "Average SoC:"
+              SETTING TEXTCOLOR 80 80 80
+            VALUE CHASQUI_II Beacon EPS_FG1_SoC CONVERTED 10
+              SETTING TEXTCOLOR 15 76 129
+            LABEL "%"
+          END
+        END
+
+        VERTICALBOX "Battery Health"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 220 225 230
+          LABELVALUE CHASQUI_II Beacon Temp_Bat_TH1 CONVERTED 12
+          LABELVALUE CHASQUI_II Beacon Temp_Bat_TH2 CONVERTED 12
+          HORIZONTAL 6
+            LABEL "Heater Current:"
+              SETTING TEXTCOLOR 80 80 80
+            VALUE CHASQUI_II Beacon Batt_Htr_Curr CONVERTED 10
+              SETTING TEXTCOLOR 15 76 129
+            LABEL "A"
+          END
+          HORIZONTAL 6
+            LABEL "Heater Status:"
+              SETTING TEXTCOLOR 80 80 80
+            LIMITSCOLOR CHASQUI_II Beacon Batt_Htr_Curr CONVERTED 10 NIL
+          END
+        END
+      END
+    END
+
+    SPACER 0 10
+
+    ###########################################################################
+    # POWER TRENDING (TABS)
+    ###########################################################################
+    VERTICALBOX "POWER TRENDING - 10 MINUTES"
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+
+      TABBOOK
+        TABITEM "Battery Voltage"
+          LINEGRAPH CHASQUI_II Beacon Main_Batt_Volt 500 900 200 CONVERTED
+            SETTING BACKCOLOR 255 255 255
+            SETTING BORDERCOLOR 220 225 230
+        END
+
+        TABITEM "Battery Current"
+          LINEGRAPH CHASQUI_II Beacon Main_Batt_Curr 500 900 200 CONVERTED
+            SETTING BACKCOLOR 255 255 255
+            SETTING BORDERCOLOR 220 225 230
+        END
+
+        TABITEM "State of Charge FG1"
+          LINEGRAPH CHASQUI_II Beacon EPS_FG1_SoC 500 900 200 CONVERTED
+            SETTING BACKCOLOR 255 255 255
+            SETTING BORDERCOLOR 220 225 230
+        END
+      END
+    END
+
+    SPACER 0 12
+  END
+END

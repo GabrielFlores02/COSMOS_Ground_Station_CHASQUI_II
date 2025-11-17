@@ -1,0 +1,194 @@
+Exception:
+RuntimeError : Can't find the file logo-chasqui.png in D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/CHASQUI_II/screens or the cosmos data directory.
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/tools/tlm_viewer/widgets/widget.rb:266:in `get_image'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/tools/tlm_viewer/widgets/canvasimage_widget.rb:43:in `process_settings'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/tools/tlm_viewer/screen.rb:87:in `block in process_settings'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/tools/tlm_viewer/screen.rb:86:in `each'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/tools/tlm_viewer/screen.rb:86:in `process_settings'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/tools/tlm_viewer/screen.rb:393:in `process'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/tools/tlm_viewer/screen.rb:262:in `initialize'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/tools/tlm_viewer/tlm_viewer.rb:519:in `new'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/tools/tlm_viewer/tlm_viewer.rb:519:in `block in display'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5-x64-mingw32/lib/Qt4.rb:114:in `execute_in_main_thread'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/tools/tlm_viewer/tlm_viewer.rb:515:in `display'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/tools/tlm_viewer/tlm_viewer.rb:272:in `block (3 levels) in initialize_central_widget'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/tools/tlm_viewer/tlm_viewer.rb:274:in `block (3 levels) in initialize_central_widget'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5-x64-mingw32/lib/Qt/qtruby4.rb:2470:in `invoke'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5-x64-mingw32/lib/Qt/qtruby4.rb:479:in `qt_metacall'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5-x64-mingw32/lib/Qt/qtruby4.rb:479:in `method_missing'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5-x64-mingw32/lib/Qt/qtruby4.rb:479:in `exec'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/gui/qt_tool.rb:324:in `block in run'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:741:in `set_working_dir'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/gui/qt_tool.rb:305:in `run'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/tools/tlm_viewer/tlm_viewer.rb:610:in `block in run'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:556:in `catch_fatal_exception'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/tools/tlm_viewer/tlm_viewer.rb:558:in `run'
+tools/TlmViewer:15:in `block in <main>'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/tools/tool_launch.rb:16:in `tool_launch'
+tools/TlmViewer:13:in `<main>'
+
+Caller Backtrace:
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:455:in `block (2 levels) in create_log_file'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:452:in `synchronize'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:452:in `block in create_log_file'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:741:in `set_working_dir'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:425:in `create_log_file'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:482:in `write_exception_file'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:572:in `handle_fatal_exception'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/gui/qt_tool.rb:327:in `rescue in block in run'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/gui/qt_tool.rb:311:in `block in run'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:741:in `set_working_dir'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/gui/qt_tool.rb:305:in `run'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/tools/tlm_viewer/tlm_viewer.rb:610:in `block in run'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:556:in `catch_fatal_exception'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/tools/tlm_viewer/tlm_viewer.rb:558:in `run'
+tools/TlmViewer:15:in `block in <main>'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/tools/tool_launch.rb:16:in `tool_launch'
+tools/TlmViewer:13:in `<main>'
+
+Ruby Version: ruby 2.5.8 (2020-03-31 patchlevel 224) [x64-mingw32]
+Rubygems Version: 3.3.26
+Cosmos Version: 4.5.2
+Cosmos::PATH: D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2
+Cosmos::USERPATH: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo
+
+Environment:
+RUBYOPT: -rD:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/site_ruby/2.5.0/bundler/setup
+RUBYLIB: D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/site_ruby/2.5.0
+GEM_PATH: D:\gabri\Documents\COSMOS\COSMOS_CH2\Vendor\Ruby\lib\ruby\gems\2.5.0
+GEMRC: D:\gabri\Documents\COSMOS\COSMOS_CH2\Vendor\Ruby\lib\ruby\gems\etc\gemrc
+RI_DEVKIT: D:\gabri\Documents\COSMOS\COSMOS_CH2\Vendor\Devkit\
+GEM_HOME: D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0
+PATH: D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5-x64-mingw32/lib/../bin;D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5-x64-mingw32/lib/../lib/2.5;D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5-x64-mingw32/lib/../bin/2.5;D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/qtbindings-qt-4.8.6.4-x64-mingw32/qtlib/../qtbin;D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/qtbindings-qt-4.8.6.4-x64-mingw32/qtlib/../qtbin/plugins;D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/../bin;D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/bin;D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5-x64-mingw32/lib/../bin;D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5-x64-mingw32/lib/../lib/2.5;D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5-x64-mingw32/lib/../bin/2.5;D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/qtbindings-qt-4.8.6.4-x64-mingw32/qtlib/../qtbin;D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/qtbindings-qt-4.8.6.4-x64-mingw32/qtlib/../qtbin/plugins;D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/../bin;D:\gabri\Documents\COSMOS\COSMOS_CH2\Vendor\Ruby\bin;D:\gabri\Documents\COSMOS\COSMOS_CH2\Vendor\Devkit\bin;D:\gabri\Documents\COSMOS\COSMOS_CH2\Vendor\Devkit\mingw\bin;D:\gabri\Documents\COSMOS\COSMOS_CH2\Vendor\wkhtmltopdf;C:\Program Files (x86)\VMware\VMware Workstation\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Users\gabri\AppData\Local\Programs\Python\Python312\Scripts;C:\Users\gabri\AppData\Local\Programs\Python\Python312;C:\Users\gabri\AppData\Local\Programs\Python\Python310\Scripts\;C:\Users\gabri\AppData\Local\Programs\Python\Python310;C:\Program Files\CMake\bin;D:\Program Files\MATLAB\R2024a\bin;C:\Program Files\Git\cmd;D:\Program Files (x86)\Microsoft SQL Server\160\Tools\Binn\;D:\Program Files\Microsoft SQL Server\160\Tools\Binn\;D:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;D:\Program Files\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;c:\Users\gabri\AppData\Local\Programs\cursor\resources\app\bin;C:\Program Files (x86)\Bitvise SSH Client;C:\Program Files\Docker\Docker\resources\bin;D:\Program Files\Microchip\xc32\v4.60\bin;c:\Users\gabri\AppData\Local\Programs\Trae\bin;C:\Users\gabri\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\gabri\AppData\Local\Programs\Python\Python310\;C:\Users\gabri\AppData\Local\Microsoft\WindowsApps;C:\Program Files\UHD\bin;C:\Users\gabri\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\gabri\AppData\Roaming\npm;C:\Users\gabri\.dotnet\tools;C:\Users\gabri\AppData\Local\Programs\cursor\resources\app\bin
+
+Ruby Path:
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/uuidtools-2.2.0/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/did_you_mean-1.2.0/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/extensions/x64-mingw32/2.5.0/cosmos-4.5.2
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/uuidtools-2.2.0/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/snmp-1.3.2/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/rubyzip-1.3.0/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/rdoc-6.0.1.1/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/rack-2.2.4/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5-x64-mingw32/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/qtbindings-qt-4.8.6.4-x64-mingw32/qtlib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/puma-3.12.6/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/extensions/x64-mingw32/2.5.0/puma-3.12.6
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/psych-3.3.4/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/extensions/x64-mingw32/2.5.0/psych-3.3.4
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/pry-doc-0.13.5/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/yard-0.9.28/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/webrick-1.7.0/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/pry-0.14.1/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/method_source-1.0.0/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/opengl-bindings-1.6.12/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/nokogiri-1.12.5-x64-mingw32/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/racc-1.6.1/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/extensions/x64-mingw32/2.5.0/racc-1.6.1
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/json-2.1.0/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/extensions/x64-mingw32/2.5.0/json-2.1.0
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/httpclient-2.8.3/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/coderay-1.1.3/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/bundler-2.3.26/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/rake-13.0.6/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/site_ruby/2.5.0
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/site_ruby/2.5.0/x64-msvcrt
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/site_ruby
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/vendor_ruby/2.5.0
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/vendor_ruby/2.5.0/x64-msvcrt
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/vendor_ruby
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/2.5.0
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/2.5.0/x64-mingw32
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/qtbindings-4.8.6.5-x64-mingw32/lib/../lib/2.5
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/INST/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/INST/procedures
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/EXAMPLE/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/TEMPLATED/lib
+  D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/SYSTEM/lib
+
+Gems:
+fiddle 1.0.0 ruby
+did_you_mean 1.2.0 ruby
+bundler 2.3.26 ruby
+rake 13.0.6 ruby
+coderay 1.1.3 ruby
+httpclient 2.8.3 ruby
+json 2.1.0 ruby
+racc 1.6.1 ruby
+nokogiri 1.12.5 x64-mingw32
+opengl-bindings 1.6.12 ruby
+method_source 1.0.0 ruby
+pry 0.14.1 ruby
+webrick 1.7.0 ruby
+yard 0.9.28 ruby
+pry-doc 0.13.5 ruby
+psych 3.3.4 ruby
+puma 3.12.6 ruby
+qtbindings-qt 4.8.6.4 x64-mingw32
+qtbindings 4.8.6.5 x64-mingw32
+rack 2.2.4 ruby
+rdoc 6.0.1.1 ruby
+rubyzip 1.3.0 ruby
+snmp 1.3.2 ruby
+uuidtools 2.2.0 ruby
+cosmos 4.5.2 ruby
+
+All Threads Backtraces:
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:518:in `backtrace'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:518:in `block (2 levels) in write_exception_file'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:517:in `each'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:517:in `block in write_exception_file'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:455:in `block (2 levels) in create_log_file'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:452:in `synchronize'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:452:in `block in create_log_file'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:741:in `set_working_dir'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:425:in `create_log_file'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:482:in `write_exception_file'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:572:in `handle_fatal_exception'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/gui/qt_tool.rb:327:in `rescue in block in run'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/gui/qt_tool.rb:311:in `block in run'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:741:in `set_working_dir'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/gui/qt_tool.rb:305:in `run'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/tools/tlm_viewer/tlm_viewer.rb:610:in `block in run'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/top_level.rb:556:in `catch_fatal_exception'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/tools/tlm_viewer/tlm_viewer.rb:558:in `run'
+tools/TlmViewer:15:in `block in <main>'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/tools/tool_launch.rb:16:in `tool_launch'
+tools/TlmViewer:13:in `<main>'
+
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/core_ext/io.rb:48:in `select'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/core_ext/io.rb:48:in `fast_select'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/core_ext/io.rb:95:in `select'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/utilities/sleeper.rb:27:in `sleep'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/gui/qt_tool.rb:494:in `block (2 levels) in redirect_io'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/gui/qt_tool.rb:479:in `loop'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/gui/qt_tool.rb:479:in `block in redirect_io'
+
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/puma-3.12.6/lib/puma/single.rb:117:in `join'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/puma-3.12.6/lib/puma/single.rb:117:in `run'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/puma-3.12.6/lib/puma/launcher.rb:186:in `run'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/puma-3.12.6/lib/rack/handler/puma.rb:73:in `run'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/io/json_drb.rb:142:in `block in start_service'
+
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/core_ext/io.rb:48:in `select'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/core_ext/io.rb:48:in `fast_select'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/core_ext/io.rb:95:in `select'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/puma-3.12.6/lib/puma/reactor.rb:128:in `run_internal'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/puma-3.12.6/lib/puma/reactor.rb:253:in `block in run_in_thread'
+
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:285:in `sleep'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:285:in `block in start!'
+
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:256:in `sleep'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/puma-3.12.6/lib/puma/thread_pool.rb:256:in `block in start!'
+
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/core_ext/io.rb:48:in `select'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/core_ext/io.rb:48:in `fast_select'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/cosmos-4.5.2/lib/cosmos/core_ext/io.rb:95:in `select'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/puma-3.12.6/lib/puma/server.rb:386:in `handle_servers'
+D:/gabri/Documents/COSMOS/COSMOS_CH2/Vendor/Ruby/lib/ruby/gems/2.5.0/gems/puma-3.12.6/lib/puma/server.rb:360:in `block in run'
+
+
+

@@ -1,225 +1,349 @@
 ###############################################################################
-# CHASQUI_II Telemetry Screen - OVERVIEW (Light Theme)
+# CHASQUI_II Telemetry Screen - OVERVIEW (Enhanced UI/UX)
 # Mission Dashboard - Estado General del Satélite
 ###############################################################################
 
 SCREEN AUTO AUTO 0.5
 GLOBAL_SETTING LABELVALUELIMITSBAR COLORBLIND TRUE
 
-VERTICAL
-  SETTING BACKCOLOR 245 245 245
-  SETTING TEXTCOLOR 30 30 30
+VERTICAL 5
+  SETTING BACKCOLOR 240 242 245
 
   ###########################################################################
-  # HEADER
+  # HEADER CON LOGO
   ###########################################################################
-  TITLE "CHASQUI_II - MISSION OVERVIEW"
-    SETTING BACKCOLOR 0 102 204
-    SETTING TEXTCOLOR 255 255 255
+  HORIZONTALBOX
+    SETTING BACKCOLOR 15 76 129
+    SETTING BORDERCOLOR 10 50 90
+    
+    HORIZONTAL 15
+      # Logo del proyecto (reemplazar con tu imagen)
+      CANVAS 80 80
+        CANVASIMAGE "logo-chasqui.jpg" 0 0
+        # Si no tienes logo, puedes usar un círculo de color:
+        # CANVASLABEL 20 45 "C-I" 28 white
+      END
+      
+      VERTICAL 3 FALSE
+        SPACER 0 10
+        TITLE "COSPAR-I MISSION CONTROL"
+          SETTING TEXTCOLOR 255 255 255
+          SETTING BACKCOLOR 15 76 129
+        LABEL "Real-Time Telemetry Dashboard"
+          SETTING TEXTCOLOR 180 200 220
+          SETTING BACKCOLOR 15 76 129
+        SPACER 0 10
+      END
+      
+      SPACER 20 0 EXPANDING MINIMUM
+      
+      # Indicador de estado general
+      VERTICAL 5
+        SPACER 0 15
+        HORIZONTAL 8
+          LABEL "System Status:"
+            SETTING TEXTCOLOR 255 255 255
+            SETTING BACKCOLOR 15 76 129
+          LIMITSCOLOR CHASQUI_II Beacon Sat_Curr_Mode CONVERTED 14 NIL
+        END
+        SPACER 0 15
+      END
+    END
+  END
 
-  HORIZONTALLINE
-    SETTING BORDERCOLOR 200 200 200
+  SPACER 0 15
 
   ###########################################################################
   # SECCIÓN SUPERIOR - ESTADO OPERACIONAL
   ###########################################################################
-  HORIZONTAL
-    SETTING BACKCOLOR 250 250 250
+  HORIZONTALBOX "OPERATIONAL STATUS"
+    SETTING BACKCOLOR 255 255 255
+    SETTING BORDERCOLOR 200 210 220
+    MATRIXBYCOLUMNS 3 15 10
 
-    # Columna 1: Estado del Satélite
-    VERTICALBOX "Satellite Status"
-      SETTING BACKCOLOR 255 255 255
-      
-      HORIZONTAL
-        LABEL "Current Mode: "
-        VALUE CHASQUI_II Beacon Sat_Curr_Mode CONVERTED
-          SETTING BACKCOLOR 255 255 255
-          SETTING TEXTCOLOR 30 30 30
-      END
-      
-      LIMITSCOLOR CHASQUI_II Beacon Sat_Curr_Mode CONVERTED 8
-      
-      LABELVALUE CHASQUI_II Beacon Obc_Time
-        SETTING BACKCOLOR 255 255 255
-      
-      LABELVALUE CHASQUI_II Beacon Boot_Counter
-        SETTING BACKCOLOR 255 255 255
-      
-      LABELVALUE CHASQUI_II Beacon Last_Command_Opcode
-        SETTING BACKCOLOR 255 255 255
-    END
+      # ═══════════════════════════════════════════════════════════════
+      # Columna 1: Estado del Satélite
+      # ═══════════════════════════════════════════════════════════════
+      VERTICALBOX "Satellite State"
+        SETTING BACKCOLOR 248 250 252
+        SETTING BORDERCOLOR 15 76 129
+        
+        HORIZONTAL 10
+            LABEL "Current Mode"
+              SETTING TEXTCOLOR 100 100 100
+            VALUE CHASQUI_II Beacon Sat_Curr_Mode CONVERTED 15
+              SETTING TEXTCOLOR 15 76 129
+        END
 
-    # Columna 2: Banderas de Deployment
-    VERTICALBOX "Deployment Status"
-      SETTING BACKCOLOR 255 255 255
-      
-      HORIZONTAL
-        LABEL "PSLV Deployment: "
-        VALUE CHASQUI_II Beacon PSLV_Deployment_Flag CONVERTED
+        LABELVALUE CHASQUI_II Beacon Obc_Time CONVERTED 20
+          SUBSETTING 0 TEXTCOLOR 80 80 80
+        
+        LABELVALUE CHASQUI_II Beacon Boot_Counter CONVERTED 15
+          SUBSETTING 0 TEXTCOLOR 80 80 80
+        
+        LABELVALUE CHASQUI_II Beacon Last_Command_Opcode CONVERTED 18
+          SUBSETTING 0 TEXTCOLOR 80 80 80
       END
-      
-      HORIZONTAL
-        LABEL "Antenna Retry: "
-        VALUE CHASQUI_II Beacon Antenna_Panels_Deployment_Retry_Flag CONVERTED
-      END
-      
-      LABELVALUE CHASQUI_II Beacon Current_SD
-        SETTING BACKCOLOR 255 255 255
-      
-      HORIZONTAL
-        LABEL "I2C Error: "
-        VALUE CHASQUI_II Beacon I2c_Error_Flag CONVERTED
-      END
-    END
 
-    # Columna 3: Estadísticas de Comandos
-    VERTICALBOX "Command Statistics"
-      SETTING BACKCOLOR 255 255 255
-      
-      LABELVALUE CHASQUI_II Beacon Command_Accept_Counter
-        SETTING BACKCOLOR 255 255 255
-      
-      LABELVALUE CHASQUI_II Beacon Command_Reject_Counter
-        SETTING BACKCOLOR 255 255 255
-      
-      HORIZONTAL
-        LABEL "Success Rate: "
-        VALUE CHASQUI_II Beacon Command_Accept_Counter CONVERTED
-        LABEL " / "
-        VALUE CHASQUI_II Beacon Command_Reject_Counter CONVERTED
+      # ═══════════════════════════════════════════════════════════════
+      # Columna 2: Deployment Flags
+      # ═══════════════════════════════════════════════════════════════
+      VERTICALBOX "Deployment Flags"
+        SETTING BACKCOLOR 248 250 252
+        SETTING BORDERCOLOR 15 76 129
+        
+        HORIZONTAL 10
+          LABEL "PSLV Deploy:"
+            SETTING TEXTCOLOR 80 80 80
+          VALUE CHASQUI_II Beacon PSLV_Deployment_Flag CONVERTED 12
+            SETTING TEXTCOLOR 15 76 129
+        END
+        
+        HORIZONTAL 10
+          LABEL "Antenna Retry:"
+            SETTING TEXTCOLOR 80 80 80
+          VALUE CHASQUI_II Beacon Antenna_Panels_Deployment_Retry_Flag CONVERTED 12
+            SETTING TEXTCOLOR 15 76 129
+        END
+        
+        SPACER 0 5
+        
+        LABELVALUE CHASQUI_II Beacon Current_SD CONVERTED 15
+          SUBSETTING 0 TEXTCOLOR 80 80 80
+        
+        HORIZONTAL 10
+          LABEL "I2C Status:"
+            SETTING TEXTCOLOR 80 80 80
+          VALUE CHASQUI_II Beacon I2c_Error_Flag CONVERTED 12
+            SETTING TEXTCOLOR 15 76 129
+        END
+      END
+
+      # ═══════════════════════════════════════════════════════════════
+      # Columna 3: Command Statistics
+      # ═══════════════════════════════════════════════════════════════
+      VERTICALBOX "Command Statistics"
+        SETTING BACKCOLOR 248 250 252
+        SETTING BORDERCOLOR 15 76 129
+        
+        LABELVALUE CHASQUI_II Beacon Command_Accept_Counter CONVERTED 15
+          SUBSETTING 0 TEXTCOLOR 80 80 80
+          SUBSETTING 1 TEXTCOLOR 34 139 34
+        
+        LABELVALUE CHASQUI_II Beacon Command_Reject_Counter CONVERTED 15
+          SUBSETTING 0 TEXTCOLOR 80 80 80
+          SUBSETTING 1 TEXTCOLOR 220 50 50
+        
+        SPACER 0 8
+        
+        HORIZONTAL 8
+          LABEL "Success Rate:"
+            SETTING TEXTCOLOR 80 80 80
+          VALUE CHASQUI_II Beacon Command_Accept_Counter CONVERTED 8
+            SETTING TEXTCOLOR 34 139 34
+          LABEL "/"
+            SETTING TEXTCOLOR 150 150 150
+          VALUE CHASQUI_II Beacon Command_Reject_Counter CONVERTED 8
+            SETTING TEXTCOLOR 220 50 50
+        END
       END
     END
   END
 
-  HORIZONTALLINE
-    SETTING BORDERCOLOR 200 200 200
+  SPACER 0 12
 
   ###########################################################################
   # SECCIÓN MEDIA - SUBSISTEMAS CRÍTICOS
   ###########################################################################
-  LABEL "CRITICAL SUBSYSTEMS"
-    SETTING BACKCOLOR 0 102 204
+  LABEL "  CRITICAL SUBSYSTEMS"
+    SETTING BACKCOLOR 15 76 129
     SETTING TEXTCOLOR 255 255 255
 
-  MATRIXBYCOLUMNS 3 10 5
-    SETTING BACKCOLOR 250 250 250
+  SPACER 0 8
 
-    # COLUMNA 1: Power System
-    VERTICALBOX "Power Status"
+  HORIZONTAL 12
+    # ═══════════════════════════════════════════════════════════════
+    # POWER SYSTEM
+    # ═══════════════════════════════════════════════════════════════
+    VERTICALBOX "Power System"
       SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
       
-      LABELVALUELIMITSBAR CHASQUI_II Beacon Main_Batt_Volt
-        SETTING BACKCOLOR 255 255 255
+      SPACER 0 8
+
+      HORIZONTAL 10
+        LIMITSCOLOR CHASQUI_II Beacon Main_Batt_Volt CONVERTED 10 NIL
+        LABEL "Battery Health"
+          SETTING TEXTCOLOR 100 100 100
+      END
       
-      LABELVALUELIMITSBAR CHASQUI_II Beacon Main_Batt_Curr
-        SETTING BACKCOLOR 255 255 255
+      SPACER 0 8
       
-      LABELVALUELIMITSBAR CHASQUI_II Beacon Battery_charge_Volt
-        SETTING BACKCOLOR 255 255 255
+      LABELVALUELIMITSBAR CHASQUI_II Beacon Main_Batt_Volt CONVERTED 14
+        SUBSETTING 0 TEXTCOLOR 80 80 80
       
-      LABELVALUELIMITSBAR CHASQUI_II Beacon Battery_charge_Curr
-        SETTING BACKCOLOR 255 255 255
+      LABELVALUELIMITSBAR CHASQUI_II Beacon Main_Batt_Curr CONVERTED 14
+        SUBSETTING 0 TEXTCOLOR 80 80 80
       
-      LIMITSCOLOR CHASQUI_II Beacon Main_Batt_Volt CONVERTED 12
+      SPACER 0 5
+      
+      LABELVALUELIMITSBAR CHASQUI_II Beacon Battery_charge_Volt CONVERTED 14
+        SUBSETTING 0 TEXTCOLOR 80 80 80
+      
+      LABELVALUELIMITSBAR CHASQUI_II Beacon Battery_charge_Curr CONVERTED 14
+        SUBSETTING 0 TEXTCOLOR 80 80 80
     END
 
-    # COLUMNA 2: Thermal System
-    VERTICALBOX "Thermal Overview"
+    # ═══════════════════════════════════════════════════════════════
+    # THERMAL SYSTEM
+    # ═══════════════════════════════════════════════════════════════
+    VERTICALBOX "Thermal System"
       SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
       
-      LABELVALUELIMITSBAR CHASQUI_II Beacon Temp_Bat_TH1
-        SETTING BACKCOLOR 255 255 255
+      SPACER 0 8
+
+      HORIZONTAL 10
+        LIMITSCOLOR CHASQUI_II Beacon Temp_Bat_TH1 CONVERTED 10 NIL
+        LABEL "Temperature Status"
+          SETTING TEXTCOLOR 100 100 100
+      END
       
-      LABELVALUELIMITSBAR CHASQUI_II Beacon Temp_Bat_TH2
-        SETTING BACKCOLOR 255 255 255
+      SPACER 0 8
       
-      LABELVALUELIMITSBAR CHASQUI_II Beacon Temp_CDH
-        SETTING BACKCOLOR 255 255 255
+      LABELVALUELIMITSBAR CHASQUI_II Beacon Temp_Bat_TH1 CONVERTED 14
+        SUBSETTING 0 TEXTCOLOR 80 80 80
       
-      LABELVALUELIMITSBAR CHASQUI_II Beacon Temp_EPS
-        SETTING BACKCOLOR 255 255 255
+      LABELVALUELIMITSBAR CHASQUI_II Beacon Temp_Bat_TH2 CONVERTED 14
+        SUBSETTING 0 TEXTCOLOR 80 80 80
       
-      LIMITSCOLOR CHASQUI_II Beacon Temp_Bat_TH1 CONVERTED 12
+      SPACER 0 5
+      
+      LABELVALUELIMITSBAR CHASQUI_II Beacon Temp_CDH CONVERTED 14
+        SUBSETTING 0 TEXTCOLOR 80 80 80
+      
+      LABELVALUELIMITSBAR CHASQUI_II Beacon Temp_EPS CONVERTED 14
+        SUBSETTING 0 TEXTCOLOR 80 80 80
     END
 
-    # COLUMNA 3: State of Charge
-    VERTICALBOX "Battery SoC"
+    # ═══════════════════════════════════════════════════════════════
+    # BATTERY STATE OF CHARGE
+    # ═══════════════════════════════════════════════════════════════
+    VERTICALBOX "Battery State of Charge"
       SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
       
-      LABELVALUELIMITSBAR CHASQUI_II Beacon EPS_FG1_SoC
-        SETTING BACKCOLOR 255 255 255
+      SPACER 0 8
+
+      HORIZONTAL 10
+        LIMITSCOLOR CHASQUI_II Beacon EPS_FG1_SoC CONVERTED 10 NIL
+        LABEL "Energy Reserve"
+          SETTING TEXTCOLOR 100 100 100
+      END
       
-      LABELVALUELIMITSBAR CHASQUI_II Beacon EPS_FG2_SoC
-        SETTING BACKCOLOR 255 255 255
+      SPACER 0 8
       
-      LABELVALUELIMITSBAR CHASQUI_II Beacon EPS_FG3_SoC
-        SETTING BACKCOLOR 255 255 255
+      LABELVALUELIMITSBAR CHASQUI_II Beacon EPS_FG1_SoC CONVERTED 14
+        SUBSETTING 0 TEXTCOLOR 80 80 80
       
-      HORIZONTAL
-        LABEL "Avg SoC: "
-        VALUE CHASQUI_II Beacon EPS_FG1_SoC CONVERTED
-        LABEL " %"
+      LABELVALUELIMITSBAR CHASQUI_II Beacon EPS_FG2_SoC CONVERTED 14
+        SUBSETTING 0 TEXTCOLOR 80 80 80
+      
+      LABELVALUELIMITSBAR CHASQUI_II Beacon EPS_FG3_SoC CONVERTED 14
+        SUBSETTING 0 TEXTCOLOR 80 80 80
+      
+      SPACER 0 5
+      
+      HORIZONTAL 8
+        LABEL "Average SoC:"
+          SETTING TEXTCOLOR 80 80 80
+        VALUE CHASQUI_II Beacon EPS_FG1_SoC CONVERTED 10
+          SETTING TEXTCOLOR 15 76 129
+        LABEL "%"
+          SETTING TEXTCOLOR 100 100 100
       END
     END
   END
 
-  HORIZONTALLINE
-    SETTING BORDERCOLOR 200 200 200
+  SPACER 0 12
 
   ###########################################################################
-  # SECCIÓN INFERIOR - MEMORY MANAGEMENT
+  # SECCIÓN INFERIOR - MEMORY & THRESHOLDS
   ###########################################################################
-  VERTICALBOX "Memory Management"
-    SETTING BACKCOLOR 250 250 250
-    
-    MATRIXBYCOLUMNS 4 5 3
+  HORIZONTAL 12
+    # ═══════════════════════════════════════════════════════════════
+    # MEMORY MANAGEMENT
+    # ═══════════════════════════════════════════════════════════════
+    VERTICALBOX "Memory Management"
       SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+      
+      MATRIXBYCOLUMNS 2 12 8
 
-      VERTICALBOX "Beacon Flash"
-        SETTING BACKCOLOR 255 255 255
-        LABELVALUE CHASQUI_II Beacon Beacon_Flash_Write_Ptr
-        LABELVALUE CHASQUI_II Beacon Beacon_Flash_Read_Ptr
-      END
+        VERTICALBOX "Beacon Flash"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 220 225 230
+          
+          LABELVALUE CHASQUI_II Beacon Beacon_Flash_Write_Ptr CONVERTED 16
+            SUBSETTING 0 TEXTCOLOR 80 80 80
+          LABELVALUE CHASQUI_II Beacon Beacon_Flash_Read_Ptr CONVERTED 16
+            SUBSETTING 0 TEXTCOLOR 80 80 80
+        END
 
-      VERTICALBOX "Payload Flash"
-        SETTING BACKCOLOR 255 255 255
-        LABELVALUE CHASQUI_II Beacon Payload_Flash_Write_Ptr
-        LABELVALUE CHASQUI_II Beacon Payload_Flash_Read_Ptr
-      END
+        VERTICALBOX "Payload Flash"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 220 225 230
+          
+          LABELVALUE CHASQUI_II Beacon Payload_Flash_Write_Ptr CONVERTED 16
+            SUBSETTING 0 TEXTCOLOR 80 80 80
+          LABELVALUE CHASQUI_II Beacon Payload_Flash_Read_Ptr CONVERTED 16
+            SUBSETTING 0 TEXTCOLOR 80 80 80
+        END
 
-      VERTICALBOX "PL Packet Flash"
-        SETTING BACKCOLOR 255 255 255
-        LABELVALUE CHASQUI_II Beacon Payload_Packet_Flash_Write_Ptr
-        LABELVALUE CHASQUI_II Beacon Payload_Packet_Flash_Read_Ptr
-      END
+        VERTICALBOX "PL Packet Flash"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 220 225 230
+          
+          LABELVALUE CHASQUI_II Beacon Payload_Packet_Flash_Write_Ptr CONVERTED 16
+            SUBSETTING 0 TEXTCOLOR 80 80 80
+          LABELVALUE CHASQUI_II Beacon Payload_Packet_Flash_Read_Ptr CONVERTED 16
+            SUBSETTING 0 TEXTCOLOR 80 80 80
+        END
 
-      VERTICALBOX "Beacon Timers"
-        SETTING BACKCOLOR 255 255 255
-        LABELVALUE CHASQUI_II Beacon Beac_Threshold_Time
-        LABELVALUE CHASQUI_II Beacon Beacon_Timeout_Threshold_Time
+        VERTICALBOX "Beacon Timers"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 220 225 230
+          
+          LABELVALUE CHASQUI_II Beacon Beac_Threshold_Time CONVERTED 16
+            SUBSETTING 0 TEXTCOLOR 80 80 80
+          LABELVALUE CHASQUI_II Beacon Beacon_Timeout_Threshold_Time CONVERTED 16
+            SUBSETTING 0 TEXTCOLOR 80 80 80
+        END
       END
+    END
+
+    # ═══════════════════════════════════════════════════════════════
+    # MODE THRESHOLDS
+    # ═══════════════════════════════════════════════════════════════
+    VERTICALBOX "Mode Transition Thresholds"
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+      
+      LABELVALUE CHASQUI_II Beacon Safe_Exit_Threshold CONVERTED 18
+        SUBSETTING 0 TEXTCOLOR 80 80 80
+      
+      SPACER 0 8
+      
+      LABELVALUE CHASQUI_II Beacon Safe_Enter_Threshold CONVERTED 18
+        SUBSETTING 0 TEXTCOLOR 80 80 80
+      
+      SPACER 0 8
+      
+      LABELVALUE CHASQUI_II Beacon Payload_Op_Temp_Cut_Off CONVERTED 18
+        SUBSETTING 0 TEXTCOLOR 80 80 80
     END
   END
 
-  HORIZONTALLINE
-    SETTING BORDERCOLOR 200 200 200
-
-  ###########################################################################
-  # ÁREA DE THRESHOLDS
-  ###########################################################################
-  VERTICALBOX "Mode Transition Thresholds"
-    SETTING BACKCOLOR 250 250 250
-    
-    HORIZONTAL
-      LABELVALUE CHASQUI_II Beacon Safe_Exit_Threshold
-        SETTING BACKCOLOR 255 255 255
-      
-      LABELVALUE CHASQUI_II Beacon Safe_Enter_Threshold
-        SETTING BACKCOLOR 255 255 255
-      
-      LABELVALUE CHASQUI_II Beacon Payload_Op_Temp_Cut_Off
-        SETTING BACKCOLOR 255 255 255
-    END
-  END
+  SPACER 0 10
 
 END
