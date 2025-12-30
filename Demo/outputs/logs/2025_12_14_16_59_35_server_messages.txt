@@ -1,0 +1,779 @@
+2025/12/14 16:59:34.289  INFO: COSMOS Version: 4.5.2
+2025/12/14 16:59:34.289  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/tools/cmd_tlm_server/cmd_tlm_server.txt
+2025/12/14 16:59:34.317  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/INST/cmd_tlm_server.txt
+2025/12/14 16:59:34.319  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/INST/cmd_tlm_server2.txt
+2025/12/14 16:59:34.458  INFO: Marshal load success: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/tmp/marshal_0d7cfb3a39a0887070fa9b77583e5eb4.bin
+2025/12/14 16:59:34.667  INFO: Creating thread for router PREIDENTIFIED_ROUTER
+2025/12/14 16:59:34.669  INFO: Creating thread for router PREIDENTIFIED_CMD_ROUTER
+2025/12/14 16:59:34.669  INFO: Creating thread for interface CHASQUI_II
+2025/12/14 16:59:34.679  INFO: Starting packet reading for PREIDENTIFIED_ROUTER
+2025/12/14 16:59:34.679  INFO: Connecting to PREIDENTIFIED_ROUTER...
+2025/12/14 16:59:34.681  INFO: PREIDENTIFIED_ROUTER Connection Success
+2025/12/14 16:59:34.681  INFO: Starting connection maintenance for PREIDENTIFIED_CMD_ROUTER
+2025/12/14 16:59:34.681  INFO: Connecting to PREIDENTIFIED_CMD_ROUTER...
+2025/12/14 16:59:34.682  INFO: PREIDENTIFIED_CMD_ROUTER Connection Success
+2025/12/14 16:59:34.682  INFO: Starting packet reading for CHASQUI_II
+2025/12/14 16:59:34.682  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:59:34.690  INFO: CHASQUI_II Connection Success
+2025/12/14 16:59:34.731  INFO: Raw Log File Opened : D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/logs/2025_12_14_16_59_34_chasqui_ii_raw_read_47577120.bin
+2025/12/14 16:59:34.793  INFO: Log File Opened : D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/logs/2025_12_14_16_59_34_tlm.bin
+2025/12/14 16:59:37.726  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 16:59:38.749  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 16:59:39.727  INFO: Enabling Limits Group: INST2_TEMP2
+2025/12/14 16:59:39.727  INFO: Enabling Limits Group: INST2_GROUND
+2025/12/14 16:59:42.783  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 16:59:43.797  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 16:59:47.839  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 16:59:48.856  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 16:59:52.905  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 16:59:53.914  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 16:59:57.963  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 16:59:58.974  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:00:03.012  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:00:04.023  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:00:08.077  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:00:09.085  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:00:13.135  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:00:14.143  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:00:18.185  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:00:19.187  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:00:23.228  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:00:24.225  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:00:28.270  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:00:29.283  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:00:33.320  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:00:34.335  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:00:38.384  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:00:39.393  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:00:43.436  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:00:44.457  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:00:48.481  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:00:49.500  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:00:53.540  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:00:54.552  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:00:58.591  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:00:59.596  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:01:03.632  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:01:04.660  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:01:08.716  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:01:09.728  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:01:13.771  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:01:14.777  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:01:18.820  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:01:19.831  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:01:23.874  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:01:24.888  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:01:28.940  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:01:29.956  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:01:33.995  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:01:35.008  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:01:39.050  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:01:40.054  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:01:44.107  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:01:45.120  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:01:49.161  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:01:50.166  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:01:54.205  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:01:55.220  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:01:59.238  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:02:00.253  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:02:04.297  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:02:05.305  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:02:09.347  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:02:10.352  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:02:14.374  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:02:15.399  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:02:19.435  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:02:20.428  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:02:24.482  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:02:25.483  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:02:29.491  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:02:30.511  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:02:34.556  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:02:35.570  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:02:39.611  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:02:40.613  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:02:44.648  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:02:45.661  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:02:49.682  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:02:50.698  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:02:54.751  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:02:55.752  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:02:59.788  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:03:00.787  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:03:04.797  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:03:05.828  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:03:09.859  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:03:10.876  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:03:14.899  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:03:15.910  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:03:19.947  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:03:20.948  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:03:25.007  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:03:26.021  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:03:30.066  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:03:31.071  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:03:35.080  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:03:36.069  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:03:40.108  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:03:41.113  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:03:45.147  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:03:46.162  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:03:50.181  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:03:51.211  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:03:55.255  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:03:56.268  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:04:00.316  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:04:01.327  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:04:05.377  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:04:06.391  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:04:10.432  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:04:11.446  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:04:15.484  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:04:16.502  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:04:20.518  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:04:21.522  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:04:25.560  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:04:26.570  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:04:30.616  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:04:31.628  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:04:33.543  INFO: Clean disconnect from CHASQUI_II (returned nil)
+2025/12/14 17:04:33.543  INFO: Connection Lost for CHASQUI_II
+2025/12/14 17:04:38.611  INFO: Connecting to CHASQUI_II...
+2025/12/14 17:04:43.684  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 17:04:48.756  INFO: Connecting to CHASQUI_II...
+2025/12/14 17:04:48.758  INFO: CHASQUI_II Connection Success
+2025/12/14 17:04:51.796  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:04:52.812  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:04:56.861  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:04:57.874  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:05:01.922  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:05:02.928  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:05:06.963  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:05:08.054  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:05:12.133  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:05:13.137  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:05:17.186  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:05:18.188  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:05:22.219  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:05:23.224  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:05:27.245  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:05:28.270  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:05:32.307  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:05:33.319  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:05:37.360  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:05:38.371  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:05:42.398  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:05:43.403  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:05:47.433  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:05:48.440  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:05:52.460  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:05:53.501  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:05:57.512  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:05:58.518  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:06:02.544  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:06:03.554  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:06:07.594  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:06:08.611  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:06:12.642  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:06:13.654  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:06:17.708  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:06:18.723  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:06:22.755  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:06:23.765  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:06:27.793  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:06:28.809  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:06:32.856  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:06:33.871  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:06:37.915  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:06:38.916  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:06:42.942  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:06:43.958  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:06:47.994  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:06:48.996  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:06:53.016  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:06:54.018  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:06:58.084  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:06:59.094  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:07:03.132  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:07:04.150  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:07:08.193  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:07:09.196  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:07:13.226  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:07:14.239  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:07:18.287  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:07:19.298  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:07:23.336  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:07:24.335  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:07:28.369  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:07:29.376  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:07:33.415  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:07:34.430  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:07:38.699  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:07:39.486  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:07:43.525  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:07:44.558  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:07:48.594  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:07:49.610  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:07:53.655  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:07:54.658  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:07:58.693  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:07:59.711  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:08:03.735  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:08:04.737  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:08:08.763  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:08:09.777  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:08:13.801  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:08:14.815  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:08:18.853  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:08:19.857  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:08:23.896  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:08:24.904  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:08:28.940  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:08:29.948  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:08:33.972  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:08:34.990  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:08:39.043  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:08:40.060  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:08:44.099  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:08:45.109  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:08:49.169  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:08:50.198  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:08:54.227  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:08:55.231  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:08:59.271  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:09:00.284  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:09:04.322  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:09:05.329  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:09:09.359  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:09:10.380  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:09:14.414  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:09:15.425  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:09:19.451  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:09:20.457  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:09:24.466  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:09:25.489  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:09:29.533  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:09:30.536  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:09:34.564  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:09:35.579  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:09:39.617  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:09:40.639  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:09:44.667  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:09:45.669  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:09:49.702  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:09:50.707  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:09:54.744  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:09:55.748  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:09:59.774  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:10:00.778  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:10:04.809  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:10:05.816  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:10:09.850  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:10:10.856  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:10:14.898  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:10:15.902  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:10:19.929  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:10:20.935  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:10:24.971  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:10:25.977  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:10:29.999  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:10:31.016  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:10:35.041  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:10:36.047  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:10:40.080  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:10:41.089  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:10:45.113  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:10:46.121  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:10:50.152  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:10:51.154  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:10:55.183  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:10:56.193  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:11:00.224  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:11:01.229  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:11:05.257  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:11:06.266  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:11:10.291  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:11:11.302  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:11:15.331  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:11:16.329  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:11:20.356  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:11:21.364  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:11:25.385  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:11:26.394  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:11:30.429  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:11:31.453  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:11:35.485  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:11:36.492  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:11:40.518  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:11:41.526  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:11:45.573  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:11:46.576  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:11:50.615  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:11:51.620  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:11:55.653  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:11:56.651  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:12:00.700  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:12:01.705  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:12:05.727  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:12:06.738  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:12:10.784  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:12:11.795  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:12:15.866  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:12:16.871  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:12:20.916  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:12:21.926  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:12:25.949  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:12:26.959  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:12:30.999  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:12:32.007  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:12:36.032  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:12:37.040  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:12:41.079  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:12:42.086  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:12:46.111  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:12:47.127  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:12:51.175  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:12:52.185  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:12:56.221  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:12:57.217  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:13:01.260  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:13:02.262  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:13:06.284  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:13:07.300  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:13:11.343  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:13:12.355  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:13:16.388  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:13:17.404  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:13:21.443  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:13:22.456  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:13:26.523  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:13:27.531  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:13:31.583  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:13:32.603  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:13:36.642  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:13:37.652  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:13:41.699  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:13:42.695  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:13:46.752  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:13:47.749  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:13:51.771  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:13:52.791  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:13:56.844  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:13:57.860  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:14:01.911  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:14:02.920  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:14:06.950  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:14:07.955  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:14:11.986  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:14:13.025  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:14:17.060  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:14:18.068  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:14:22.097  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:14:23.101  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:14:27.142  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:14:28.150  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:14:32.194  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:14:33.199  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:14:37.232  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:14:38.240  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:14:42.267  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:14:43.285  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:14:47.323  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:14:48.338  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:14:52.376  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:14:53.394  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:14:57.435  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:14:58.452  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:15:02.501  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:15:03.510  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:15:07.560  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:15:08.626  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:15:12.680  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:15:13.684  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:15:17.725  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:15:18.739  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:15:22.776  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:15:23.786  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:15:27.820  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:15:28.828  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:15:32.888  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:15:33.896  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:15:37.927  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:15:38.939  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:15:42.980  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:15:44.004  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:15:48.022  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:15:49.029  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:15:53.070  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:15:54.077  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:15:58.114  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:15:59.121  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:16:03.150  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:16:04.153  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:16:08.170  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:16:09.200  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:16:13.227  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:16:14.236  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:16:18.276  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:16:19.281  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:16:23.313  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:16:24.321  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:16:28.360  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:16:29.365  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:16:33.373  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:16:34.400  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:16:38.440  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:16:39.446  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:16:43.486  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:16:44.497  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:16:48.528  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:16:49.541  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:16:53.570  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:16:54.579  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:16:58.612  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:16:59.627  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:17:03.668  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:17:04.678  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:17:08.699  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:17:09.704  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:17:13.732  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:17:14.739  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:17:18.758  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:17:19.783  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:17:23.832  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:17:24.840  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:17:28.877  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:17:29.885  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:17:30.684  INFO: User connecting interface INST_INT
+2025/12/14 17:17:30.684  INFO: Creating thread for interface INST_INT
+2025/12/14 17:17:30.684  INFO: Starting packet reading for INST_INT
+2025/12/14 17:17:30.685  INFO: Connecting to INST_INT...
+2025/12/14 17:17:30.686  INFO: INST_INT Connection Success
+2025/12/14 17:17:30.711  ERROR: INST_INT - Unknown 10 byte packet starting: B636697EE5D60610D23E
+2025/12/14 17:17:30.711  WARN: INST MECH SLRPNL1 = -179.0 is YELLOW_LOW (2025/12/14 17:17:30.711)
+2025/12/14 17:17:30.711  ERROR: INST PARAMS VALUE2 = BAD is RED (2025/12/14 17:17:30.711)
+2025/12/14 17:17:30.711  ERROR: INST PARAMS VALUE4 = BAD is RED (2025/12/14 17:17:30.711)
+2025/12/14 17:17:30.711  INFO: INST HEALTH_STATUS TEMP1 = 54.888149999999996 is GREEN_HIGH (2025/12/14 17:17:30.711)
+2025/12/14 17:17:30.711  ERROR: INST HEALTH_STATUS TEMP2 = -Infinity is RED_LOW (2025/12/14 17:17:30.711)
+2025/12/14 17:17:30.711  ERROR: INST HEALTH_STATUS TEMP3 = 79.94390000000001 is RED_HIGH (2025/12/14 17:17:30.711)
+2025/12/14 17:17:30.711  INFO: INST HEALTH_STATUS TEMP4 = -0.057599999999993656 is GREEN (2025/12/14 17:17:30.711)
+2025/12/14 17:17:31.716  INFO: INST HEALTH_STATUS TEMP2 = -22.164702929687493 is GREEN (2025/12/14 17:17:31.716)
+2025/12/14 17:17:32.727  WARN: INST HEALTH_STATUS TEMP1 = 64.77625 is YELLOW_HIGH (2025/12/14 17:17:32.727)
+2025/12/14 17:17:33.925  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:17:34.927  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:17:35.717  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:17:35.717)
+2025/12/14 17:17:36.709  ERROR: INST HEALTH_STATUS TEMP1 = 84.55245000000002 is RED_HIGH (2025/12/14 17:17:36.709)
+2025/12/14 17:17:36.709  INFO: cmd("INST COLLECT with TYPE NORMAL, DURATION 5.0, OPCODE 171, TEMP 0.0")
+2025/12/14 17:17:36.712  INFO: Log File Opened : D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/logs/2025_12_14_17_17_36_cmd.bin
+2025/12/14 17:17:37.718  ERROR: INST HEALTH_STATUS TEMP2 = NaN is RED_LOW (2025/12/14 17:17:37.718)
+2025/12/14 17:17:38.968  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:17:39.980  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:17:40.723  ERROR: INST_INT - Unknown 10 byte packet starting: 795EC4D281B488308724
+2025/12/14 17:17:40.724  WARN: INST HEALTH_STATUS GROUND1STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:17:40.724)
+2025/12/14 17:17:40.724  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:17:40.724)
+2025/12/14 17:17:41.749  INFO: INST HEALTH_STATUS TEMP2 = -32.71371171874999 is GREEN (2025/12/14 17:17:41.749)
+2025/12/14 17:17:42.732  WARN: INST HEALTH_STATUS TEMP1 = 79.7731 is YELLOW_HIGH (2025/12/14 17:17:42.732)
+2025/12/14 17:17:43.734  WARN: INST HEALTH_STATUS TEMP3 = 53.21980000000002 is YELLOW_HIGH (2025/12/14 17:17:43.734)
+2025/12/14 17:17:44.011  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:17:45.033  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:17:45.741  INFO: INST HEALTH_STATUS TEMP3 = 49.10840000000002 is GREEN (2025/12/14 17:17:45.741)
+2025/12/14 17:17:45.741  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:17:45.741)
+2025/12/14 17:17:46.723  INFO: INST HEALTH_STATUS TEMP1 = 59.545500000000004 is GREEN_HIGH (2025/12/14 17:17:46.723)
+2025/12/14 17:17:49.053  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:17:50.069  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:17:50.344  INFO: User disconnecting interface CHASQUI_II
+2025/12/14 17:17:50.344  INFO: Killing thread for interface CHASQUI_II
+2025/12/14 17:17:50.349  INFO: Clean disconnect from CHASQUI_II (returned nil)
+2025/12/14 17:17:50.349  INFO: Connection Lost for CHASQUI_II
+2025/12/14 17:17:50.349  INFO: Stopped packet reading for CHASQUI_II
+2025/12/14 17:17:50.354  INFO: Disconnected from interface CHASQUI_II
+2025/12/14 17:17:50.726  ERROR: INST_INT - Unknown 10 byte packet starting: 84729C884498705BF61F
+2025/12/14 17:17:50.728  INFO: INST HEALTH_STATUS GROUND1STATUS = CONNECTED is GREEN (2025/12/14 17:17:50.727)
+2025/12/14 17:17:50.728  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:17:50.727)
+2025/12/14 17:17:53.027  INFO: User connecting interface CHASQUI_II
+2025/12/14 17:17:53.027  INFO: Creating thread for interface CHASQUI_II
+2025/12/14 17:17:53.028  INFO: Starting packet reading for CHASQUI_II
+2025/12/14 17:17:53.028  INFO: Connecting to CHASQUI_II...
+2025/12/14 17:17:53.029  INFO: CHASQUI_II Connection Success
+2025/12/14 17:17:54.708  INFO: INST HEALTH_STATUS TEMP1 = 19.090300000000013 is BLUE (2025/12/14 17:17:54.707)
+2025/12/14 17:17:55.707  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:17:55.707)
+2025/12/14 17:18:00.720  ERROR: INST_INT - Unknown 10 byte packet starting: 0B7D4CA68B3C3EBC8596
+2025/12/14 17:18:00.720  WARN: INST HEALTH_STATUS GROUND1STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:18:00.720)
+2025/12/14 17:18:00.720  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:18:00.720)
+2025/12/14 17:18:02.747  INFO: INST HEALTH_STATUS TEMP1 = -21.36489999999999 is GREEN_LOW (2025/12/14 17:18:02.747)
+2025/12/14 17:18:04.996  INFO: Clean disconnect from CHASQUI_II (returned nil)
+2025/12/14 17:18:04.996  INFO: Connection Lost for CHASQUI_II
+2025/12/14 17:18:05.726  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:18:05.726)
+2025/12/14 17:18:10.074  INFO: Connecting to CHASQUI_II...
+2025/12/14 17:18:10.077  INFO: CHASQUI_II Connection Success
+2025/12/14 17:18:10.723  ERROR: INST_INT - Unknown 10 byte packet starting: EBFE99EEECB1B1F41413
+2025/12/14 17:18:10.725  INFO: INST HEALTH_STATUS GROUND1STATUS = CONNECTED is GREEN (2025/12/14 17:18:10.725)
+2025/12/14 17:18:10.725  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:18:10.725)
+2025/12/14 17:18:12.745  WARN: INST HEALTH_STATUS TEMP1 = -71.9339 is YELLOW_LOW (2025/12/14 17:18:12.745)
+2025/12/14 17:18:13.114  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:18:14.117  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:18:14.726  ERROR: INST HEALTH_STATUS TEMP1 = -82.04769999999999 is RED_LOW (2025/12/14 17:18:14.726)
+2025/12/14 17:18:14.727  INFO: cmd("INST CLEAR")
+2025/12/14 17:18:14.727  WARN: INST HEALTH_STATUS TEMP3 = -10.506899999999987 is YELLOW_LOW (2025/12/14 17:18:14.726)
+2025/12/14 17:18:15.747  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:18:15.747)
+2025/12/14 17:18:18.145  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:18:18.759  ERROR: INST HEALTH_STATUS TEMP2 = NaN is RED_LOW (2025/12/14 17:18:18.759)
+2025/12/14 17:18:19.147  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:18:20.727  ERROR: INST_INT - Unknown 10 byte packet starting: 16F161796CD59CFC1E30
+2025/12/14 17:18:20.728  WARN: INST HEALTH_STATUS GROUND1STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:18:20.728)
+2025/12/14 17:18:20.728  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:18:20.728)
+2025/12/14 17:18:21.734  WARN: INST HEALTH_STATUS TEMP1 = -75.27975 is YELLOW_LOW (2025/12/14 17:18:21.734)
+2025/12/14 17:18:22.745  INFO: INST HEALTH_STATUS TEMP2 = -27.3724826171875 is GREEN (2025/12/14 17:18:22.745)
+2025/12/14 17:18:22.745  ERROR: INST HEALTH_STATUS TEMP3 = -26.9525 is RED_LOW (2025/12/14 17:18:22.745)
+2025/12/14 17:18:23.186  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:18:23.734  INFO: INST HEALTH_STATUS TEMP1 = -65.39165 is GREEN_LOW (2025/12/14 17:18:23.734)
+2025/12/14 17:18:24.181  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:18:25.712  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:18:25.712)
+2025/12/14 17:18:27.723  WARN: INST HEALTH_STATUS TEMP3 = -24.228849999999994 is YELLOW_LOW (2025/12/14 17:18:27.722)
+2025/12/14 17:18:28.221  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:18:28.717  ERROR: INST HEALTH_STATUS TEMP2 = -Infinity is RED_LOW (2025/12/14 17:18:28.717)
+2025/12/14 17:18:29.236  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:18:30.722  ERROR: INST_INT - Unknown 10 byte packet starting: E7C9D4050D78F0B35E7B
+2025/12/14 17:18:30.723  INFO: INST HEALTH_STATUS GROUND1STATUS = CONNECTED is GREEN (2025/12/14 17:18:30.723)
+2025/12/14 17:18:30.723  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:18:30.723)
+2025/12/14 17:18:32.738  INFO: INST HEALTH_STATUS TEMP2 = -17.921473828124988 is GREEN (2025/12/14 17:18:32.738)
+2025/12/14 17:18:33.272  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:18:33.729  INFO: INST HEALTH_STATUS TEMP1 = -15.951149999999998 is BLUE (2025/12/14 17:18:33.729)
+2025/12/14 17:18:34.286  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:18:35.720  INFO: INST HEALTH_STATUS TEMP3 = -8.686049999999994 is GREEN (2025/12/14 17:18:35.720)
+2025/12/14 17:18:35.720  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:18:35.720)
+2025/12/14 17:18:38.328  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:18:39.349  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:18:39.738  ERROR: INST HEALTH_STATUS TEMP2 = Infinity is RED_HIGH (2025/12/14 17:18:39.738)
+2025/12/14 17:18:40.724  ERROR: INST_INT - Unknown 10 byte packet starting: C04155BB43F2F4DA288C
+2025/12/14 17:18:40.725  WARN: INST HEALTH_STATUS GROUND1STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:18:40.724)
+2025/12/14 17:18:40.725  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:18:40.724)
+2025/12/14 17:18:41.709  INFO: INST HEALTH_STATUS TEMP1 = 23.601250000000007 is GREEN_HIGH (2025/12/14 17:18:41.709)
+2025/12/14 17:18:43.381  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:18:43.717  INFO: INST HEALTH_STATUS TEMP2 = -7.5253641601562435 is GREEN (2025/12/14 17:18:43.716)
+2025/12/14 17:18:44.397  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:18:45.713  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:18:45.713)
+2025/12/14 17:18:48.421  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:18:49.431  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:18:49.709  WARN: INST HEALTH_STATUS TEMP1 = 63.15365 is YELLOW_HIGH (2025/12/14 17:18:49.708)
+2025/12/14 17:18:50.712  ERROR: INST_INT - Unknown 10 byte packet starting: 384F66991759177E1C64
+2025/12/14 17:18:50.712  INFO: INST HEALTH_STATUS GROUND1STATUS = CONNECTED is GREEN (2025/12/14 17:18:50.712)
+2025/12/14 17:18:50.712  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:18:50.712)
+2025/12/14 17:18:53.462  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:18:53.725  ERROR: INST HEALTH_STATUS TEMP1 = 82.92985000000002 is RED_HIGH (2025/12/14 17:18:53.725)
+2025/12/14 17:18:53.725  INFO: cmd("INST COLLECT with TYPE NORMAL, DURATION 5.0, OPCODE 171, TEMP 0.0")
+2025/12/14 17:18:54.471  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:18:55.708  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:18:55.708)
+2025/12/14 17:18:58.502  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:18:59.518  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:18:59.711  WARN: INST HEALTH_STATUS TEMP1 = 79.7731 is YELLOW_HIGH (2025/12/14 17:18:59.711)
+2025/12/14 17:19:00.709  ERROR: INST_INT - Unknown 10 byte packet starting: D7183E713CED9BBBB4F3
+2025/12/14 17:19:00.710  ERROR: INST HEALTH_STATUS TEMP2 = Infinity is RED_HIGH (2025/12/14 17:19:00.710)
+2025/12/14 17:19:00.710  WARN: INST HEALTH_STATUS GROUND1STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:19:00.710)
+2025/12/14 17:19:00.710  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:19:00.710)
+2025/12/14 17:19:03.566  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:19:03.715  INFO: INST HEALTH_STATUS TEMP1 = 59.545500000000004 is GREEN_HIGH (2025/12/14 17:19:03.714)
+2025/12/14 17:19:04.563  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:19:04.716  INFO: INST HEALTH_STATUS TEMP2 = 12.321670898437503 is GREEN (2025/12/14 17:19:04.716)
+2025/12/14 17:19:05.716  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:19:05.716)
+2025/12/14 17:19:06.712  WARN: INST HEALTH_STATUS TEMP3 = 51.54230000000001 is YELLOW_HIGH (2025/12/14 17:19:06.712)
+2025/12/14 17:19:08.605  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:19:08.720  ERROR: INST HEALTH_STATUS TEMP3 = 55.428 is RED_HIGH (2025/12/14 17:19:08.720)
+2025/12/14 17:19:09.609  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:19:10.712  ERROR: INST_INT - Unknown 10 byte packet starting: 99D4314F7C2E67AF21F3
+2025/12/14 17:19:10.713  INFO: INST HEALTH_STATUS GROUND1STATUS = CONNECTED is GREEN (2025/12/14 17:19:10.713)
+2025/12/14 17:19:10.713  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:19:10.713)
+2025/12/14 17:19:11.715  INFO: INST HEALTH_STATUS TEMP1 = 19.090300000000013 is BLUE (2025/12/14 17:19:11.715)
+2025/12/14 17:19:11.715  ERROR: INST HEALTH_STATUS TEMP2 = -Infinity is RED_LOW (2025/12/14 17:19:11.715)
+2025/12/14 17:19:13.653  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:19:14.660  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:19:15.713  INFO: INST HEALTH_STATUS TEMP2 = 22.71771503906251 is GREEN (2025/12/14 17:19:15.713)
+2025/12/14 17:19:15.713  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:19:15.713)
+2025/12/14 17:19:18.710  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:19:19.721  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:19:19.722  INFO: INST HEALTH_STATUS TEMP1 = -21.36489999999999 is GREEN_LOW (2025/12/14 17:19:19.722)
+2025/12/14 17:19:20.733  ERROR: INST_INT - Unknown 10 byte packet starting: 0A919E09F22F0EF332F3
+2025/12/14 17:19:20.733  WARN: INST HEALTH_STATUS GROUND1STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:19:20.733)
+2025/12/14 17:19:20.734  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:19:20.733)
+2025/12/14 17:19:21.709  ERROR: INST HEALTH_STATUS TEMP2 = NaN is RED_LOW (2025/12/14 17:19:21.709)
+2025/12/14 17:19:23.756  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:19:24.763  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:19:25.719  WARN: INST HEALTH_STATUS TEMP2 = 32.16866425781251 is YELLOW_HIGH (2025/12/14 17:19:25.719)
+2025/12/14 17:19:25.719  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:19:25.719)
+2025/12/14 17:19:28.718  ERROR: INST HEALTH_STATUS TEMP2 = 35.003949023437514 is RED_HIGH (2025/12/14 17:19:28.718)
+2025/12/14 17:19:28.801  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:19:29.719  WARN: INST HEALTH_STATUS TEMP1 = -71.9339 is YELLOW_LOW (2025/12/14 17:19:29.719)
+2025/12/14 17:19:29.813  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:19:30.713  ERROR: INST_INT - Unknown 10 byte packet starting: 8548AFB9166C15AF843D
+2025/12/14 17:19:30.714  INFO: INST HEALTH_STATUS GROUND1STATUS = CONNECTED is GREEN (2025/12/14 17:19:30.714)
+2025/12/14 17:19:30.714  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:19:30.714)
+2025/12/14 17:19:31.714  ERROR: INST HEALTH_STATUS TEMP1 = -82.04769999999999 is RED_LOW (2025/12/14 17:19:31.714)
+2025/12/14 17:19:31.714  INFO: cmd("INST CLEAR")
+2025/12/14 17:19:33.847  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:19:34.710  WARN: INST HEALTH_STATUS TEMP3 = 53.21980000000002 is YELLOW_HIGH (2025/12/14 17:19:34.710)
+2025/12/14 17:19:34.854  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:19:35.718  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:19:35.718)
+2025/12/14 17:19:36.709  INFO: INST HEALTH_STATUS TEMP3 = 49.10840000000002 is GREEN (2025/12/14 17:19:36.709)
+2025/12/14 17:19:38.735  WARN: INST HEALTH_STATUS TEMP1 = -75.27975 is YELLOW_LOW (2025/12/14 17:19:38.735)
+2025/12/14 17:19:38.884  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:19:39.887  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:19:40.709  ERROR: INST_INT - Unknown 10 byte packet starting: 154C99A94EB559C56A40
+2025/12/14 17:19:40.710  INFO: INST HEALTH_STATUS TEMP1 = -65.39165 is GREEN_LOW (2025/12/14 17:19:40.710)
+2025/12/14 17:19:40.710  WARN: INST HEALTH_STATUS GROUND1STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:19:40.710)
+2025/12/14 17:19:40.710  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:19:40.710)
+2025/12/14 17:19:43.926  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:19:44.947  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:19:45.720  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:19:45.720)
+2025/12/14 17:19:48.973  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:19:49.976  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:19:50.724  ERROR: INST_INT - Unknown 10 byte packet starting: 1C425496C0D0DA4C9DE7
+2025/12/14 17:19:50.725  INFO: INST HEALTH_STATUS TEMP1 = -15.951149999999998 is BLUE (2025/12/14 17:19:50.725)
+2025/12/14 17:19:50.725  INFO: INST HEALTH_STATUS GROUND1STATUS = CONNECTED is GREEN (2025/12/14 17:19:50.725)
+2025/12/14 17:19:50.725  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:19:50.725)
+2025/12/14 17:19:54.018  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:19:55.022  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:19:55.713  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:19:55.713)
+2025/12/14 17:19:58.710  INFO: INST HEALTH_STATUS TEMP1 = 23.601250000000007 is GREEN_HIGH (2025/12/14 17:19:58.710)
+2025/12/14 17:19:59.066  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:19:59.714  WARN: INST HEALTH_STATUS TEMP2 = 34.12167695312502 is YELLOW_HIGH (2025/12/14 17:19:59.714)
+2025/12/14 17:20:00.073  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:20:00.733  ERROR: INST_INT - Unknown 10 byte packet starting: E4CCDD01B3A5E16A23ED
+2025/12/14 17:20:00.733  WARN: INST HEALTH_STATUS GROUND1STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:20:00.733)
+2025/12/14 17:20:00.734  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:20:00.733)
+2025/12/14 17:20:02.719  ERROR: INST HEALTH_STATUS TEMP2 = NaN is RED_LOW (2025/12/14 17:20:02.719)
+2025/12/14 17:20:04.103  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:20:05.118  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:20:05.713  INFO: INST HEALTH_STATUS TEMP2 = 27.79230742187501 is GREEN (2025/12/14 17:20:05.713)
+2025/12/14 17:20:05.713  WARN: INST HEALTH_STATUS TEMP3 = -10.506899999999987 is YELLOW_LOW (2025/12/14 17:20:05.713)
+2025/12/14 17:20:05.713  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:20:05.713)
+2025/12/14 17:20:06.713  WARN: INST HEALTH_STATUS TEMP1 = 63.15365 is YELLOW_HIGH (2025/12/14 17:20:06.713)
+2025/12/14 17:20:09.158  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:20:10.168  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:20:10.723  ERROR: INST_INT - Unknown 10 byte packet starting: 49D7EB6C0590890F136B
+2025/12/14 17:20:10.724  ERROR: INST HEALTH_STATUS TEMP1 = 82.92985000000002 is RED_HIGH (2025/12/14 17:20:10.724)
+2025/12/14 17:20:10.724  INFO: cmd("INST COLLECT with TYPE NORMAL, DURATION 5.0, OPCODE 171, TEMP 0.0")
+2025/12/14 17:20:10.724  INFO: INST HEALTH_STATUS GROUND1STATUS = CONNECTED is GREEN (2025/12/14 17:20:10.724)
+2025/12/14 17:20:10.724  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:20:10.724)
+2025/12/14 17:20:11.731  ERROR: INST HEALTH_STATUS TEMP2 = -Infinity is RED_LOW (2025/12/14 17:20:11.731)
+2025/12/14 17:20:13.714  ERROR: INST HEALTH_STATUS TEMP3 = -26.9525 is RED_LOW (2025/12/14 17:20:13.714)
+2025/12/14 17:20:14.214  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:20:15.221  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:20:15.714  INFO: INST HEALTH_STATUS TEMP2 = 17.243358203125013 is GREEN (2025/12/14 17:20:15.714)
+2025/12/14 17:20:15.714  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:20:15.714)
+2025/12/14 17:20:16.709  WARN: INST HEALTH_STATUS TEMP1 = 79.7731 is YELLOW_HIGH (2025/12/14 17:20:16.709)
+2025/12/14 17:20:18.714  WARN: INST HEALTH_STATUS TEMP3 = -24.228849999999994 is YELLOW_LOW (2025/12/14 17:20:18.713)
+2025/12/14 17:20:19.257  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:20:20.256  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:20:20.719  ERROR: INST_INT - Unknown 10 byte packet starting: 6A41729D9651C1AAAE26
+2025/12/14 17:20:20.719  INFO: INST HEALTH_STATUS TEMP1 = 59.545500000000004 is GREEN_HIGH (2025/12/14 17:20:20.719)
+2025/12/14 17:20:20.719  ERROR: INST HEALTH_STATUS TEMP2 = Infinity is RED_HIGH (2025/12/14 17:20:20.719)
+2025/12/14 17:20:20.719  WARN: INST HEALTH_STATUS GROUND1STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:20:20.719)
+2025/12/14 17:20:20.720  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:20:20.719)
+2025/12/14 17:20:24.297  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:20:24.736  INFO: INST HEALTH_STATUS TEMP2 = 7.749303906250006 is GREEN (2025/12/14 17:20:24.736)
+2025/12/14 17:20:25.301  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:20:25.706  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:20:25.706)
+2025/12/14 17:20:26.712  INFO: INST HEALTH_STATUS TEMP3 = -8.686049999999994 is GREEN (2025/12/14 17:20:26.711)
+2025/12/14 17:20:28.720  INFO: INST HEALTH_STATUS TEMP1 = 19.090300000000013 is BLUE (2025/12/14 17:20:28.720)
+2025/12/14 17:20:29.338  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:20:30.358  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:20:30.714  ERROR: INST_INT - Unknown 10 byte packet starting: B7FB1228200DF00C2095
+2025/12/14 17:20:30.715  INFO: INST HEALTH_STATUS GROUND1STATUS = CONNECTED is GREEN (2025/12/14 17:20:30.715)
+2025/12/14 17:20:30.715  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:20:30.715)
+2025/12/14 17:20:34.399  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:20:35.409  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:20:35.720  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:20:35.720)
+2025/12/14 17:20:36.713  INFO: INST HEALTH_STATUS TEMP1 = -21.36489999999999 is GREEN_LOW (2025/12/14 17:20:36.713)
+2025/12/14 17:20:39.445  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:20:39.719  ERROR: INST HEALTH_STATUS TEMP2 = Infinity is RED_HIGH (2025/12/14 17:20:39.718)
+2025/12/14 17:20:40.453  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:20:40.713  ERROR: INST_INT - Unknown 10 byte packet starting: FF92B134C9760A89417A
+2025/12/14 17:20:40.714  WARN: INST HEALTH_STATUS GROUND1STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:20:40.714)
+2025/12/14 17:20:40.714  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:20:40.714)
+2025/12/14 17:20:43.714  INFO: INST HEALTH_STATUS TEMP2 = -12.293771093749996 is GREEN (2025/12/14 17:20:43.714)
+2025/12/14 17:20:44.503  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:20:45.512  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:20:45.727  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:20:45.727)
+2025/12/14 17:20:46.729  WARN: INST HEALTH_STATUS TEMP1 = -71.9339 is YELLOW_LOW (2025/12/14 17:20:46.729)
+2025/12/14 17:20:48.709  ERROR: INST HEALTH_STATUS TEMP1 = -82.04769999999999 is RED_LOW (2025/12/14 17:20:48.709)
+2025/12/14 17:20:48.709  INFO: cmd("INST CLEAR")
+2025/12/14 17:20:49.560  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:20:49.714  ERROR: INST HEALTH_STATUS TEMP2 = -Infinity is RED_LOW (2025/12/14 17:20:49.714)
+2025/12/14 17:20:50.568  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:20:50.707  ERROR: INST_INT - Unknown 10 byte packet starting: 99BD0CFE1AD3110A8F5F
+2025/12/14 17:20:50.707  INFO: INST HEALTH_STATUS GROUND1STATUS = CONNECTED is GREEN (2025/12/14 17:20:50.707)
+2025/12/14 17:20:50.707  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:20:50.707)
+2025/12/14 17:20:53.713  INFO: INST HEALTH_STATUS TEMP2 = -22.842779882812493 is GREEN (2025/12/14 17:20:53.713)
+2025/12/14 17:20:54.604  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:20:55.615  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:20:55.716  WARN: INST HEALTH_STATUS TEMP1 = -75.27975 is YELLOW_LOW (2025/12/14 17:20:55.716)
+2025/12/14 17:20:55.716  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:20:55.716)
+2025/12/14 17:20:57.712  INFO: INST HEALTH_STATUS TEMP1 = -65.39165 is GREEN_LOW (2025/12/14 17:20:57.712)
+2025/12/14 17:20:57.712  WARN: INST HEALTH_STATUS TEMP3 = 51.54230000000001 is YELLOW_HIGH (2025/12/14 17:20:57.712)
+2025/12/14 17:20:58.709  ERROR: INST HEALTH_STATUS TEMP2 = NaN is RED_LOW (2025/12/14 17:20:58.709)
+2025/12/14 17:20:59.669  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:20:59.715  ERROR: INST HEALTH_STATUS TEMP3 = 55.428 is RED_HIGH (2025/12/14 17:20:59.715)
+2025/12/14 17:21:00.674  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:21:00.715  ERROR: INST_INT - Unknown 10 byte packet starting: C37C9839A0E962C8B7E0
+2025/12/14 17:21:00.715  WARN: INST HEALTH_STATUS GROUND1STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:21:00.715)
+2025/12/14 17:21:00.715  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:21:00.715)
+2025/12/14 17:21:02.708  INFO: INST HEALTH_STATUS TEMP2 = -32.33688779296874 is GREEN (2025/12/14 17:21:02.708)
+2025/12/14 17:21:04.726  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:21:05.722  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:21:05.722)
+2025/12/14 17:21:05.727  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:21:07.710  INFO: INST HEALTH_STATUS TEMP1 = -15.951149999999998 is BLUE (2025/12/14 17:21:07.710)
+2025/12/14 17:21:09.778  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:21:10.724  ERROR: INST_INT - Unknown 10 byte packet starting: 525E5A0FCDD02D38D480
+2025/12/14 17:21:10.725  INFO: INST HEALTH_STATUS GROUND1STATUS = CONNECTED is GREEN (2025/12/14 17:21:10.725)
+2025/12/14 17:21:10.725  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:21:10.725)
+2025/12/14 17:21:10.797  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:21:14.835  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:21:15.730  INFO: INST HEALTH_STATUS TEMP1 = 23.601250000000007 is GREEN_HIGH (2025/12/14 17:21:15.730)
+2025/12/14 17:21:15.730  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:21:15.730)
+2025/12/14 17:21:15.852  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:21:19.899  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:21:20.719  ERROR: INST_INT - Unknown 10 byte packet starting: 04C72A109450A60BE1A6
+2025/12/14 17:21:20.720  WARN: INST HEALTH_STATUS GROUND1STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:21:20.720)
+2025/12/14 17:21:20.720  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:21:20.720)
+2025/12/14 17:21:20.904  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:21:23.718  WARN: INST HEALTH_STATUS TEMP1 = 63.15365 is YELLOW_HIGH (2025/12/14 17:21:23.717)
+2025/12/14 17:21:24.957  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:21:25.711  WARN: INST HEALTH_STATUS TEMP3 = 53.21980000000002 is YELLOW_HIGH (2025/12/14 17:21:25.710)
+2025/12/14 17:21:25.711  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:21:25.710)
+2025/12/14 17:21:25.969  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:21:27.716  ERROR: INST HEALTH_STATUS TEMP1 = 82.92985000000002 is RED_HIGH (2025/12/14 17:21:27.716)
+2025/12/14 17:21:27.716  INFO: cmd("INST COLLECT with TYPE NORMAL, DURATION 5.0, OPCODE 171, TEMP 0.0")
+2025/12/14 17:21:27.716  INFO: INST HEALTH_STATUS TEMP3 = 49.10840000000002 is GREEN (2025/12/14 17:21:27.716)
+2025/12/14 17:21:30.011  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:21:30.722  ERROR: INST_INT - Unknown 10 byte packet starting: 0545B9646136F3120013
+2025/12/14 17:21:30.724  INFO: INST HEALTH_STATUS GROUND1STATUS = CONNECTED is GREEN (2025/12/14 17:21:30.724)
+2025/12/14 17:21:30.724  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:21:30.724)
+2025/12/14 17:21:31.028  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:21:33.721  WARN: INST HEALTH_STATUS TEMP1 = 79.7731 is YELLOW_HIGH (2025/12/14 17:21:33.721)
+2025/12/14 17:21:35.059  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:21:35.717  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:21:35.717)
+2025/12/14 17:21:36.075  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:21:37.716  INFO: INST HEALTH_STATUS TEMP1 = 59.545500000000004 is GREEN_HIGH (2025/12/14 17:21:37.715)
+2025/12/14 17:21:39.714  ERROR: INST HEALTH_STATUS TEMP2 = NaN is RED_LOW (2025/12/14 17:21:39.714)
+2025/12/14 17:21:40.102  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:21:40.713  ERROR: INST_INT - Unknown 10 byte packet starting: 139FB8D74C6F231EBD33
+2025/12/14 17:21:40.713  WARN: INST HEALTH_STATUS GROUND1STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:21:40.713)
+2025/12/14 17:21:40.713  INFO: INST HEALTH_STATUS GROUND2STATUS = CONNECTED is GREEN (2025/12/14 17:21:40.713)
+2025/12/14 17:21:41.110  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:21:43.712  INFO: INST HEALTH_STATUS TEMP2 = -27.3724826171875 is GREEN (2025/12/14 17:21:43.712)
+2025/12/14 17:21:45.138  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:21:45.650  INFO: User disconnecting interface CHASQUI_II
+2025/12/14 17:21:45.650  INFO: Killing thread for interface CHASQUI_II
+2025/12/14 17:21:45.651  INFO: Clean disconnect from CHASQUI_II (returned nil)
+2025/12/14 17:21:45.652  INFO: Connection Lost for CHASQUI_II
+2025/12/14 17:21:45.652  INFO: Stopped packet reading for CHASQUI_II
+2025/12/14 17:21:45.660  INFO: Disconnected from interface CHASQUI_II
+2025/12/14 17:21:45.730  INFO: INST HEALTH_STATUS TEMP1 = 19.090300000000013 is BLUE (2025/12/14 17:21:45.730)
+2025/12/14 17:21:45.730  WARN: INST HEALTH_STATUS GROUND2STATUS = UNAVAILABLE is YELLOW (2025/12/14 17:21:45.730)
+2025/12/14 17:21:46.360  INFO: User disconnecting interface INST_INT
+2025/12/14 17:21:46.360  INFO: Killing thread for interface INST_INT
+2025/12/14 17:21:46.365  INFO: Clean disconnect from INST_INT (returned nil)
+2025/12/14 17:21:46.365  INFO: Connection Lost for INST_INT
+2025/12/14 17:21:46.365  INFO: Stopped packet reading for INST_INT
+2025/12/14 17:21:46.370  INFO: Disconnected from interface INST_INT

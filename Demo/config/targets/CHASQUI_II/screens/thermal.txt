@@ -23,7 +23,7 @@ VERTICAL 5
 
       VERTICAL 3 FALSE
         SPACER 0 6
-        TITLE "COSPAR-I THERMAL CONTROL SYSTEM"
+        TITLE "CHASQUI-II THERMAL CONTROL SYSTEM"
           SETTING TEXTCOLOR 255 255 255
           SETTING BACKCOLOR 15 76 129
         LABEL "Thermal Health, Regulation and Trending Overview"
@@ -64,27 +64,27 @@ VERTICAL 5
         HORIZONTAL 6
           LABEL "Temp_SP0:"
             SETTING TEXTCOLOR 80 80 80
-          VALUE CHASQUI_II Beacon Temp_SP0 CONVERTED 10
+          VALUE CHASQUI_II Beacon Temp_SP0 FORMATTED 18
             SETTING TEXTCOLOR 15 76 129
-          LABEL "°C"
+          LABEL "C"
             SETTING TEXTCOLOR 100 100 100
         END
 
         HORIZONTAL 6
           LABEL "Temp_SP1:"
             SETTING TEXTCOLOR 80 80 80
-          VALUE CHASQUI_II Beacon Temp_SP1 CONVERTED 10
+          VALUE CHASQUI_II Beacon Temp_SP1 FORMATTED 18
             SETTING TEXTCOLOR 15 76 129
-          LABEL "°C"
+          LABEL "C"
             SETTING TEXTCOLOR 100 100 100
         END
 
         HORIZONTAL 6
           LABEL "Temp_SP2:"
             SETTING TEXTCOLOR 80 80 80
-          VALUE CHASQUI_II Beacon Temp_SP2 CONVERTED 10
+          VALUE CHASQUI_II Beacon Temp_SP2 FORMATTED 18
             SETTING TEXTCOLOR 15 76 129
-          LABEL "°C"
+          LABEL "C"
             SETTING TEXTCOLOR 100 100 100
         END
       END
@@ -97,25 +97,25 @@ VERTICAL 5
         HORIZONTAL 6
           LABEL "Temp_Bat_TH1:"
             SETTING TEXTCOLOR 80 80 80
-          VALUE CHASQUI_II Beacon Temp_Bat_TH1 CONVERTED 10
+          VALUE CHASQUI_II Beacon Temp_Bat_TH1 CONVERTED 18
             SETTING TEXTCOLOR 15 76 129
-          LABEL "°C"
+          LABEL "C"
             SETTING TEXTCOLOR 100 100 100
         END
 
         HORIZONTAL 6
           LABEL "Temp_Bat_TH2:"
             SETTING TEXTCOLOR 80 80 80
-          VALUE CHASQUI_II Beacon Temp_Bat_TH2 CONVERTED 10
+          VALUE CHASQUI_II Beacon Temp_Bat_TH2 CONVERTED 18
             SETTING TEXTCOLOR 15 76 129
-          LABEL "°C"
+          LABEL "C"
             SETTING TEXTCOLOR 100 100 100
         END
 
         HORIZONTAL 6
           LABEL "Heater Current:"
             SETTING TEXTCOLOR 80 80 80
-          VALUE CHASQUI_II Beacon Batt_Htr_Curr CONVERTED 10
+          VALUE CHASQUI_II Beacon Batt_Htr_Curr CONVERTED 18
             SETTING TEXTCOLOR 15 76 129
           LABEL "A"
             SETTING TEXTCOLOR 100 100 100
@@ -130,27 +130,27 @@ VERTICAL 5
         HORIZONTAL 6
           LABEL "Temp_CDH:"
             SETTING TEXTCOLOR 80 80 80
-          VALUE CHASQUI_II Beacon Temp_CDH CONVERTED 10
+          VALUE CHASQUI_II Beacon Temp_CDH FORMATTED 18
             SETTING TEXTCOLOR 15 76 129
-          LABEL "°C"
+          LABEL "C"
             SETTING TEXTCOLOR 100 100 100
         END
 
         HORIZONTAL 6
           LABEL "Temp_IF_card:"
             SETTING TEXTCOLOR 80 80 80
-          VALUE CHASQUI_II Beacon Temp_IF_card CONVERTED 10
+          VALUE CHASQUI_II Beacon Temp_IF_card FORMATTED 18
             SETTING TEXTCOLOR 15 76 129
-          LABEL "°C"
+          LABEL "C"
             SETTING TEXTCOLOR 100 100 100
         END
 
         HORIZONTAL 6
           LABEL "Temp_EPS:"
             SETTING TEXTCOLOR 80 80 80
-          VALUE CHASQUI_II Beacon Temp_EPS CONVERTED 10
+          VALUE CHASQUI_II Beacon Temp_EPS FORMATTED 18
             SETTING TEXTCOLOR 15 76 129
-          LABEL "°C"
+          LABEL "C"
             SETTING TEXTCOLOR 100 100 100
         END
       END
@@ -293,35 +293,35 @@ VERTICAL 5
 
       LABEL "Temp_SP0"
       VALUE CHASQUI_II Beacon Temp_SP0 CONVERTED
-      LIMITSCOLOR CHASQUI_II Beacon Temp_SP0 CONVERTED 12
+      LIMITSCOLOR CHASQUI_II Beacon Temp_SP0 CONVERTED 18
 
       LABEL "Temp_SP1"
       VALUE CHASQUI_II Beacon Temp_SP1 CONVERTED
-      LIMITSCOLOR CHASQUI_II Beacon Temp_SP1 CONVERTED 12
+      LIMITSCOLOR CHASQUI_II Beacon Temp_SP1 CONVERTED 18
 
       LABEL "Temp_SP2"
       VALUE CHASQUI_II Beacon Temp_SP2 CONVERTED
-      LIMITSCOLOR CHASQUI_II Beacon Temp_SP2 CONVERTED 12
+      LIMITSCOLOR CHASQUI_II Beacon Temp_SP2 CONVERTED 18
 
       LABEL "Temp_Bat_TH1"
       VALUE CHASQUI_II Beacon Temp_Bat_TH1 CONVERTED
-      LIMITSCOLOR CHASQUI_II Beacon Temp_Bat_TH1 CONVERTED 12
+      LIMITSCOLOR CHASQUI_II Beacon Temp_Bat_TH1 CONVERTED 18
 
       LABEL "Temp_Bat_TH2"
       VALUE CHASQUI_II Beacon Temp_Bat_TH2 CONVERTED
-      LIMITSCOLOR CHASQUI_II Beacon Temp_Bat_TH2 CONVERTED 12
+      LIMITSCOLOR CHASQUI_II Beacon Temp_Bat_TH2 CONVERTED 18
 
       LABEL "Temp_CDH"
       VALUE CHASQUI_II Beacon Temp_CDH CONVERTED
-      LIMITSCOLOR CHASQUI_II Beacon Temp_CDH CONVERTED 12
+      LIMITSCOLOR CHASQUI_II Beacon Temp_CDH CONVERTED 18
 
       LABEL "Temp_IF_card"
       VALUE CHASQUI_II Beacon Temp_IF_card CONVERTED
-      LIMITSCOLOR CHASQUI_II Beacon Temp_IF_card CONVERTED 12
+      LIMITSCOLOR CHASQUI_II Beacon Temp_IF_card CONVERTED 18
 
       LABEL "Temp_EPS"
       VALUE CHASQUI_II Beacon Temp_EPS CONVERTED
-      LIMITSCOLOR CHASQUI_II Beacon Temp_EPS CONVERTED 12
+      LIMITSCOLOR CHASQUI_II Beacon Temp_EPS CONVERTED 18
     END
   END
 

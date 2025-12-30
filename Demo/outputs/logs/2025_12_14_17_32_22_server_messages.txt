@@ -1,0 +1,66 @@
+2025/12/14 17:32:21.917  INFO: COSMOS Version: 4.5.2
+2025/12/14 17:32:21.917  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/tools/cmd_tlm_server/cmd_tlm_server.txt
+2025/12/14 17:32:21.943  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/INST/cmd_tlm_server.txt
+2025/12/14 17:32:21.945  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/INST/cmd_tlm_server2.txt
+2025/12/14 17:32:22.023  INFO: Marshal load success: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/tmp/marshal_c43b4789840e1ac2370eacf7b3148d35.bin
+2025/12/14 17:32:22.231  INFO: Creating thread for router PREIDENTIFIED_ROUTER
+2025/12/14 17:32:22.232  INFO: Creating thread for router PREIDENTIFIED_CMD_ROUTER
+2025/12/14 17:32:22.233  INFO: Creating thread for interface CHASQUI_II
+2025/12/14 17:32:22.233  INFO: Starting packet reading for PREIDENTIFIED_ROUTER
+2025/12/14 17:32:22.233  INFO: Connecting to PREIDENTIFIED_ROUTER...
+2025/12/14 17:32:22.233  INFO: PREIDENTIFIED_ROUTER Connection Success
+2025/12/14 17:32:22.234  INFO: Starting connection maintenance for PREIDENTIFIED_CMD_ROUTER
+2025/12/14 17:32:22.234  INFO: Connecting to PREIDENTIFIED_CMD_ROUTER...
+2025/12/14 17:32:22.234  INFO: PREIDENTIFIED_CMD_ROUTER Connection Success
+2025/12/14 17:32:22.234  INFO: Starting packet reading for CHASQUI_II
+2025/12/14 17:32:22.234  INFO: Connecting to CHASQUI_II...
+2025/12/14 17:32:22.256  INFO: CHASQUI_II Connection Success
+2025/12/14 17:32:27.313  INFO: Enabling Limits Group: INST2_TEMP2
+2025/12/14 17:32:27.313  INFO: Enabling Limits Group: INST2_GROUND
+2025/12/14 17:46:10.468  INFO: User disconnecting interface CHASQUI_II
+2025/12/14 17:46:10.468  INFO: Killing thread for interface CHASQUI_II
+2025/12/14 17:46:10.478  INFO: Clean disconnect from CHASQUI_II (returned nil)
+2025/12/14 17:46:10.478  INFO: Connection Lost for CHASQUI_II
+2025/12/14 17:46:10.478  INFO: Stopped packet reading for CHASQUI_II
+2025/12/14 17:46:10.479  INFO: Disconnected from interface CHASQUI_II
+2025/12/14 17:46:11.918  INFO: User connecting interface CHASQUI_II
+2025/12/14 17:46:11.918  INFO: Creating thread for interface CHASQUI_II
+2025/12/14 17:46:11.919  INFO: Starting packet reading for CHASQUI_II
+2025/12/14 17:46:11.919  INFO: Connecting to CHASQUI_II...
+2025/12/14 17:46:16.928  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 17:46:21.943  INFO: Connecting to CHASQUI_II...
+2025/12/14 17:46:21.946  INFO: CHASQUI_II Connection Success
+2025/12/14 17:46:21.960  INFO: Raw Log File Opened : D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/logs/2025_12_14_17_46_21_chasqui_ii_raw_read_45572420.bin
+2025/12/14 17:46:21.967  INFO: Log File Opened : D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/logs/2025_12_14_17_46_21_tlm.bin
+2025/12/14 17:46:24.976  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:46:26.003  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:46:30.052  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:46:31.066  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:46:35.115  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:46:36.124  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:46:40.174  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:46:41.195  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:46:45.237  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:46:46.254  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:46:50.280  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:46:51.295  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 17:46:55.137  INFO: Log File Closed : D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/logs/2025_12_14_17_46_21_tlm.bin
+2025/12/14 17:46:55.238  INFO: Disconnected from router INST_ROUTER
+2025/12/14 17:46:55.238  INFO: Killing thread for router PREIDENTIFIED_ROUTER
+2025/12/14 17:46:55.238  INFO: Clean disconnect from PREIDENTIFIED_ROUTER (returned nil)
+2025/12/14 17:46:55.238  INFO: Connection Lost for PREIDENTIFIED_ROUTER
+2025/12/14 17:46:55.311  INFO: Stopped packet reading for PREIDENTIFIED_ROUTER
+2025/12/14 17:46:55.311  INFO: Disconnected from router PREIDENTIFIED_ROUTER
+2025/12/14 17:46:55.311  INFO: Killing thread for router PREIDENTIFIED_CMD_ROUTER
+2025/12/14 17:46:55.320  INFO: Stopped packet reading for PREIDENTIFIED_CMD_ROUTER
+2025/12/14 17:46:55.363  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 17:46:55.405  INFO: Disconnected from router PREIDENTIFIED_CMD_ROUTER
+2025/12/14 17:46:55.427  INFO: Disconnected from interface INST_INT
+2025/12/14 17:46:55.427  INFO: Disconnected from interface INST2_INT
+2025/12/14 17:46:55.427  INFO: Disconnected from interface SYSTEM_INT
+2025/12/14 17:46:55.427  INFO: Killing thread for interface CHASQUI_II
+2025/12/14 17:46:55.430  INFO: Clean disconnect from CHASQUI_II (returned nil)
+2025/12/14 17:46:55.430  INFO: Connection Lost for CHASQUI_II
+2025/12/14 17:46:55.430  INFO: Stopped packet reading for CHASQUI_II
+2025/12/14 17:46:55.438  INFO: Disconnected from interface CHASQUI_II
+2025/12/14 17:46:55.439  INFO: Raw Log File Closed : D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/logs/2025_12_14_17_46_21_chasqui_ii_raw_read_45572420.bin

@@ -1,0 +1,36 @@
+2025/11/18 22:59:54.426  INFO: COSMOS Version: 4.5.2
+2025/11/18 22:59:54.426  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/tools/cmd_tlm_server/cmd_tlm_server.txt
+2025/11/18 22:59:54.447  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/INST/cmd_tlm_server.txt
+2025/11/18 22:59:54.449  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/INST/cmd_tlm_server2.txt
+2025/11/18 22:59:54.624  INFO: Marshal load success: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/tmp/marshal_0d7cfb3a39a0887070fa9b77583e5eb4.bin
+2025/11/18 22:59:54.833  INFO: Creating thread for router PREIDENTIFIED_ROUTER
+2025/11/18 22:59:54.833  INFO: Creating thread for router PREIDENTIFIED_CMD_ROUTER
+2025/11/18 22:59:54.835  INFO: Creating thread for interface CHASQUI_II
+2025/11/18 22:59:54.837  INFO: Starting packet reading for PREIDENTIFIED_ROUTER
+2025/11/18 22:59:54.837  INFO: Connecting to PREIDENTIFIED_ROUTER...
+2025/11/18 22:59:54.838  INFO: Starting connection maintenance for PREIDENTIFIED_CMD_ROUTER
+2025/11/18 22:59:54.838  INFO: Connecting to PREIDENTIFIED_CMD_ROUTER...
+2025/11/18 22:59:54.839  INFO: PREIDENTIFIED_CMD_ROUTER Connection Success
+2025/11/18 22:59:54.839  INFO: Starting packet reading for CHASQUI_II
+2025/11/18 22:59:54.839  INFO: Connecting to CHASQUI_II...
+2025/11/18 22:59:54.842  INFO: PREIDENTIFIED_ROUTER Connection Success
+2025/11/18 22:59:56.035  INFO: User disconnecting interface CHASQUI_II
+2025/11/18 22:59:56.035  INFO: Killing thread for interface CHASQUI_II
+2025/11/18 22:59:59.922  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/11/18 22:59:59.922  INFO: Enabling Limits Group: INST2_TEMP2
+2025/11/18 22:59:59.922  INFO: Enabling Limits Group: INST2_GROUND
+2025/11/18 22:59:59.922  INFO: Stopped packet reading for CHASQUI_II
+2025/11/18 22:59:59.922  INFO: Disconnected from interface CHASQUI_II
+2025/11/18 23:22:35.823  INFO: Disconnected from router INST_ROUTER
+2025/11/18 23:22:35.823  INFO: Killing thread for router PREIDENTIFIED_ROUTER
+2025/11/18 23:22:35.823  INFO: Clean disconnect from PREIDENTIFIED_ROUTER (returned nil)
+2025/11/18 23:22:35.823  INFO: Connection Lost for PREIDENTIFIED_ROUTER
+2025/11/18 23:22:35.833  INFO: Stopped packet reading for PREIDENTIFIED_ROUTER
+2025/11/18 23:22:35.833  INFO: Disconnected from router PREIDENTIFIED_ROUTER
+2025/11/18 23:22:35.833  INFO: Killing thread for router PREIDENTIFIED_CMD_ROUTER
+2025/11/18 23:22:35.836  INFO: Stopped packet reading for PREIDENTIFIED_CMD_ROUTER
+2025/11/18 23:22:35.927  INFO: Disconnected from router PREIDENTIFIED_CMD_ROUTER
+2025/11/18 23:22:35.948  INFO: Disconnected from interface INST_INT
+2025/11/18 23:22:35.948  INFO: Disconnected from interface INST2_INT
+2025/11/18 23:22:35.948  INFO: Disconnected from interface SYSTEM_INT
+2025/11/18 23:22:35.948  INFO: Disconnected from interface CHASQUI_II

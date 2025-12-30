@@ -1,0 +1,23 @@
+2025/12/14 14:28:51.729  INFO: COSMOS Version: 4.5.2
+2025/12/14 14:28:51.730  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/tools/cmd_tlm_server/cmd_tlm_server.txt
+2025/12/14 14:28:51.733  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/INST/cmd_tlm_server.txt
+2025/12/14 14:28:51.735  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/INST/cmd_tlm_server2.txt
+2025/12/14 14:28:51.863  INFO: Marshal load success: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/tmp/marshal_0d7cfb3a39a0887070fa9b77583e5eb4.bin
+2025/12/14 14:28:52.071  INFO: Creating thread for router PREIDENTIFIED_ROUTER
+2025/12/14 14:28:52.071  INFO: Creating thread for router PREIDENTIFIED_CMD_ROUTER
+2025/12/14 14:28:52.072  INFO: Creating thread for interface CHASQUI_II
+2025/12/14 14:28:52.072  INFO: Starting packet reading for PREIDENTIFIED_ROUTER
+2025/12/14 14:28:52.073  INFO: Connecting to PREIDENTIFIED_ROUTER...
+2025/12/14 14:28:52.073  INFO: PREIDENTIFIED_ROUTER Connection Success
+2025/12/14 14:28:52.073  INFO: Starting connection maintenance for PREIDENTIFIED_CMD_ROUTER
+2025/12/14 14:28:52.073  INFO: Connecting to PREIDENTIFIED_CMD_ROUTER...
+2025/12/14 14:28:52.073  INFO: PREIDENTIFIED_CMD_ROUTER Connection Success
+2025/12/14 14:28:52.073  INFO: Starting packet reading for CHASQUI_II
+2025/12/14 14:28:52.074  INFO: Connecting to CHASQUI_II...
+2025/12/14 14:28:54.819  INFO: User disconnecting interface CHASQUI_II
+2025/12/14 14:28:54.819  INFO: Killing thread for interface CHASQUI_II
+2025/12/14 14:28:57.144  INFO: Enabling Limits Group: INST2_TEMP2
+2025/12/14 14:28:57.144  INFO: Enabling Limits Group: INST2_GROUND
+2025/12/14 14:28:57.145  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 14:28:57.145  INFO: Stopped packet reading for CHASQUI_II
+2025/12/14 14:28:57.155  INFO: Disconnected from interface CHASQUI_II

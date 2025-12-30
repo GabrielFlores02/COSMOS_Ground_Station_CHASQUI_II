@@ -1,0 +1,187 @@
+2025/12/14 15:15:38.086  INFO: Log File Closed : D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/logs/2025_12_14_15_01_23_tlm.bin
+2025/12/14 15:15:38.186  INFO: Disconnected from router INST_ROUTER
+2025/12/14 15:15:38.186  INFO: Killing thread for router PREIDENTIFIED_ROUTER
+2025/12/14 15:15:38.186  INFO: Clean disconnect from PREIDENTIFIED_ROUTER (returned nil)
+2025/12/14 15:15:38.186  INFO: Connection Lost for PREIDENTIFIED_ROUTER
+2025/12/14 15:15:38.216  INFO: Stopped packet reading for PREIDENTIFIED_ROUTER
+2025/12/14 15:15:38.227  INFO: Disconnected from router PREIDENTIFIED_ROUTER
+2025/12/14 15:15:38.227  INFO: Killing thread for router PREIDENTIFIED_CMD_ROUTER
+2025/12/14 15:15:38.238  INFO: Stopped packet reading for PREIDENTIFIED_CMD_ROUTER
+2025/12/14 15:15:38.321  INFO: Disconnected from router PREIDENTIFIED_CMD_ROUTER
+2025/12/14 15:15:38.342  INFO: Disconnected from interface INST_INT
+2025/12/14 15:15:38.342  INFO: Disconnected from interface INST2_INT
+2025/12/14 15:15:38.342  INFO: Disconnected from interface SYSTEM_INT
+2025/12/14 15:15:38.342  INFO: Disconnected from interface CHASQUI_II
+2025/12/14 15:15:38.344  INFO: Raw Log File Closed : D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/logs/2025_12_14_15_01_23_chasqui_ii_raw_read_46415260.bin
+2025/12/14 15:15:38.366  INFO: Processing target definition in file 'D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/INST/target.txt'
+2025/12/14 15:15:38.378  INFO: Processing target definition in file 'D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/INST/target.txt'
+2025/12/14 15:15:38.390  INFO: Processing target definition in file 'D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/EXAMPLE/target.txt'
+2025/12/14 15:15:38.394  INFO: Processing target definition in file 'D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/TEMPLATED/target.txt'
+2025/12/14 15:15:38.399  INFO: Processing target definition in file 'D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/DART/target.txt'
+2025/12/14 15:15:38.408  INFO: Processing target definition in file 'D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/SYSTEM/target.txt'
+2025/12/14 15:15:38.431  INFO: Marshal load success: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/tmp/marshal_0d7cfb3a39a0887070fa9b77583e5eb4.bin
+2025/12/14 15:15:38.436  INFO: COSMOS Version: 4.5.2
+2025/12/14 15:15:38.436  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/tools/cmd_tlm_server/cmd_tlm_server.txt
+2025/12/14 15:15:38.438  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/INST/cmd_tlm_server.txt
+2025/12/14 15:15:38.440  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/INST/cmd_tlm_server2.txt
+2025/12/14 15:15:38.544  INFO: Creating thread for router PREIDENTIFIED_ROUTER
+2025/12/14 15:15:38.544  INFO: Creating thread for router PREIDENTIFIED_CMD_ROUTER
+2025/12/14 15:15:38.544  INFO: Creating thread for interface CHASQUI_II
+2025/12/14 15:15:38.545  INFO: Starting packet reading for PREIDENTIFIED_ROUTER
+2025/12/14 15:15:38.545  INFO: Connecting to PREIDENTIFIED_ROUTER...
+2025/12/14 15:15:38.546  INFO: PREIDENTIFIED_ROUTER Connection Success
+2025/12/14 15:15:38.546  INFO: Starting connection maintenance for PREIDENTIFIED_CMD_ROUTER
+2025/12/14 15:15:38.546  INFO: Connecting to PREIDENTIFIED_CMD_ROUTER...
+2025/12/14 15:15:38.547  INFO: PREIDENTIFIED_CMD_ROUTER Connection Success
+2025/12/14 15:15:38.548  INFO: Starting packet reading for CHASQUI_II
+2025/12/14 15:15:38.548  INFO: Connecting to CHASQUI_II...
+2025/12/14 15:15:38.559  INFO: CHASQUI_II Connection Success
+2025/12/14 15:15:38.601  INFO: Raw Log File Opened : D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/logs/2025_12_14_15_15_38_chasqui_ii_raw_read_75175400.bin
+2025/12/14 15:15:38.656  INFO: Log File Opened : D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/logs/2025_12_14_15_15_38_tlm.bin
+2025/12/14 15:15:43.598  INFO: Enabling Limits Group: INST2_TEMP2
+2025/12/14 15:15:43.598  INFO: Enabling Limits Group: INST2_GROUND
+2025/12/14 15:15:47.591  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 15:15:50.601  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 15:16:02.635  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 15:16:05.644  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 15:16:17.671  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 15:16:20.689  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 15:16:32.727  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 15:16:35.738  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 15:16:47.769  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 15:16:50.777  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 15:17:02.824  ERROR: CHASQUI_II STATICPARS received with actual packet length of 270 but defined length of 95
+2025/12/14 15:17:05.833  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 426 but defined length of 146
+2025/12/14 15:17:11.879  INFO: User disconnecting interface CHASQUI_II
+2025/12/14 15:17:11.879  INFO: Killing thread for interface CHASQUI_II
+2025/12/14 15:17:11.887  INFO: Clean disconnect from CHASQUI_II (returned nil)
+2025/12/14 15:17:11.887  INFO: Connection Lost for CHASQUI_II
+2025/12/14 15:17:11.887  INFO: Stopped packet reading for CHASQUI_II
+2025/12/14 15:17:11.890  INFO: Disconnected from interface CHASQUI_II
+2025/12/14 15:25:25.160  INFO: User connecting interface CHASQUI_II
+2025/12/14 15:25:25.160  INFO: Creating thread for interface CHASQUI_II
+2025/12/14 15:25:25.161  INFO: Starting packet reading for CHASQUI_II
+2025/12/14 15:25:25.161  INFO: Connecting to CHASQUI_II...
+2025/12/14 15:25:25.162  INFO: CHASQUI_II Connection Success
+2025/12/14 15:25:39.446  INFO: User disconnecting interface CHASQUI_II
+2025/12/14 15:25:39.446  INFO: Killing thread for interface CHASQUI_II
+2025/12/14 15:25:39.448  INFO: Clean disconnect from CHASQUI_II (returned nil)
+2025/12/14 15:25:39.448  INFO: Connection Lost for CHASQUI_II
+2025/12/14 15:25:39.448  INFO: Stopped packet reading for CHASQUI_II
+2025/12/14 15:25:39.457  INFO: Disconnected from interface CHASQUI_II
+2025/12/14 15:25:57.635  INFO: User connecting interface CHASQUI_II
+2025/12/14 15:25:57.635  INFO: Creating thread for interface CHASQUI_II
+2025/12/14 15:25:57.635  INFO: Starting packet reading for CHASQUI_II
+2025/12/14 15:25:57.635  INFO: Connecting to CHASQUI_II...
+2025/12/14 15:25:57.637  INFO: CHASQUI_II Connection Success
+2025/12/14 16:07:33.622  INFO: Clean disconnect from CHASQUI_II (returned nil)
+2025/12/14 16:07:33.622  INFO: Connection Lost for CHASQUI_II
+2025/12/14 16:07:38.697  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:07:38.700  INFO: CHASQUI_II Connection Success
+2025/12/14 16:12:48.959  INFO: Clean disconnect from CHASQUI_II (returned nil)
+2025/12/14 16:12:48.959  INFO: Connection Lost for CHASQUI_II
+2025/12/14 16:12:54.026  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:12:59.102  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:13:04.173  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:13:09.253  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:13:14.325  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:13:19.401  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:13:24.488  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:13:29.675  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:13:34.751  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:13:39.825  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:13:44.905  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:13:49.985  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:13:55.055  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:14:00.126  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:14:05.197  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:14:10.281  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:14:15.364  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:14:20.442  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:14:25.509  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:14:30.586  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:14:35.659  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:14:40.729  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:14:45.814  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:14:50.981  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:14:56.060  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:15:01.131  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:15:06.198  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:15:11.265  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:15:16.345  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:15:21.424  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:15:26.495  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:15:31.567  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:15:36.644  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:15:41.722  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:15:46.796  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:15:51.878  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:15:56.951  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:16:02.023  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:16:07.097  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:16:12.183  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:16:17.251  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:16:22.331  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:16:27.406  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:16:32.472  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:16:37.483  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:16:42.494  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:16:47.505  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:16:52.517  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:16:57.527  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:17:02.537  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:17:07.548  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:17:12.560  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:17:17.581  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:17:22.654  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:17:27.735  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:17:32.811  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:17:37.883  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:17:42.961  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:17:48.037  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:17:53.111  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:17:58.191  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:18:03.267  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:18:08.348  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:18:13.426  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:18:18.509  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:18:23.586  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:18:28.660  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:18:33.738  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:18:38.813  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:18:43.892  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:18:48.963  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:18:54.042  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:18:59.116  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:19:04.184  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:19:09.257  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:19:14.333  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:19:19.407  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:19:24.481  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:19:29.562  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:19:34.629  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:19:39.696  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:19:44.763  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:19:49.777  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:19:49.779  INFO: CHASQUI_II Connection Success
+2025/12/14 16:20:25.205  INFO: Clean disconnect from CHASQUI_II (returned nil)
+2025/12/14 16:20:25.205  INFO: Connection Lost for CHASQUI_II
+2025/12/14 16:20:30.273  INFO: Connecting to CHASQUI_II...
+2025/12/14 16:20:31.859  INFO: Log File Closed : D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/logs/2025_12_14_15_15_38_tlm.bin
+2025/12/14 16:20:31.960  INFO: Disconnected from router INST_ROUTER
+2025/12/14 16:20:31.960  INFO: Killing thread for router PREIDENTIFIED_ROUTER
+2025/12/14 16:20:31.961  INFO: Clean disconnect from PREIDENTIFIED_ROUTER (returned nil)
+2025/12/14 16:20:31.961  INFO: Connection Lost for PREIDENTIFIED_ROUTER
+2025/12/14 16:20:32.013  INFO: Stopped packet reading for PREIDENTIFIED_ROUTER
+2025/12/14 16:20:32.023  INFO: Disconnected from router PREIDENTIFIED_ROUTER
+2025/12/14 16:20:32.023  INFO: Killing thread for router PREIDENTIFIED_CMD_ROUTER
+2025/12/14 16:20:32.028  INFO: Stopped packet reading for PREIDENTIFIED_CMD_ROUTER
+2025/12/14 16:20:32.107  INFO: Disconnected from router PREIDENTIFIED_CMD_ROUTER
+2025/12/14 16:20:32.129  INFO: Disconnected from interface INST_INT
+2025/12/14 16:20:32.129  INFO: Disconnected from interface INST2_INT
+2025/12/14 16:20:32.129  INFO: Disconnected from interface SYSTEM_INT
+2025/12/14 16:20:32.129  INFO: Killing thread for interface CHASQUI_II
+2025/12/14 16:20:35.291  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 16:20:35.292  INFO: Stopped packet reading for CHASQUI_II
+2025/12/14 16:20:35.292  INFO: Disconnected from interface CHASQUI_II
+2025/12/14 16:20:35.294  INFO: Raw Log File Closed : D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/logs/2025_12_14_15_15_38_chasqui_ii_raw_read_75175400.bin

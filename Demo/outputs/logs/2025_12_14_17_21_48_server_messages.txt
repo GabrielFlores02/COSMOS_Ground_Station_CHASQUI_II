@@ -1,0 +1,16 @@
+2025/12/14 17:21:48.219  INFO: Log File Closed : D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/logs/2025_12_14_17_17_36_cmd.bin
+2025/12/14 17:21:48.220  INFO: Log File Closed : D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/logs/2025_12_14_16_59_34_tlm.bin
+2025/12/14 17:21:48.320  INFO: Disconnected from router INST_ROUTER
+2025/12/14 17:21:48.320  INFO: Killing thread for router PREIDENTIFIED_ROUTER
+2025/12/14 17:21:48.320  INFO: Clean disconnect from PREIDENTIFIED_ROUTER (returned nil)
+2025/12/14 17:21:48.321  INFO: Connection Lost for PREIDENTIFIED_ROUTER
+2025/12/14 17:21:48.414  INFO: Stopped packet reading for PREIDENTIFIED_ROUTER
+2025/12/14 17:21:48.425  INFO: Disconnected from router PREIDENTIFIED_ROUTER
+2025/12/14 17:21:48.425  INFO: Killing thread for router PREIDENTIFIED_CMD_ROUTER
+2025/12/14 17:21:48.433  INFO: Stopped packet reading for PREIDENTIFIED_CMD_ROUTER
+2025/12/14 17:21:48.489  INFO: Disconnected from router PREIDENTIFIED_CMD_ROUTER
+2025/12/14 17:21:48.510  INFO: Disconnected from interface INST_INT
+2025/12/14 17:21:48.510  INFO: Disconnected from interface INST2_INT
+2025/12/14 17:21:48.510  INFO: Disconnected from interface SYSTEM_INT
+2025/12/14 17:21:48.510  INFO: Disconnected from interface CHASQUI_II
+2025/12/14 17:21:48.511  INFO: Raw Log File Closed : D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/logs/2025_12_14_16_59_34_chasqui_ii_raw_read_47577120.bin

@@ -1,0 +1,67 @@
+2025/12/14 15:01:12.759  INFO: COSMOS Version: 4.5.2
+2025/12/14 15:01:12.759  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/tools/cmd_tlm_server/cmd_tlm_server.txt
+2025/12/14 15:01:12.776  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/INST/cmd_tlm_server.txt
+2025/12/14 15:01:12.780  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/INST/cmd_tlm_server2.txt
+2025/12/14 15:01:12.952  INFO: Marshal load success: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/tmp/marshal_0d7cfb3a39a0887070fa9b77583e5eb4.bin
+2025/12/14 15:01:13.158  INFO: Creating thread for router PREIDENTIFIED_ROUTER
+2025/12/14 15:01:13.159  INFO: Creating thread for router PREIDENTIFIED_CMD_ROUTER
+2025/12/14 15:01:13.160  INFO: Creating thread for interface CHASQUI_II
+2025/12/14 15:01:13.173  INFO: Starting packet reading for PREIDENTIFIED_ROUTER
+2025/12/14 15:01:13.173  INFO: Connecting to PREIDENTIFIED_ROUTER...
+2025/12/14 15:01:13.174  INFO: PREIDENTIFIED_ROUTER Connection Success
+2025/12/14 15:01:13.174  INFO: Starting connection maintenance for PREIDENTIFIED_CMD_ROUTER
+2025/12/14 15:01:13.175  INFO: Connecting to PREIDENTIFIED_CMD_ROUTER...
+2025/12/14 15:01:13.175  INFO: PREIDENTIFIED_CMD_ROUTER Connection Success
+2025/12/14 15:01:13.176  INFO: Starting packet reading for CHASQUI_II
+2025/12/14 15:01:13.176  INFO: Connecting to CHASQUI_II...
+2025/12/14 15:01:18.231  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 15:01:18.247  INFO: Enabling Limits Group: INST2_TEMP2
+2025/12/14 15:01:18.247  INFO: Enabling Limits Group: INST2_GROUND
+2025/12/14 15:01:23.297  INFO: Connecting to CHASQUI_II...
+2025/12/14 15:01:23.299  INFO: CHASQUI_II Connection Success
+2025/12/14 15:01:23.302  INFO: Raw Log File Opened : D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/logs/2025_12_14_15_01_23_chasqui_ii_raw_read_46415260.bin
+2025/12/14 15:01:23.302  ERROR: CHASQUI_II BEACON received with actual packet length of 13 but defined length of 155
+2025/12/14 15:01:23.310  INFO: Log File Opened : D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/logs/2025_12_14_15_01_23_tlm.bin
+2025/12/14 15:01:23.310  ERROR: CHASQUI_II: Sync not found. Discarding 142 bytes of data.
+2025/12/14 15:01:23.310  ERROR: Starting: 0x01 0x01 0x00 0x00 0x01 0x00
+2025/12/14 15:01:26.309  ERROR: CHASQUI_II BEACON received with actual packet length of 14 but defined length of 155
+2025/12/14 15:01:26.309  ERROR: CHASQUI_II: Sync not found. Discarding 141 bytes of data.
+2025/12/14 15:01:26.309  ERROR: Starting: 0x01 0x00 0x00 0x01 0x00 0x00
+2025/12/14 15:01:29.315  ERROR: CHASQUI_II BEACON received with actual packet length of 15 but defined length of 155
+2025/12/14 15:01:29.316  ERROR: CHASQUI_II: Sync not found. Discarding 140 bytes of data.
+2025/12/14 15:01:29.316  ERROR: Starting: 0x00 0x00 0x01 0x00 0x00 0x05
+2025/12/14 15:01:32.328  ERROR: CHASQUI_II STATICPARS received with actual packet length of 16 but defined length of 95
+2025/12/14 15:01:32.329  ERROR: CHASQUI_II: Sync not found. Discarding 254 bytes of data.
+2025/12/14 15:01:32.329  ERROR: Starting: 0x00 0x10 0x27 0x00 0x00 0x60
+2025/12/14 15:01:35.339  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 17 but defined length of 146
+2025/12/14 15:01:35.339  ERROR: CHASQUI_II: Sync not found. Discarding 409 bytes of data.
+2025/12/14 15:01:35.339  ERROR: Starting: 0x42 0x04 0x9F 0x17 0x3F 0x69
+2025/12/14 15:01:38.355  ERROR: CHASQUI_II BEACON received with actual packet length of 18 but defined length of 155
+2025/12/14 15:01:38.355  ERROR: CHASQUI_II: Sync not found. Discarding 137 bytes of data.
+2025/12/14 15:01:38.355  ERROR: Starting: 0x00 0x00 0x05 0x40 0x1F 0x4C
+2025/12/14 15:01:41.355  ERROR: CHASQUI_II BEACON received with actual packet length of 19 but defined length of 155
+2025/12/14 15:01:41.355  ERROR: CHASQUI_II: Sync not found. Discarding 136 bytes of data.
+2025/12/14 15:01:41.355  ERROR: Starting: 0x00 0x05 0x40 0x1F 0x4C 0x1D
+2025/12/14 15:01:44.370  ERROR: CHASQUI_II BEACON received with actual packet length of 20 but defined length of 155
+2025/12/14 15:01:44.370  ERROR: CHASQUI_II: Sync not found. Discarding 135 bytes of data.
+2025/12/14 15:01:44.370  ERROR: Starting: 0x05 0x40 0x1F 0x4C 0x1D 0x32
+2025/12/14 15:01:47.386  ERROR: CHASQUI_II STATICPARS received with actual packet length of 21 but defined length of 95
+2025/12/14 15:01:47.386  ERROR: CHASQUI_II: Sync not found. Discarding 249 bytes of data.
+2025/12/14 15:01:47.386  ERROR: Starting: 0x60 0xEA 0x00 0x00 0x00 0x00
+2025/12/14 15:01:50.398  ERROR: CHASQUI_II DYNAMICPARS received with actual packet length of 22 but defined length of 146
+2025/12/14 15:01:50.398  ERROR: CHASQUI_II: Sync not found. Discarding 17 bytes of data.
+2025/12/14 15:01:50.398  ERROR: Starting: 0x69 0xA0 0x00 0x00 0x00 0x02
+2025/12/14 15:01:50.398  ERROR: CHASQUI_II: Sync not found. Discarding 274 bytes of data.
+2025/12/14 15:01:50.398  ERROR: Starting: 0x00 0x82 0x25 0x7D 0x03 0x49
+2025/12/14 15:01:50.398  ERROR: CHASQUI_II: Sync not found. Discarding 68 bytes of data.
+2025/12/14 15:01:50.398  ERROR: Starting: 0x05 0x00 0x00 0x67 0x0C 0x00
+2025/12/14 15:01:50.399  ERROR: CHASQUI_II: Sync not found. Discarding 45 bytes of data.
+2025/12/14 15:01:50.399  ERROR: Starting: 0x09 0x00 0x00 0x1F 0x0F 0x00
+2025/12/14 15:01:50.728  INFO: Clean disconnect from CHASQUI_II (returned nil)
+2025/12/14 15:01:50.728  INFO: Connection Lost for CHASQUI_II
+2025/12/14 15:01:55.804  INFO: Connecting to CHASQUI_II...
+2025/12/14 15:02:00.589  INFO: User disconnecting interface CHASQUI_II
+2025/12/14 15:02:00.589  INFO: Killing thread for interface CHASQUI_II
+2025/12/14 15:02:00.869  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 15:02:00.869  INFO: Stopped packet reading for CHASQUI_II
+2025/12/14 15:02:00.879  INFO: Disconnected from interface CHASQUI_II

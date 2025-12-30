@@ -1,0 +1,255 @@
+COMMAND CHASQUI_II ResetPeripheral BIG_ENDIAN ""
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x03 0x03 0x03 "Command Length (starting from ApId)"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 0x00 0x00 0x00 "OpCode of the command"
+  APPEND_PARAMETER Subsystem 8 UINT 0x00 0x04 0x00 
+    STATE PL      1
+    #STATE ADS     2
+    STATE EPS_I2C 3
+   # STATE BATT_HTR 4
+
+COMMAND CHASQUI_II ResetFlatsat BIG_ENDIAN ""
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x02 0x02 0x02 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 0x01 0x01 0x01 "OpCode of the command"
+
+COMMAND CHASQUI_II StreamPacket BIG_ENDIAN ""
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x04 0x04 0x04 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 0x02 0x02 0x02 "OpCode of the command"
+  APPEND_PARAMETER Packet 8 UINT 0 1 0  "Packet to be streamed"
+    STATE Beacon  0 
+    STATE PL   1
+  APPEND_PARAMETER Stream 8 UINT 0x00 0x07 0x00 "Stream to select"
+    STATE Disable       0  
+    STATE Debug         1
+    STATE Uhf           2
+    STATE Debug+Uhf     3
+   # STATE Vhf           4
+   # STATE Debug+Uhf+Vhf 7
+
+COMMAND CHASQUI_II TurnOnPeripheral BIG_ENDIAN ""
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x03 0x03 0x03 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 0x03 0x03 0x03 "OpCode of the command"
+  APPEND_PARAMETER Peripheral 8 UINT 0x00 0x04 0x00 "Peripheral to turn on"
+    STATE PL      1
+    STATE ADS     2
+    STATE EPS_I2C 3
+    STATE BATT_HTR 4
+
+COMMAND CHASQUI_II TurnOffPeripheral BIG_ENDIAN ""
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x03 0x03 0x03 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 0x04 0x04 0x04 "OpCode of the command"
+  APPEND_PARAMETER Peripheral 8 UINT 0x00 0x04 0x00 "Peripheral to turn off"
+    STATE PL      1
+    STATE ADS     2
+    STATE EPS_I2C 3
+   STATE BATT_HTR 4
+
+COMMAND CHASQUI_II IssuePacket BIG_ENDIAN ""
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x04 0x04 0x04 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 0x05 0x05 0x05 "OpCode of the command"
+  APPEND_PARAMETER Packet 8 UINT 0x00 0x04 0x00 "Packet to issue"
+    STATE Beacon  0
+    STATE PL   1
+    #STATE ADS     2
+    STATE StaticPar 3
+    STATE DynamicPar 4
+  APPEND_PARAMETER Stream 8 UINT 0x00 0x02 0x00 "Stream to issue" 
+    STATE Debug 0
+    STATE Uhf 1
+    #STATE Vhf 2
+
+COMMAND CHASQUI_II SetLinuxTime BIG_ENDIAN ""
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x06 0x06 0x06 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 0x06 0x06 0x06 "OpCode of the command"
+  APPEND_PARAMETER Seconds 32 UINT 0x00 0xFFFFFFFF 0x00 "Time in seconds" LITTLE_ENDIAN
+
+COMMAND CHASQUI_II EraseTableParams BIG_ENDIAN ""
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x02 0x02 0x02 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 0x08 0x08 0x08 "OpCode of the command"
+
+COMMAND CHASQUI_II SetEpsReadInterval BIG_ENDIAN ""
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x06 0x06 0x06 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 30 30 30 "OpCode of the command"
+  APPEND_PARAMETER Interval 32 UINT 0x00 0xFFFFFFFF 0x00 "Time in milliseconds" LITTLE_ENDIAN
+
+COMMAND CHASQUI_II SetUhfReadInterval BIG_ENDIAN ""
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x06 0x06 0x06 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 31 31 31 "OpCode of the command"
+  APPEND_PARAMETER Interval 32 UINT 0x00 0xFFFFFFFF 0x00 "Time in milliseconds" LITTLE_ENDIAN
+
+COMMAND CHASQUI_II SetBcnPacketInterval BIG_ENDIAN ""
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x06 0x06 0x06 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 32 32 32 "OpCode of the command"
+  APPEND_PARAMETER Interval 32 UINT 0x00 0xFFFFFFFF 0x00 "Time in milliseconds" LITTLE_ENDIAN
+
+COMMAND CHASQUI_II SetPacketSaveInterval BIG_ENDIAN ""
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x06 0x06 0x06 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 33 33 33 "OpCode of the command"
+  APPEND_PARAMETER PacketType 8  UINT 0x00 0x05 0x00 "Save interval for packet type"
+    STATE Beacon      0
+   # STATE Ads         2
+    STATE StaticTablePars  3
+    STATE DynamicTablePars  4
+  APPEND_PARAMETER Interval 32 UINT 0x00 0xFFFFFFFF 0x00 "Time in milliseconds" LITTLE_ENDIAN
+
+COMMAND CHASQUI_II SetPlInterval BIG_ENDIAN ""
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x06 0x06 0x06 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 34 34 34 "OpCode of the command"
+  APPEND_PARAMETER Interval 32 UINT 0x00 0xFFFFFFFF 0x00 "Time in milliseconds" LITTLE_ENDIAN
+
+COMMAND CHASQUI_II SetDeploymentInterval BIG_ENDIAN ""
+  APPEND_PARAMETER SYNC 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x07 0x07 0x07 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 35 35 35 "OpCode of the command"
+  APPEND_PARAMETER Deployable 8 UINT 0x00 0x03 0x00 "Select deployables"
+    STATE All   0
+    STATE SP1   1
+    STATE SP2   2
+    STATE ANT   3
+  APPEND_PARAMETER Interval 32 UINT 0x00 0xFFFFFFFF 0x00 "Time in milliseconds" LITTLE_ENDIAN
+
+COMMAND CHASQUI_II SetDeploymentFlag BIG_ENDIAN ""
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x03 0x03 0x03 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 36 36 36 "OpCode of the command"
+  APPEND_PARAMETER Flag 8 UINT 0x00 0x01 0x01 "Dep Flag"
+    STATE Stop  0
+    STATE Retry 1
+
+COMMAND CHASQUI_II SetCltTimeout BIG_ENDIAN ""
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x06 0x06 0x06 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 37 37 37 "OpCode of the command"
+  APPEND_PARAMETER Timeout 32 UINT 0x00 0xFFFFFFFF 0x00 "Time in milliseconds" LITTLE_ENDIAN
+
+#COMMAND CHASQUI_II SetAdsReadInterval BIG_ENDIAN ""
+ # APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  #APPEND_PARAMETER CmdLen 8 UINT 0x06 0x06 0x06 "Command Length"
+  #APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  #APPEND_PARAMETER OpCode 8 UINT 38 38 38 "OpCode of the command"
+  #APPEND_PARAMETER Interval 32 UINT 0x00 0xFFFFFFFF 0x00 "Time in milliseconds" #LITTLE_ENDIAN
+
+COMMAND CHASQUI_II Playback BIG_ENDIAN ""
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x0B 0x0B 0x0B "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "AP_ID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 50 50 50 "OpCode of the command"
+  APPEND_PARAMETER Partition 8 UINT 0 5 0 "Partition to playback"
+    STATE StaticTable   0
+    STATE DynamicTable  1
+    STATE Beacon        2
+    STATE EpsI2C          3
+   # STATE Ads           4
+   STATE PL          5  #STATE            5
+  APPEND_PARAMETER ReadPointer 32 UINT 0 0xFFFFFFFF 0 "Read pointer to start playback from" LITTLE_ENDIAN
+  APPEND_PARAMETER NPackets 32 UINT 0 500 0 "Number of packets" LITTLE_ENDIAN
+
+  COMMAND CHASQUI_II ResetWritePointer BIG_ENDIAN ""
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x03 0x03 0x03 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "AP_ID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 51 51 51 "OpCode of the command"
+  APPEND_PARAMETER PacketType 8 UINT 0 2 0 "Write pointer to reset"
+    STATE Beacon      0
+    STATE PL         1
+    #STATE Ads         2
+ 
+
+COMMAND CHASQUI_II SwitchtoNominal BIG_ENDIAN "Command to switch satellite mode to nominal"
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x02 0x02 0x02 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 55 55 55 "OpCode of the command"
+
+COMMAND CHASQUI_II SwitchtoSafe BIG_ENDIAN "Command to switch satellite mode to safe"
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x02 0x02 0x02 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 56 56 56 "OpCode of the command"
+
+COMMAND CHASQUI_II SetModeThresholds BIG_ENDIAN "Command to define safe exit and enter thresholds"
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 6 6 6 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0 0 0 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 57 57 57 "OpCode of the command"
+  APPEND_PARAMETER ExitThresh 16 UINT 0 0xFFFF 8000 "Safe exit threshold in mV" LITTLE_ENDIAN
+  APPEND_PARAMETER EnterThresh 16 UINT 0 0xFFFF 7500 "Safe enter threshold in mV" LITTLE_ENDIAN
+
+COMMAND CHASQUI_II SetModeOverrideFlag BIG_ENDIAN "Command to set auto mode override flag"
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 3 3 3 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0 0 0 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 58 58 58 "OpCode of the command"
+  APPEND_PARAMETER OverrideFlag 8 UINT 0 1 0 "Flag value"
+    STATE Off   0
+    STATE On    1
+
+COMMAND CHASQUI_II SetBattHtrThresholds BIG_ENDIAN "Command to define battery heater automation thresholds"
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 6 6 6 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0 0 0 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 60 60 60 "OpCode of the command"
+  APPEND_PARAMETER HtrOnThresh 16 UINT 0 0xFFFF 1700 "Raw value for NTC Heater on threshold" LITTLE_ENDIAN
+  APPEND_PARAMETER HtrOffThresh 16 UINT 0 0xFFFF 1200 "Raw value for NTC Heater off threshold" LITTLE_ENDIAN 
+
+COMMAND CHASQUI_II SetBattHtrOverrideFlag BIG_ENDIAN "Command to set battery heater override flag"
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 3 3 3 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0 0 0 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 61 61 61 "OpCode of the command"
+  APPEND_PARAMETER OverrideFlag 8 UINT 0 1 0 "Flag value"
+    STATE Off   0
+    STATE On    1
+
+COMMAND CHASQUI_II NoOperation BIG_ENDIAN "No operations command to check aliveness of TC"
+  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  APPEND_PARAMETER CmdLen 8 UINT 0x02 0x02 0x02 "Command Length"
+  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  APPEND_PARAMETER OpCode 8 UINT 70 70 70 "OpCode of the command"
+
+#COMMAND CHASQUI_II SetGsAddress BIG_ENDIAN "Command to change the ground station address in firmware"
+ # APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+ # APPEND_PARAMETER CmdLen 8 UINT 0x04 0x04 0x04 "Command Length"
+ # APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+ # APPEND_PARAMETER OpCode 8 UINT 75 75 75 "OpCode of the command"
+ # APPEND_PARAMETER GsAddress 16 UINT 0x3030 0x4646 0x3232 "Ground statio radio address" 
+
+#COMMAND CHASQUI_II EsUhfSetSCW BIG_ENDIAN "Test command for endurosat UHF set status, control word"
+  #APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+  #APPEND_PARAMETER CmdLen 8 UINT 0x02 0x02 0x02 "Command Length"
+  #APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+  #APPEND_PARAMETER OpCode 8 UINT 128 128 128 "OpCode of the command"
+
+#COMMAND CHASQUI_II AdsGetTlm BIG_ENDIAN "Test command for ADS get telemetry"
+#  APPEND_PARAMETER Sync 24 UINT 0x483230 0x483230 0x483230 "Sync pattern"
+#  APPEND_PARAMETER CmdLen 8 UINT 0x02 0x02 0x02 "Command Length"
+#  APPEND_PARAMETER ApID 8 UINT 0x00 0x00 0x00 "ApID of Command"
+#  APPEND_PARAMETER OpCode 8 UINT 130 130 130 "OpCode of the command"

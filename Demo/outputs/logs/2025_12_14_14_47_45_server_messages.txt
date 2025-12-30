@@ -1,0 +1,48 @@
+2025/12/14 14:47:44.940  INFO: Disconnected from router INST_ROUTER
+2025/12/14 14:47:44.940  INFO: Killing thread for router PREIDENTIFIED_ROUTER
+2025/12/14 14:47:44.940  INFO: Clean disconnect from PREIDENTIFIED_ROUTER (returned nil)
+2025/12/14 14:47:44.940  INFO: Connection Lost for PREIDENTIFIED_ROUTER
+2025/12/14 14:47:44.993  INFO: Stopped packet reading for PREIDENTIFIED_ROUTER
+2025/12/14 14:47:44.994  INFO: Disconnected from router PREIDENTIFIED_ROUTER
+2025/12/14 14:47:44.994  INFO: Killing thread for router PREIDENTIFIED_CMD_ROUTER
+2025/12/14 14:47:45.000  INFO: Stopped packet reading for PREIDENTIFIED_CMD_ROUTER
+2025/12/14 14:47:45.087  INFO: Disconnected from router PREIDENTIFIED_CMD_ROUTER
+2025/12/14 14:47:45.119  INFO: Disconnected from interface INST_INT
+2025/12/14 14:47:45.119  INFO: Disconnected from interface INST2_INT
+2025/12/14 14:47:45.119  INFO: Disconnected from interface SYSTEM_INT
+2025/12/14 14:47:45.119  INFO: Disconnected from interface CHASQUI_II
+2025/12/14 14:47:45.146  INFO: Processing target definition in file 'D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/INST/target.txt'
+2025/12/14 14:47:45.160  INFO: Processing target definition in file 'D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/INST/target.txt'
+2025/12/14 14:47:45.175  INFO: Processing target definition in file 'D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/EXAMPLE/target.txt'
+2025/12/14 14:47:45.189  INFO: Processing target definition in file 'D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/TEMPLATED/target.txt'
+2025/12/14 14:47:45.196  INFO: Processing target definition in file 'D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/DART/target.txt'
+2025/12/14 14:47:45.209  INFO: Processing target definition in file 'D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/SYSTEM/target.txt'
+2025/12/14 14:47:45.268  INFO: Marshal load success: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/outputs/tmp/marshal_0d7cfb3a39a0887070fa9b77583e5eb4.bin
+2025/12/14 14:47:45.280  INFO: COSMOS Version: 4.5.2
+2025/12/14 14:47:45.280  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/tools/cmd_tlm_server/cmd_tlm_server.txt
+2025/12/14 14:47:45.282  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/INST/cmd_tlm_server.txt
+2025/12/14 14:47:45.286  INFO: Processing CmdTlmServer configuration in file: D:/gabri/Documents/COSMOS/COSMOS_CH2/Demo/config/targets/INST/cmd_tlm_server2.txt
+2025/12/14 14:47:45.503  INFO: Creating thread for router PREIDENTIFIED_ROUTER
+2025/12/14 14:47:45.504  INFO: Creating thread for router PREIDENTIFIED_CMD_ROUTER
+2025/12/14 14:47:45.504  INFO: Creating thread for interface CHASQUI_II
+2025/12/14 14:47:45.505  INFO: Starting packet reading for PREIDENTIFIED_ROUTER
+2025/12/14 14:47:45.505  INFO: Connecting to PREIDENTIFIED_ROUTER...
+2025/12/14 14:47:45.506  INFO: PREIDENTIFIED_ROUTER Connection Success
+2025/12/14 14:47:45.506  INFO: Starting connection maintenance for PREIDENTIFIED_CMD_ROUTER
+2025/12/14 14:47:45.506  INFO: Connecting to PREIDENTIFIED_CMD_ROUTER...
+2025/12/14 14:47:45.506  INFO: PREIDENTIFIED_CMD_ROUTER Connection Success
+2025/12/14 14:47:45.517  INFO: Starting packet reading for CHASQUI_II
+2025/12/14 14:47:45.517  INFO: Connecting to CHASQUI_II...
+2025/12/14 14:47:50.598  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 14:47:50.598  INFO: Enabling Limits Group: INST2_TEMP2
+2025/12/14 14:47:50.598  INFO: Enabling Limits Group: INST2_GROUND
+2025/12/14 14:47:55.674  INFO: Connecting to CHASQUI_II...
+2025/12/14 14:48:00.740  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 14:48:05.752  INFO: Connecting to CHASQUI_II...
+2025/12/14 14:48:10.765  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 14:48:15.776  INFO: Connecting to CHASQUI_II...
+2025/12/14 14:48:17.096  INFO: User disconnecting interface CHASQUI_II
+2025/12/14 14:48:17.096  INFO: Killing thread for interface CHASQUI_II
+2025/12/14 14:48:20.787  ERROR: CHASQUI_II Connection Failed: RuntimeError : Connect timeout
+2025/12/14 14:48:20.787  INFO: Stopped packet reading for CHASQUI_II
+2025/12/14 14:48:20.797  INFO: Disconnected from interface CHASQUI_II

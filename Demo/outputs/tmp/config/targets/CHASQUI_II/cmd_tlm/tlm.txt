@@ -1,0 +1,376 @@
+############################################
+## Beacon packet definition (CORREGIDO)
+############################################
+
+TELEMETRY CHASQUI_II BEACON BIG_ENDIAN "Beacon telemetry packet"
+  # Header
+  ARRAY_ITEM Sync 0 8 UINT 24 "Sync word 0x483230"
+  APPEND_ITEM Version 8 UINT "Protocol version"
+  APPEND_ID_ITEM ApID 8 UINT 16 "Application ID"
+  APPEND_ITEM Seq_Number 16 UINT "Sequence number"
+  APPEND_ITEM Packet_Size 16 UINT "Packet size in bytes"
+  APPEND_ITEM Obc_Time_Hdr 32 UINT "OBC timestamp"
+  
+  # Estado del satélite
+  APPEND_ITEM Sat_Curr_Mode 8 UINT "Satellite operational mode"
+    STATE SAFE 0 GREEN
+    STATE NOMINAL 1 GREEN
+    STATE UNDEFINED ANY RED
+    
+  APPEND_ITEM Pslv_Deployment_Flag 8 UINT "PSLV deployment status"
+    STATE NOT_DEPLOYED 0 RED
+    STATE DEPLOYED 1 GREEN
+    
+  APPEND_ITEM Antenna_Panels_Deployment_Retry_Flag 8 UINT "Deployment retry flag"
+  APPEND_ITEM Buffer1 8 UINT "Reserved"
+  APPEND_ITEM Current_SD 8 UINT "Current SD card"
+  APPEND_ITEM I2c_Error_Flag 8 UINT "I2C error flag"
+  APPEND_ITEM Buffer2 8 UINT "Reserved"
+  APPEND_ITEM Last_Command_Opcode 8 UINT "Last executed command"
+  
+  # Thresholds
+  APPEND_ITEM Safe_Exit_Threshold 16 UINT "Safe mode exit threshold (mV)"
+  APPEND_ITEM Safe_Enter_Threshold 16 UINT "Safe mode enter threshold (mV)"
+  APPEND_ITEM Payload_Op_Temp_Cut_Off 16 UINT "Payload temperature cutoff"
+  
+  # Tiempos y contadores
+  APPEND_ITEM Obc_Time 32 UINT "OBC time"
+  APPEND_ITEM Boot_Counter 32 UINT "System boot counter"
+  
+  # Punteros de memoria flash
+  APPEND_ITEM Beacon_Flash_Write_Ptr 32 UINT "Beacon write pointer"
+  APPEND_ITEM Beacon_Flash_Read_Ptr 32 UINT "Beacon read pointer"
+  APPEND_ITEM Payload_Flash_Write_Ptr 32 UINT "Payload write pointer"
+  APPEND_ITEM Payload_Flash_Read_Ptr 32 UINT "Payload read pointer"
+  APPEND_ITEM Payload_Packet_Flash_Write_Ptr 32 UINT "Payload packet write pointer"
+  APPEND_ITEM Payload_Packet_Flash_Read_Ptr 32 UINT "Payload packet read pointer"
+  
+  # Contadores de comandos
+  APPEND_ITEM Command_Accept_Counter 32 UINT "Accepted commands"
+    LIMITS DEFAULT 1 ENABLED 0 0 1000000 1000000
+  APPEND_ITEM Command_Reject_Counter 32 UINT "Rejected commands"
+    LIMITS DEFAULT 1 ENABLED 0 0 100 200
+    
+  # Timers
+  APPEND_ITEM Beac_Threshold_Time 64 UINT "Beacon threshold time"
+  APPEND_ITEM Beacon_Timeout_Threshold_Time 64 UINT "Beacon timeout"
+  APPEND_ITEM Beacon_Timer_Countdown_Time 64 UINT "Beacon countdown"
+  
+  # ========================================
+  # EPS TELEMETRY - Solar Panels
+  # ========================================
+  APPEND_ITEM Panel0_Curr 16 UINT "Panel 0 current (raw)"
+    POLY_READ_CONVERSION 0.0 0.0005
+    UNITS CURRENT A
+    FORMAT_STRING "%0.3f"
+    LIMITS DEFAULT 1 ENABLED 0.0 0.05 0.5 0.6
+    
+  APPEND_ITEM Panel1_Curr 16 UINT "Panel 1 current (raw)"
+    POLY_READ_CONVERSION 0.0 0.0005
+    UNITS CURRENT A
+    FORMAT_STRING "%0.3f"
+    LIMITS DEFAULT 1 ENABLED 0.0 0.05 0.5 0.6
+    
+  APPEND_ITEM Panel2_Curr 16 UINT "Panel 2 current (raw)"
+    POLY_READ_CONVERSION 0.0 0.0005
+    UNITS CURRENT A
+    FORMAT_STRING "%0.3f"
+    LIMITS DEFAULT 1 ENABLED 0.0 0.05 0.5 0.6
+    
+  APPEND_ITEM Panel0_Volt 16 UINT "Panel 0 voltage (raw)"
+    POLY_READ_CONVERSION 0.0 0.001
+    UNITS VOLTAGE V
+    FORMAT_STRING "%0.2f"
+    LIMITS DEFAULT 1 ENABLED 0.0 2.0 8.0 9.0
+    
+  APPEND_ITEM Panel1_Volt 16 UINT "Panel 1 voltage (raw)"
+    POLY_READ_CONVERSION 0.0 0.001
+    UNITS VOLTAGE V
+    FORMAT_STRING "%0.2f"
+    LIMITS DEFAULT 1 ENABLED 0.0 2.0 8.0 9.0
+    
+  APPEND_ITEM Panel2_Volt 16 UINT "Panel 2 voltage (raw)"
+    POLY_READ_CONVERSION 0.0 0.001
+    UNITS VOLTAGE V
+    FORMAT_STRING "%0.2f"
+    LIMITS DEFAULT 1 ENABLED 0.0 2.0 8.0 9.0
+  
+  # ========================================
+  # EPS TELEMETRY - Bus Power
+  # ========================================
+  APPEND_ITEM CDH_3v3_Curr 16 UINT "CDH 3.3V rail current"
+    POLY_READ_CONVERSION 0.0 0.0005
+    UNITS CURRENT A
+    LIMITS DEFAULT 1 ENABLED 0.0 0.05 0.5 0.6
+    
+  APPEND_ITEM UHF_6v_Curr 16 UINT "UHF 6V rail current"
+    POLY_READ_CONVERSION 0.0 0.0005
+    UNITS CURRENT A
+    LIMITS DEFAULT 1 ENABLED 0.0 0.05 1.5 2.0
+    
+  APPEND_ITEM ADCS_12v_Curr 16 UINT "ADCS 12V rail current"
+    POLY_READ_CONVERSION 0.0 0.0005
+    UNITS CURRENT A
+    LIMITS DEFAULT 1 ENABLED 0.0 0.05 0.5 0.6
+    
+  APPEND_ITEM CDH_3v3_Volt 16 UINT "CDH 3.3V rail voltage"
+    POLY_READ_CONVERSION 0.0 0.001
+    UNITS VOLTAGE V
+    LIMITS DEFAULT 1 ENABLED 3.0 3.2 3.4 3.6
+    
+  APPEND_ITEM UHF_6v_Volt 16 UINT "UHF 6V rail voltage"
+    POLY_READ_CONVERSION 0.0 0.001
+    UNITS VOLTAGE V
+    LIMITS DEFAULT 1 ENABLED 5.5 5.8 6.2 6.5
+    
+  APPEND_ITEM ADCS_12v_Volt 16 UINT "ADCS 12V rail voltage"
+    POLY_READ_CONVERSION 0.0 0.001
+    UNITS VOLTAGE V
+    LIMITS DEFAULT 1 ENABLED 11.0 11.5 12.5 13.0
+    
+  # ========================================
+  # EPS TELEMETRY - Battery & Payload
+  # ========================================
+  APPEND_ITEM PL_12v_Curr 16 UINT "Payload 12V current"
+    POLY_READ_CONVERSION 0.0 0.0005
+    UNITS CURRENT A
+    LIMITS DEFAULT 1 ENABLED 0.0 0.05 1.0 1.5
+    
+  APPEND_ITEM Batt_Htr_Curr 16 UINT "Battery heater current"
+    POLY_READ_CONVERSION 0.0 0.0005
+    UNITS CURRENT A
+    LIMITS DEFAULT 1 ENABLED 0.0 0.0 0.5 1.0
+    
+  APPEND_ITEM Main_Batt_Curr 16 UINT "Main battery current"
+    POLY_READ_CONVERSION 0.0 0.0005
+    UNITS CURRENT A
+    FORMAT_STRING "%0.3f"
+    LIMITS DEFAULT 1 ENABLED -0.5 -0.1 2.0 2.5
+    
+  APPEND_ITEM PL_12v_Volt 16 UINT "Payload 12V voltage"
+    POLY_READ_CONVERSION 0.0 0.001
+    UNITS VOLTAGE V
+    LIMITS DEFAULT 1 ENABLED 11.0 11.5 12.5 13.0
+    
+  APPEND_ITEM Batt_Htr_Volt 16 UINT "Battery heater voltage"
+    POLY_READ_CONVERSION 0.0 0.001
+    UNITS VOLTAGE V
+    LIMITS DEFAULT 1 ENABLED 6.0 6.5 8.5 9.0
+    
+  APPEND_ITEM Main_Batt_Volt 16 UINT "Main battery voltage"
+    POLY_READ_CONVERSION 0.0 0.001
+    UNITS VOLTAGE V
+    FORMAT_STRING "%0.2f"
+    # CRÍTICO: Estos son los límites más importantes
+    LIMITS DEFAULT 1 ENABLED 6.5 7.0 8.4 8.8
+    LIMITS SAFE 1 ENABLED 7.0 7.2 8.4 8.6
+    
+  APPEND_ITEM Battery_charge_Curr 16 UINT "Battery charge current"
+    POLY_READ_CONVERSION 0.0 0.0005
+    UNITS CURRENT A
+    LIMITS DEFAULT 1 ENABLED 0.0 0.0 1.0 1.5
+    
+  APPEND_ITEM Battery_charge_Volt 16 UINT "Battery charge voltage"
+    POLY_READ_CONVERSION 0.0 0.00125
+    UNITS VOLTAGE V
+    LIMITS DEFAULT 1 ENABLED 6.5 7.0 8.8 9.0
+  
+  # ========================================
+  # THERMAL TELEMETRY
+  # ========================================
+  APPEND_ITEM Temp_SP0 16 UINT "Solar Panel 0 temperature"
+    POLY_READ_CONVERSION 91.394 -0.08949 3.55E-05 -6.26E-09 1.89E-13
+    UNITS CELSIUS C
+    FORMAT_STRING "%0.1f"
+    LIMITS DEFAULT 1 ENABLED -20.0 -10.0 50.0 60.0
+    
+  APPEND_ITEM Temp_SP1 16 UINT "Solar Panel 1 temperature"
+    POLY_READ_CONVERSION 91.394 -0.08949 3.55E-05 -6.26E-09 1.89E-13
+    UNITS CELSIUS C
+    FORMAT_STRING "%0.1f"
+    LIMITS DEFAULT 1 ENABLED -20.0 -10.0 50.0 60.0
+    
+  APPEND_ITEM Temp_SP2 16 UINT "Solar Panel 2 temperature"
+    POLY_READ_CONVERSION 91.394 -0.08949 3.55E-05 -6.26E-09 1.89E-13
+    UNITS CELSIUS C
+    FORMAT_STRING "%0.1f"
+    LIMITS DEFAULT 1 ENABLED -20.0 -10.0 50.0 60.0
+    
+  APPEND_ITEM Temp_Bat_TH1 16 UINT "Battery thermistor 1"
+    POLY_READ_CONVERSION -265 1.57
+    UNITS CELSIUS C
+    FORMAT_STRING "%0.1f"
+    LIMITS DEFAULT 1 ENABLED -10.0 0.0 30.0 40.0
+    
+  APPEND_ITEM Temp_Bat_TH2 16 UINT "Battery thermistor 2"
+    POLY_READ_CONVERSION -265 1.57
+    UNITS CELSIUS C
+    FORMAT_STRING "%0.1f"
+    LIMITS DEFAULT 1 ENABLED -10.0 0.0 30.0 40.0
+    
+  APPEND_ITEM Temp_CDH 16 UINT "CDH board temperature"
+    POLY_READ_CONVERSION 91.394 -0.08949 3.55E-05 -6.26E-09 1.89E-13
+    UNITS CELSIUS C
+    FORMAT_STRING "%0.1f"
+    LIMITS DEFAULT 1 ENABLED -15.0 -5.0 45.0 55.0
+    
+  APPEND_ITEM Temp_IF_card 16 UINT "Interface card temperature"
+    POLY_READ_CONVERSION 91.394 -0.08949 3.55E-05 -6.26E-09 1.89E-13
+    UNITS CELSIUS C
+    FORMAT_STRING "%0.1f"
+    LIMITS DEFAULT 1 ENABLED -15.0 -5.0 45.0 55.0
+    
+  APPEND_ITEM Temp_EPS 16 UINT "EPS board temperature"
+    POLY_READ_CONVERSION 91.394 -0.08949 3.55E-05 -6.26E-09 1.89E-13
+    UNITS CELSIUS C
+    FORMAT_STRING "%0.1f"
+    LIMITS DEFAULT 1 ENABLED -15.0 -5.0 50.0 60.0
+  
+  # ========================================
+  # BATTERY STATE OF CHARGE
+  # ========================================
+  APPEND_ITEM EPS_FG1_SoC 16 UINT "Fuel gauge 1 state of charge"
+    POLY_READ_CONVERSION 0.0 0.00390625
+    UNITS PERCENT %
+    FORMAT_STRING "%0.1f"
+    LIMITS DEFAULT 1 ENABLED 10.0 20.0 100.0 100.0
+    
+  APPEND_ITEM EPS_FG2_SoC 16 UINT "Fuel gauge 2 state of charge"
+    POLY_READ_CONVERSION 0.0 0.00390625
+    UNITS PERCENT %
+    FORMAT_STRING "%0.1f"
+    LIMITS DEFAULT 1 ENABLED 10.0 20.0 100.0 100.0
+    
+  APPEND_ITEM EPS_FG3_SoC 16 UINT "Fuel gauge 3 state of charge"
+    POLY_READ_CONVERSION 0.0 0.00390625
+    UNITS PERCENT %
+    FORMAT_STRING "%0.1f"
+    LIMITS DEFAULT 1 ENABLED 10.0 20.0 100.0 100.0
+  
+  # CRC
+  APPEND_ITEM CRC 16 UINT "Packet CRC"
+
+
+############################################
+## Static Parameters packet (CORREGIDO)
+############################################
+
+TELEMETRY CHASQUI_II STATICPARS BIG_ENDIAN "Static configuration parameters"
+  # Header
+  ARRAY_ITEM Sync 0 8 UINT 24 "Sync word"
+  APPEND_ITEM Version 8 UINT "Version"
+  APPEND_ID_ITEM ApID 8 UINT 128 "Application ID"
+  APPEND_ITEM Seq_Number 16 UINT "Sequence number"
+  APPEND_ITEM Packet_Size 16 UINT "Packet size"
+  APPEND_ITEM Obc_Time_Hdr 32 UINT "OBC timestamp"
+  
+  # Intervals
+  APPEND_ITEM EpsReadInterval 32 UINT "EPS read interval (ms)"
+  APPEND_ITEM UhfReadInterval 32 UINT "UHF read interval (ms)"
+  APPEND_ITEM PlReadInterval 32 UINT "Payload read interval (ms)"
+  APPEND_ITEM Buffer4 32 UINT "Reserved"
+  
+  # Streaming configuration
+  APPEND_ARRAY_ITEM PktActiveStreams 8 UINT 40 "Active streams config"
+  APPEND_ITEM PktInterval 32 UINT "Packet interval (ms)"
+  APPEND_ARRAY_ITEM PktSaveInterval 32 UINT 160 "Save intervals (ms)"
+  
+  # Deployment configuration
+  APPEND_ITEM DeploymentsActive 8 UINT "Deployment active flag"
+    STATE STOP 0 RED
+    STATE RETRY 1 GREEN
+  APPEND_ITEM SP1DepInterval 32 UINT "Solar panel 1 deployment interval (ms)"
+  APPEND_ITEM SP2DepInterval 32 UINT "Solar panel 2 deployment interval (ms)"
+  APPEND_ITEM AntDepInterval 32 UINT "Antenna deployment interval (ms)"
+  
+  # Timeouts
+  APPEND_ITEM FlashTimeout 32 UINT "Flash timeout (ms)"
+  APPEND_ITEM CltTimeout 32 UINT "Command loss timer (ms)"
+  
+  # Mode thresholds
+  APPEND_ITEM ModeOverrideFlag 8 UINT "Mode override flag"
+    STATE OFF 0 RED
+    STATE ON 1 GREEN
+  APPEND_ITEM SafeExitThresh 16 UINT "Safe exit threshold (mV)"
+  APPEND_ITEM SafeEnterThresh 16 UINT "Safe enter threshold (mV)"
+  
+  # Battery heater
+  APPEND_ITEM BattHtrOverrideFlag 8 UINT "Battery heater override"
+    STATE OFF 0 RED
+    STATE ON 1 GREEN
+  APPEND_ITEM BattHtrOnThresh 16 UINT "Heater ON threshold (raw)"
+  APPEND_ITEM BattHtrOffThresh 16 UINT "Heater OFF threshold (raw)"
+  
+  APPEND_ITEM Bootcounter 32 UINT "Boot counter"
+  APPEND_ITEM CRC 16 UINT "CRC"
+
+
+############################################
+## Dynamic Parameters packet (CORREGIDO)
+############################################
+
+TELEMETRY CHASQUI_II DYNAMICPARS BIG_ENDIAN "Dynamic operational parameters"
+  # Header
+  ARRAY_ITEM Sync 0 8 UINT 24 "Sync word"
+  APPEND_ITEM Version 8 UINT "Version"
+  APPEND_ID_ITEM ApID 8 UINT 129 "Application ID"
+  APPEND_ITEM Seq_Number 16 UINT "Sequence number"
+  APPEND_ITEM Packet_Size 16 UINT "Packet size"
+  APPEND_ITEM Obc_Time_Hdr 32 UINT "OBC timestamp"
+  
+  # System clock
+  APPEND_ITEM SysClk_Day 16 UINT "System clock days"
+  APPEND_ITEM SysClk_Ms 32 UINT "System clock milliseconds"
+  APPEND_ITEM ObcTime 32 UINT "OBC time"
+  
+  # Command counters
+  APPEND_ITEM ValidCmds 32 UINT "Valid commands"
+  APPEND_ITEM InvalidCmds 32 UINT "Invalid commands"
+  
+  # Current mode
+  APPEND_ITEM CurrMode 8 UINT "Current mode"
+    STATE SAFE 0 GREEN
+    STATE NOMINAL 1 GREEN
+    
+  # Last operation timestamps
+  APPEND_ITEM LastCmdTime_Day 16 UINT "Last command day"
+  APPEND_ITEM LastCmdTime_Ms 32 UINT "Last command ms"
+  APPEND_ITEM LastEpsTime_Day 16 UINT "Last EPS read day"
+  APPEND_ITEM LastEpsTime_Ms 32 UINT "Last EPS read ms"
+  APPEND_ITEM LastUhfReadTime_Day 16 UINT "Last UHF read day"
+  APPEND_ITEM LastUhfReadTime_Ms 32 UINT "Last UHF read ms"
+  APPEND_ITEM LastPlReadTime_Day 16 UINT "Last payload read day"
+  APPEND_ITEM LastPlReadTime_Ms 32 UINT "Last payload read ms"
+  APPEND_ITEM Buffer1 16 UINT "Reserved"
+  APPEND_ITEM Buffer2 32 UINT "Reserved"
+  APPEND_ITEM LastPktSendTime_Day 16 UINT "Last packet send day"
+  APPEND_ITEM LastPktSendTime_Ms 32 UINT "Last packet send ms"
+  
+  # Last save times per packet type
+  APPEND_ITEM LastPktSaveTime_Day_1 16 UINT "Last save day type 1"
+  APPEND_ITEM LastPktSaveTime_Ms_1 32 UINT "Last save ms type 1"
+  APPEND_ITEM LastPktSaveTime_Day_2 16 UINT "Last save day type 2"
+  APPEND_ITEM LastPktSaveTime_Ms_2 32 UINT "Last save ms type 2"
+  APPEND_ITEM LastPktSaveTime_Day_4 16 UINT "Last save day type 4"
+  APPEND_ITEM LastPktSaveTime_Ms_4 32 UINT "Last save ms type 4"
+  APPEND_ITEM LastPktSaveTime_Day_5 16 UINT "Last save day type 5"
+  APPEND_ITEM LastPktSaveTime_Ms_5 32 UINT "Last save ms type 5"
+  # Flash pointers
+  APPEND_ARRAY_ITEM PktWritePtr 32 UINT 160 "Write pointers"
+  APPEND_ARRAY_ITEM PktReadPtr 32 UINT 160 "Read pointers"
+  # Playback status
+  APPEND_ITEM PbFlag 8 UINT "Playback flag" 
+  STATE OFF 0 YELLOW
+  STATE ON 1 GREEN
+  APPEND_ITEM LastPktSaveTime_Day_3 16 UINT "Last save day type 3"
+  APPEND_ITEM LastPktSaveTime_Ms_3 32 UINT "Last save ms type 3"
+  APPEND_ITEM PbPartition 8 UINT "Playback partition"
+  STATE STATICTABLE 0
+  STATE DYNAMICTABLE 1
+  STATE BEACON 2
+  STATE EPS 3
+  STATE ADS 4
+  STATE PL 5
+  APPEND_ITEM PbPkts 32 UINT "Playback packets"
+  APPEND_ITEM CRC 16 UINT "CRC"
+     
