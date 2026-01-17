@@ -1,0 +1,498 @@
+###############################################################################
+# CHASQUI_II Telemetry Screen - ADCS SYSTEM CONTROL
+###############################################################################
+
+SCREEN AUTO AUTO 0.5
+GLOBAL_SETTING LABELVALUELIMITSBAR COLORBLIND TRUE
+
+SCROLLWINDOW
+  VERTICAL 5
+    SETTING BACKCOLOR 240 242 245
+    SETTING TEXTCOLOR 30 30 30
+
+    ###########################################################################
+    # HEADER
+    ###########################################################################
+    HORIZONTALBOX
+      SETTING BACKCOLOR 15 76 129
+      SETTING BORDERCOLOR 10 50 90
+
+      HORIZONTAL 10
+        CANVAS 56 56
+          CANVASIMAGE "logo-chasqui.jpg" 0 0
+        END
+
+        VERTICAL 2 FALSE
+          TITLE "ADCS SYSTEM CONTROL"
+            SETTING TEXTCOLOR 255 255 255
+            SETTING BACKCOLOR 15 76 129
+            SETTING FONTSIZE 16
+          LABEL "Attitude Determination & Control - Pointing, Sensors & Actuators"
+            SETTING TEXTCOLOR 180 200 220
+            SETTING BACKCOLOR 15 76 129
+        END
+
+        SPACER 20 0 EXPANDING MINIMUM
+
+        VERTICAL 2 FALSE
+          SPACER 0 8
+          HORIZONTAL 8
+            LABEL "ADCS Mode:"
+              SETTING TEXTCOLOR 255 255 255
+              SETTING BACKCOLOR 15 76 129
+            VALUE CHASQUI_II ADCS ADCS_MODE CONVERTED 14
+              SETTING TEXTCOLOR 255 255 255
+              SETTING FONT "bold"
+          END
+          SPACER 0 8
+        END
+      END
+    END
+
+    SPACER 0 6
+
+    ###########################################################################
+    # ADCS OVERVIEW
+    ###########################################################################
+    LABEL "  ADCS OVERVIEW"
+      SETTING BACKCOLOR 15 76 129
+      SETTING TEXTCOLOR 255 255 255
+      SETTING FONT "bold"
+      SETTING FONTSIZE 12
+    SPACER 0 6
+
+    HORIZONTALBOX
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+      SETTING HEIGHT 125
+
+      MATRIXBYCOLUMNS 3 8 6
+
+        VERTICALBOX "Packet Header"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 200 210 220
+
+          SPACER 0 6
+          LABEL "PACKET HEADER"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 11
+          SPACER 0 10
+
+          HORIZONTAL 10
+            LABEL "SYNC:"
+              SETTING WIDTH 80
+            SPACER 18 0
+            VALUE CHASQUI_II ADCS SYNC CONVERTED 16
+              SETTING WIDTH 170
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 12
+          END
+
+          SPACER 0 4
+          HORIZONTAL 10
+            LABEL "VERSION:"
+              SETTING WIDTH 80
+            SPACER 18 0
+            VALUE CHASQUI_II ADCS VERSION CONVERTED 16
+              SETTING WIDTH 170
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 12
+          END
+
+          SPACER 0 4
+          HORIZONTAL 10
+            LABEL "APID:"
+              SETTING WIDTH 80
+            SPACER 18 0
+            VALUE CHASQUI_II ADCS APID CONVERTED 16
+              SETTING WIDTH 170
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 12
+          END
+        END
+
+        VERTICALBOX "Timing"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 200 210 220
+
+          SPACER 0 6
+          LABEL "TIMING"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 11
+          SPACER 0 10
+
+          HORIZONTAL 10
+            LABEL "OBC_TIMESTAMP:"
+              SETTING WIDTH 130
+            SPACER 18 0
+            VALUE CHASQUI_II ADCS OBC_TIMESTAMP CONVERTED 14
+              SETTING WIDTH 170
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 12
+          END
+
+          SPACER 0 4
+          HORIZONTAL 10
+            LABEL "UPTIME:"
+              SETTING WIDTH 130
+            SPACER 18 0
+            VALUE CHASQUI_II ADCS UPTIME CONVERTED 14
+              SETTING WIDTH 170
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 12
+          END
+
+          SPACER 0 4
+          HORIZONTAL 10
+            LABEL "CRC:"
+              SETTING WIDTH 130
+            SPACER 18 0
+            VALUE CHASQUI_II ADCS CRC CONVERTED 14
+              SETTING WIDTH 170
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 12
+          END
+        END
+
+        VERTICALBOX "Navigation / Status"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 200 210 220
+
+          SPACER 0 6
+          LABEL "STATUS"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 11
+          SPACER 0 10
+
+          HORIZONTAL 10
+            LABEL "LAT:"
+              SETTING WIDTH 60
+            SPACER 18 0
+            VALUE CHASQUI_II ADCS LATITUDE CONVERTED 14
+              SETTING WIDTH 170
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 12
+          END
+
+          SPACER 0 4
+          HORIZONTAL 10
+            LABEL "LON:"
+              SETTING WIDTH 60
+            SPACER 18 0
+            VALUE CHASQUI_II ADCS LONGITUDE CONVERTED 14
+              SETTING WIDTH 170
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 12
+          END
+
+          SPACER 0 4
+          HORIZONTAL 10
+            LABEL "ALT:"
+              SETTING WIDTH 60
+            SPACER 18 0
+            VALUE CHASQUI_II ADCS ALTITUDE CONVERTED 14
+              SETTING WIDTH 170
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 12
+          END
+
+          SPACER 0 6
+          HORIZONTAL 10
+            LABEL "SENS_H:"
+              SETTING WIDTH 60
+            SPACER 18 0
+            VALUE CHASQUI_II ADCS SENSOR_HEALTH CONVERTED 14
+              SETTING WIDTH 170
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 12
+          END
+        END
+
+      END
+    END
+
+    SPACER 0 6
+
+    ###########################################################################
+    # ATTITUDE & CONTROL
+    ###########################################################################
+    LABEL "  ATTITUDE & CONTROL"
+      SETTING BACKCOLOR 15 76 129
+      SETTING TEXTCOLOR 255 255 255
+      SETTING FONT "bold"
+      SETTING FONTSIZE 12
+    SPACER 0 6
+
+    HORIZONTALBOX
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+      SETTING HEIGHT 230
+
+      MATRIXBYCOLUMNS 2 8 6
+
+        VERTICALBOX "Attitude (Quaternion)"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 200 210 220
+          SETTING WIDTH 300
+
+          SPACER 0 6
+          LABEL "QUATERNION (BARS)"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 11
+          SPACER 0 10
+
+          LABELVALUELIMITSBAR CHASQUI_II ADCS QUATERNION_X CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II ADCS QUATERNION_Y CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II ADCS QUATERNION_Z CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II ADCS QUATERNION_W CONVERTED 12
+        END
+
+        VERTICALBOX "Pointing Error Trend"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 200 210 220
+
+          SPACER 0 6
+          LABEL "POINTING ERROR (BAR + TREND)"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 11
+          SPACER 0 4
+
+          LABELVALUELIMITSBAR CHASQUI_II ADCS POINTING_ERROR CONVERTED 12
+
+          LINEGRAPH CHASQUI_II ADCS POINTING_ERROR 620 1200 165 CONVERTED
+            SETTING BACKCOLOR 255 255 255
+            SETTING BORDERCOLOR 200 210 220
+            SETTING POINTSIZE 5
+
+          SPACER 0 6
+        END
+
+      END
+    END
+
+    SPACER 0 6
+
+    ###########################################################################
+    # AXIS TABS (X / Y / Z)
+    ###########################################################################
+    LABEL "  AXIS TABS (X / Y / Z)"
+      SETTING BACKCOLOR 15 76 129
+      SETTING TEXTCOLOR 255 255 255
+      SETTING FONT "bold"
+      SETTING FONTSIZE 12
+    SPACER 0 6
+
+    VERTICALBOX "Axis Selector"
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+
+      TABBOOK
+
+        TABITEM "Eje X"
+          VERTICALBOX "X-Axis Telemetry"
+            SETTING BACKCOLOR 248 250 252
+            SETTING BORDERCOLOR 220 225 230
+            LABELVALUELIMITSBAR CHASQUI_II ADCS CONTROL_EFFORT_X CONVERTED 12
+          END
+        END
+
+        TABITEM "Eje Y"
+          VERTICALBOX "Y-Axis Telemetry"
+            SETTING BACKCOLOR 248 250 252
+            SETTING BORDERCOLOR 220 225 230
+            LABELVALUELIMITSBAR CHASQUI_II ADCS CONTROL_EFFORT_Y CONVERTED 12
+          END
+        END
+
+        TABITEM "Eje Z"
+          VERTICALBOX "Z-Axis Telemetry"
+            SETTING BACKCOLOR 248 250 252
+            SETTING BORDERCOLOR 220 225 230
+            LABELVALUELIMITSBAR CHASQUI_II ADCS CONTROL_EFFORT_Z CONVERTED 12
+          END
+        END
+
+      END
+    END
+
+    SPACER 0 6
+
+    ###########################################################################
+    # SENSOR READINGS - RAW DATA  (AHORA SI CON VALORES + BARRAS)
+    ###########################################################################
+    LABEL "  SENSOR READINGS - RAW DATA"
+      SETTING BACKCOLOR 15 76 129
+      SETTING TEXTCOLOR 255 255 255
+      SETTING FONT "bold"
+      SETTING FONTSIZE 12
+    SPACER 0 6
+
+    HORIZONTALBOX
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+      SETTING HEIGHT 220
+
+      MATRIXBYCOLUMNS 3 8 6
+
+        VERTICALBOX "Gyroscope"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 200 210 220
+
+          SPACER 0 6
+          LABEL "GYROSCOPE (deg/s)"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 11
+          SPACER 0 8
+
+          LABELVALUELIMITSBAR CHASQUI_II ADCS ANGULAR_RATE_X CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II ADCS ANGULAR_RATE_Y CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II ADCS ANGULAR_RATE_Z CONVERTED 12
+        END
+
+        VERTICALBOX "Magnetometer"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 200 210 220
+
+          SPACER 0 6
+          LABEL "MAGNETOMETER (uT)"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 11
+          SPACER 0 8
+
+          LABELVALUELIMITSBAR CHASQUI_II ADCS MAGNETIC_FIELD_X CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II ADCS MAGNETIC_FIELD_Y CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II ADCS MAGNETIC_FIELD_Z CONVERTED 12
+        END
+
+        VERTICALBOX "Sun Sensor"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 200 210 220
+
+          SPACER 0 6
+          LABEL "SUN VECTOR"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 11
+          SPACER 0 8
+
+          LABELVALUELIMITSBAR CHASQUI_II ADCS SUN_VECTOR_X CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II ADCS SUN_VECTOR_Y CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II ADCS SUN_VECTOR_Z CONVERTED 12
+        END
+
+      END
+    END
+
+    SPACER 0 6
+
+    ###########################################################################
+    # ACTUATORS & CONTROL
+    ###########################################################################
+    LABEL "  ACTUATORS & CONTROL"
+      SETTING BACKCOLOR 15 76 129
+      SETTING TEXTCOLOR 255 255 255
+      SETTING FONT "bold"
+      SETTING FONTSIZE 12
+    SPACER 0 6
+
+    HORIZONTALBOX
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+      SETTING HEIGHT 140
+
+      MATRIXBYCOLUMNS 2 8 6
+
+        VERTICALBOX "Control Effort"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 200 210 220
+
+          SPACER 0 6
+          LABEL "CONTROL EFFORT (mA) - BARS"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 11
+          SPACER 0 10
+
+          LABELVALUELIMITSBAR CHASQUI_II ADCS CONTROL_EFFORT_X CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II ADCS CONTROL_EFFORT_Y CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II ADCS CONTROL_EFFORT_Z CONVERTED 12
+        END
+
+        VERTICALBOX "Magnetorquer Status"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 200 210 220
+
+          SPACER 0 6
+          LABEL "MAGNETORQUER STATUS"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 11
+          SPACER 0 10
+
+          HORIZONTAL 10
+            LABEL "State:"
+              SETTING WIDTH 100
+            SPACER 18 0
+            VALUE CHASQUI_II ADCS MAGNETORQUER_STATE CONVERTED 14
+              SETTING WIDTH 150
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+          END
+        END
+
+      END
+    END
+
+    SPACER 0 10
+  END
+END
