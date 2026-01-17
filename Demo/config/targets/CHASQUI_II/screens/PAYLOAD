@@ -1,0 +1,693 @@
+###############################################################################
+# CHASQUI_II Telemetry Screen - PAYLOAD SYSTEM DASHBOARD (COMPACTO)
+###############################################################################
+
+SCREEN AUTO AUTO 0.5
+GLOBAL_SETTING LABELVALUELIMITSBAR COLORBLIND TRUE
+
+SCROLLWINDOW
+  VERTICAL 6
+    SETTING BACKCOLOR 240 242 245
+    SETTING TEXTCOLOR 30 30 30
+
+    ###########################################################################
+    # HEADER
+    ###########################################################################
+    HORIZONTALBOX
+      SETTING BACKCOLOR 15 76 129
+      SETTING BORDERCOLOR 10 50 90
+
+      HORIZONTAL 12
+        CANVAS 56 56
+          CANVASIMAGE "logo-chasqui.jpg" 0 0
+        END
+
+        VERTICAL 2 FALSE
+          TITLE "PAYLOAD SYSTEM CONTROL"
+            SETTING TEXTCOLOR 255 255 255
+            SETTING BACKCOLOR 15 76 129
+            SETTING FONTSIZE 16
+          LABEL "Scientific Payload Telemetry & Monitoring"
+            SETTING TEXTCOLOR 180 200 220
+            SETTING BACKCOLOR 15 76 129
+        END
+
+        SPACER 20 0 EXPANDING MINIMUM
+
+        VERTICAL 2 FALSE
+          SPACER 0 6
+          HORIZONTAL 8
+            LABEL "Payload Mode:"
+              SETTING TEXTCOLOR 255 255 255
+              SETTING BACKCOLOR 15 76 129
+            VALUE CHASQUI_II Beacon Sat_Curr_Mode CONVERTED 14
+              SETTING TEXTCOLOR 255 255 255
+              SETTING FONT "bold"
+              SETTING WIDTH 120
+              SETTING HEIGHT 18
+              SETTING BACKCOLOR 15 76 129
+              SETTING BORDERCOLOR 15 76 129
+          END
+          SPACER 0 6
+        END
+      END
+    END
+
+    SPACER 0 6
+
+    ###########################################################################
+    # PAYLOAD OVERVIEW (FRANJA AZUL)
+    ###########################################################################
+    LABEL "  PAYLOAD OVERVIEW"
+      SETTING BACKCOLOR 15 76 129
+      SETTING TEXTCOLOR 255 255 255
+      SETTING FONT "bold"
+      SETTING FONTSIZE 12
+    SPACER 0 6
+
+    ###########################################################################
+    # ROW 1: OVERVIEW CONTENT
+    ###########################################################################
+    HORIZONTALBOX
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+      SETTING HEIGHT 235
+
+      MATRIXBYCOLUMNS 2 10 8
+
+        #######################################################################
+        # Power Parameters (compacto)
+        #######################################################################
+        VERTICALBOX "Power Parameters"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 200 210 220
+          SETTING WIDTH 330
+
+          SPACER 0 6
+          LABEL "POWER SUPPLY STATUS"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING ALIGNCENTER
+            SETTING FONTSIZE 11
+          SPACER 0 8
+
+          HORIZONTAL 8
+            LIMITSCOLOR CHASQUI_II Beacon PL_12v_Volt CONVERTED 10 NIL
+            LABEL "Power Health"
+              SETTING TEXTCOLOR 100 100 100
+          END
+
+          SPACER 0 8
+
+          LABELVALUELIMITSBAR CHASQUI_II Beacon PL_12v_Volt CONVERTED 13
+            SETTING WIDTH 300
+            SUBSETTING 0 TEXTCOLOR 80 80 80
+          SPACER 0 6
+
+          LABELVALUELIMITSBAR CHASQUI_II Beacon PL_12v_Curr CONVERTED 13
+            SETTING WIDTH 300
+            SUBSETTING 0 TEXTCOLOR 80 80 80
+          SPACER 0 8
+
+          HORIZONTAL 8
+            LABEL "Power Status:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 115
+            SPACER 6 0
+            VALUE CHASQUI_II Beacon Sat_Curr_Mode CONVERTED 14
+              SETTING WIDTH 110
+              SETTING HEIGHT 18
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 0 0 0
+              SETTING FONT "bold"
+              SETTING FONTSIZE 11
+          END
+
+          SPACER 0 8
+
+          LABELVALUELIMITSBAR CHASQUI_II Beacon Main_Batt_Volt CONVERTED 13
+            SETTING WIDTH 300
+            SUBSETTING 0 TEXTCOLOR 80 80 80
+
+          SPACER 0 6
+        END
+
+        #######################################################################
+        # Command History (compacto)
+        #######################################################################
+        VERTICALBOX "Command History"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 200 210 220
+
+          SPACER 0 6
+          LABEL "COMMAND ACCEPTANCE HISTORY"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 11
+          SPACER 0 6
+
+          LINEGRAPH CHASQUI_II Beacon Command_Accept_Counter 520 1100 150 CONVERTED
+            SETTING BACKCOLOR 255 255 255
+            SETTING BORDERCOLOR 200 210 220
+            SETTING POINTSIZE 5
+
+          SPACER 0 6
+
+          HORIZONTAL 10
+            LABEL "Monitoring:"
+              SETTING TEXTCOLOR 120 120 120
+              SETTING FONTSIZE 10
+            SPACER 0 0 EXPANDING MINIMUM
+            LABEL "ACTIVE"
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 10
+          END
+
+          SPACER 0 6
+        END
+
+      END
+    END
+
+    SPACER 0 8
+
+    ###########################################################################
+    # MEMORY STORAGE (FRANJA AZUL)
+    ###########################################################################
+    LABEL "  MEMORY STORAGE"
+      SETTING BACKCOLOR 15 76 129
+      SETTING TEXTCOLOR 255 255 255
+      SETTING FONT "bold"
+      SETTING FONTSIZE 12
+    SPACER 0 6
+
+    HORIZONTALBOX
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+      SETTING HEIGHT 120
+
+      MATRIXBYCOLUMNS 3 10 8
+
+        VERTICALBOX "Payload Flash"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 200 210 220
+
+          SPACER 0 6
+          LABEL "FLASH MEMORY"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 10
+          SPACER 0 6
+
+          HORIZONTAL 8
+            LABEL "Write Ptr:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 90
+            SPACER 6 0
+            VALUE CHASQUI_II Beacon Payload_Flash_Write_Ptr CONVERTED 16
+              SETTING WIDTH 110
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 11
+          END
+
+          SPACER 0 4
+
+          HORIZONTAL 8
+            LABEL "Read Ptr:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 90
+            SPACER 6 0
+            VALUE CHASQUI_II Beacon Payload_Flash_Read_Ptr CONVERTED 16
+              SETTING WIDTH 110
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 11
+          END
+
+          SPACER 0 6
+          LABEL "Status: NOMINAL"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 10
+        END
+
+        VERTICALBOX "Packet Storage"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 200 210 220
+
+          SPACER 0 6
+          LABEL "SCIENCE DATA STORAGE"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 10
+          SPACER 0 6
+
+          HORIZONTAL 8
+            LABEL "Write Ptr:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 90
+            SPACER 6 0
+            VALUE CHASQUI_II Beacon Payload_Packet_Flash_Write_Ptr CONVERTED 16
+              SETTING WIDTH 110
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 11
+          END
+
+          SPACER 0 4
+
+          HORIZONTAL 8
+            LABEL "Read Ptr:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 90
+            SPACER 6 0
+            VALUE CHASQUI_II Beacon Payload_Packet_Flash_Read_Ptr CONVERTED 16
+              SETTING WIDTH 110
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 11
+          END
+
+          SPACER 0 6
+          HORIZONTAL 8
+            LABEL "Status:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 60
+            SPACER 6 0
+            LABEL "ACTIVE"
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 10
+          END
+        END
+
+        VERTICALBOX "System Storage"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 200 210 220
+
+          SPACER 0 6
+          LABEL "STORAGE CONFIGURATION"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 10
+          SPACER 0 6
+
+          HORIZONTAL 8
+            LABEL "Current SD:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 95
+            SPACER 6 0
+            VALUE CHASQUI_II Beacon Current_SD CONVERTED 14
+              SETTING WIDTH 120
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 11
+          END
+
+          SPACER 0 4
+
+          HORIZONTAL 8
+            LABEL "I2C Bus:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 95
+            SPACER 6 0
+            VALUE CHASQUI_II Beacon I2C_Error_Flag CONVERTED 14
+              SETTING WIDTH 120
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 11
+          END
+
+          SPACER 0 4
+
+          HORIZONTAL 8
+            LABEL "Boot Cnt:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 95
+            SPACER 6 0
+            VALUE CHASQUI_II Beacon Boot_Counter CONVERTED 14
+              SETTING WIDTH 120
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 11
+          END
+
+          SPACER 0 6
+          LABEL "Storage: OK"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 10
+        END
+
+      END
+    END
+
+    SPACER 0 8
+
+    ###########################################################################
+    # COMMANDS TIMING (FRANJA AZUL)
+    ###########################################################################
+    LABEL "  COMMANDS TIMING"
+      SETTING BACKCOLOR 15 76 129
+      SETTING TEXTCOLOR 255 255 255
+      SETTING FONT "bold"
+      SETTING FONTSIZE 12
+    SPACER 0 6
+
+    HORIZONTALBOX
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+      SETTING HEIGHT 170
+
+      MATRIXBYCOLUMNS 2 10 8
+
+        VERTICALBOX "Command Statistics"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 200 210 220
+
+          SPACER 0 6
+          LABEL "COMMAND STATISTICS"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 10
+          SPACER 0 6
+
+          HORIZONTAL 8
+            LABEL "Last OpCode:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 110
+            SPACER 6 0
+            VALUE CHASQUI_II Beacon Last_Command_Opcode CONVERTED 16
+              SETTING WIDTH 160
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 11
+          END
+
+          SPACER 0 8
+
+          LABELVALUELIMITSBAR CHASQUI_II Beacon Command_Accept_Counter CONVERTED 16
+            SETTING WIDTH 360
+            SUBSETTING 0 TEXTCOLOR 80 80 80
+          SPACER 0 6
+
+          LABELVALUELIMITSBAR CHASQUI_II Beacon Command_Reject_Counter CONVERTED 16
+            SETTING WIDTH 360
+            SUBSETTING 0 TEXTCOLOR 80 80 80
+
+          SPACER 0 6
+        END
+
+        VERTICALBOX "System Timing"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 200 210 220
+
+          SPACER 0 6
+          LABEL "SYSTEM TIMING"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 10
+          SPACER 0 6
+
+          HORIZONTAL 8
+            LABEL "Obc_Time:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 90
+            SPACER 6 0
+            VALUE CHASQUI_II Beacon Obc_Time CONVERTED 14
+              SETTING WIDTH 140
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 11
+          END
+
+          SPACER 0 4
+
+          HORIZONTAL 8
+            LABEL "Obc_Hdr:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 90
+            SPACER 6 0
+            VALUE CHASQUI_II Beacon Obc_Time_Hdr CONVERTED 14
+              SETTING WIDTH 140
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 11
+          END
+
+          SPACER 0 4
+
+          HORIZONTAL 8
+            LABEL "Sat Mode:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 90
+            SPACER 6 0
+            VALUE CHASQUI_II Beacon Sat_Curr_Mode CONVERTED 14
+              SETTING WIDTH 140
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 11
+          END
+
+          SPACER 0 6
+        END
+
+      END
+    END
+
+    SPACER 0 8
+
+    ###########################################################################
+    # PAYLOAD CONFIGURATION (FRANJA AZUL)
+    ###########################################################################
+    LABEL "  PAYLOAD CONFIGURATION"
+      SETTING BACKCOLOR 15 76 129
+      SETTING TEXTCOLOR 255 255 255
+      SETTING FONT "bold"
+      SETTING FONTSIZE 12
+    SPACER 0 6
+
+    HORIZONTALBOX
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+      SETTING HEIGHT 135
+
+      MATRIXBYCOLUMNS 3 10 8
+
+        VERTICALBOX "Thermal Control"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 200 210 220
+
+          SPACER 0 6
+          LABEL "THERMAL CONTROL"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 10
+          SPACER 0 6
+
+          HORIZONTAL 8
+            LABEL "Cutoff:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 70
+            SPACER 6 0
+            VALUE CHASQUI_II Beacon Payload_Op_Temp_Cut_Off CONVERTED 14
+              SETTING WIDTH 110
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 11
+            SPACER 6 0
+            LABEL "C"
+              SETTING TEXTCOLOR 120 120 120
+          END
+
+          SPACER 0 4
+
+          HORIZONTAL 8
+            LABEL "Safe In:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 70
+            SPACER 6 0
+            VALUE CHASQUI_II Beacon Safe_Enter_Threshold CONVERTED 12
+              SETTING WIDTH 110
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 11
+          END
+
+          SPACER 0 4
+
+          HORIZONTAL 8
+            LABEL "Safe Out:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 70
+            SPACER 6 0
+            VALUE CHASQUI_II Beacon Safe_Exit_Threshold CONVERTED 12
+              SETTING WIDTH 110
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 11
+          END
+        END
+
+        VERTICALBOX "Payload Timing"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 200 210 220
+
+          SPACER 0 6
+          LABEL "PAYLOAD TIMING"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 10
+          SPACER 0 6
+
+          HORIZONTAL 8
+            LABEL "Obc_Time:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 85
+            SPACER 6 0
+            VALUE CHASQUI_II Beacon Obc_Time CONVERTED 14
+              SETTING WIDTH 140
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 11
+          END
+
+          SPACER 0 4
+
+          HORIZONTAL 8
+            LABEL "Obc_Hdr:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 85
+            SPACER 6 0
+            VALUE CHASQUI_II Beacon Obc_Time_Hdr CONVERTED 14
+              SETTING WIDTH 140
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 11
+          END
+
+          SPACER 0 4
+
+          HORIZONTAL 8
+            LABEL "Sat Mode:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 85
+            SPACER 6 0
+            VALUE CHASQUI_II Beacon Sat_Curr_Mode CONVERTED 14
+              SETTING WIDTH 140
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 11
+          END
+        END
+
+        VERTICALBOX "Deployment Flags"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 200 210 220
+
+          SPACER 0 6
+          LABEL "DEPLOYMENT FLAGS"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 10
+          SPACER 0 6
+
+          HORIZONTAL 8
+            LABEL "Deploy:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 70
+            SPACER 6 0
+            VALUE CHASQUI_II Beacon Pslv_Deployment_Flag CONVERTED 14
+              SETTING WIDTH 130
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 11
+          END
+
+          SPACER 0 4
+
+          HORIZONTAL 8
+            LABEL "Retry:"
+              SETTING TEXTCOLOR 60 60 60
+              SETTING WIDTH 70
+            SPACER 6 0
+            VALUE CHASQUI_II Beacon Antenna_Panels_Deployment_Retry_Flag CONVERTED 14
+              SETTING WIDTH 130
+              SETTING HEIGHT 16
+              SETTING BACKCOLOR 235 235 235
+              SETTING BORDERCOLOR 190 190 190
+              SETTING TEXTCOLOR 46 204 113
+              SETTING FONT "bold"
+              SETTING FONTSIZE 11
+          END
+
+          SPACER 0 6
+          LABEL "Status: MONITORING"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 10
+        END
+
+      END
+    END
+
+    SPACER 0 10
+  END
+END
