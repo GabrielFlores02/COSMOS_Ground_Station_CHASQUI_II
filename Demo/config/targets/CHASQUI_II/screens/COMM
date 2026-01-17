@@ -1,0 +1,321 @@
+###############################################################################
+# CHASQUI_II Telemetry Screen - COMM SYSTEM CONTROL (UI limpio + barras + trends)
+###############################################################################
+
+SCREEN AUTO AUTO 0.5
+GLOBAL_SETTING LABELVALUELIMITSBAR COLORBLIND TRUE
+
+SCROLLWINDOW
+  VERTICAL 6
+    SETTING BACKCOLOR 240 242 245
+    SETTING TEXTCOLOR 30 30 30
+
+    ###########################################################################
+    # HEADER
+    ###########################################################################
+    HORIZONTALBOX
+      SETTING BACKCOLOR 15 76 129
+      SETTING BORDERCOLOR 10 50 90
+
+      HORIZONTAL 12
+        CANVAS 56 56
+          CANVASIMAGE "logo-chasqui.jpg" 0 0
+        END
+
+        VERTICAL 2 FALSE
+          TITLE "COMM SYSTEM CONTROL"
+            SETTING TEXTCOLOR 255 255 255
+            SETTING BACKCOLOR 15 76 129
+            SETTING FONTSIZE 16
+          LABEL "Transceiver Monitoring - Mode, Channel, RF Health"
+            SETTING TEXTCOLOR 180 200 220
+            SETTING BACKCOLOR 15 76 129
+        END
+
+        SPACER 20 0 EXPANDING MINIMUM
+
+        VERTICAL 2 FALSE
+          SPACER 0 10
+          HORIZONTAL 8
+            LABEL "Op Mode:"
+              SETTING TEXTCOLOR 255 255 255
+              SETTING BACKCOLOR 15 76 129
+            VALUE CHASQUI_II COMM OPERATION_MODE CONVERTED 14
+              SETTING TEXTCOLOR 255 255 255
+              SETTING FONT "bold"
+              SETTING WIDTH 140
+              SETTING BACKCOLOR 15 76 129
+              SETTING BORDERCOLOR 15 76 129
+          END
+          SPACER 0 10
+        END
+      END
+    END
+
+    SPACER 0 8
+
+    ###########################################################################
+    # STATUS STRIP
+    ###########################################################################
+    LABEL "  COMM STATUS"
+      SETTING BACKCOLOR 15 76 129
+      SETTING TEXTCOLOR 255 255 255
+      SETTING FONT "bold"
+      SETTING FONTSIZE 12
+    SPACER 0 6
+
+    HORIZONTALBOX
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+      SETTING HEIGHT 185
+
+      MATRIXBYCOLUMNS 3 10 8
+
+        #######################################################################
+        # Transceiver State (izquierda)
+        #######################################################################
+        VERTICALBOX "Transceiver"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 220 225 230
+          SETTING WIDTH 320
+
+          LABEL "TRANSCEIVER STATE"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 11
+          SPACER 0 6
+
+          HORIZONTAL 10
+            LABEL "COMM_STATE:"
+              SETTING WIDTH 140
+            VALUE CHASQUI_II COMM COMM_STATE CONVERTED 12
+              SETTING WIDTH 140
+          END
+
+          HORIZONTAL 10
+            LABEL "ACTIVE_CHANNEL:"
+              SETTING WIDTH 140
+            VALUE CHASQUI_II COMM ACTIVE_CHANNEL CONVERTED 12
+              SETTING WIDTH 140
+          END
+
+          HORIZONTAL 10
+            LABEL "MODULATION:"
+              SETTING WIDTH 140
+            VALUE CHASQUI_II COMM MODULATION CONVERTED 12
+              SETTING WIDTH 140
+          END
+
+          HORIZONTAL 10
+            LABEL "BEACON_INTERVAL:"
+              SETTING WIDTH 140
+            LABELVALUELIMITSBAR CHASQUI_II COMM BEACON_INTERVAL CONVERTED 12
+          END
+        END
+
+        #######################################################################
+        # Deployment / Mission flags (usa items REALES del BEACON)
+        #######################################################################
+        VERTICALBOX "Mission / Deploy"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 220 225 230
+          SETTING WIDTH 300
+
+          LABEL "MISSION FLAGS"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 11
+          SPACER 0 6
+
+          HORIZONTAL 10
+            LABEL "Sat Mode:"
+              SETTING WIDTH 120
+            VALUE CHASQUI_II Beacon Sat_Curr_Mode CONVERTED 12
+              SETTING WIDTH 160
+          END
+
+          HORIZONTAL 10
+            LABEL "PSLV Deploy:"
+              SETTING WIDTH 120
+            VALUE CHASQUI_II Beacon Pslv_Deployment_Flag CONVERTED 12
+              SETTING WIDTH 160
+          END
+
+          HORIZONTAL 10
+            LABEL "Dep Retry:"
+              SETTING WIDTH 120
+            VALUE CHASQUI_II Beacon Antenna_Panels_Deployment_Retry_Flag CONVERTED 12
+              SETTING WIDTH 160
+          END
+        END
+
+        #######################################################################
+        # RF Config (barras)
+        #######################################################################
+        VERTICALBOX "RF / Config"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 220 225 230
+
+          LABEL "RF CONFIG (BARS)"
+            SETTING TEXTCOLOR 46 204 113
+            SETTING FONT "bold"
+            SETTING FONTSIZE 11
+          SPACER 0 6
+
+          LABELVALUELIMITSBAR CHASQUI_II COMM TX_POWER CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II COMM DATA_RATE CONVERTED 12
+          LABELVALUE CHASQUI_II COMM ANTENNA_STATE CONVERTED 12
+        END
+
+      END
+    END
+
+    SPACER 0 10
+
+    ###########################################################################
+    # COUNTERS (TABS para que no se encimen)
+    ###########################################################################
+    LABEL "  PACKET COUNTERS"
+      SETTING BACKCOLOR 15 76 129
+      SETTING TEXTCOLOR 255 255 255
+      SETTING FONT "bold"
+      SETTING FONTSIZE 12
+    SPACER 0 6
+
+    VERTICALBOX "Counters (Trend)"
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+
+      TABBOOK
+        TABITEM "TX Counter"
+          VERTICALBOX "TX Packets"
+            SETTING BACKCOLOR 248 250 252
+            SETTING BORDERCOLOR 220 225 230
+
+            LABELVALUELIMITSBAR CHASQUI_II COMM TX_PACKET_COUNT CONVERTED 12
+            SPACER 0 6
+            LINEGRAPH CHASQUI_II COMM TX_PACKET_COUNT 760 1200 190 CONVERTED
+              SETTING BACKCOLOR 255 255 255
+              SETTING BORDERCOLOR 220 225 230
+              SETTING POINTSIZE 7
+          END
+        END
+
+        TABITEM "RX Counter"
+          VERTICALBOX "RX Packets"
+            SETTING BACKCOLOR 248 250 252
+            SETTING BORDERCOLOR 220 225 230
+
+            LABELVALUELIMITSBAR CHASQUI_II COMM RX_PACKET_COUNT CONVERTED 12
+            SPACER 0 6
+            LINEGRAPH CHASQUI_II COMM RX_PACKET_COUNT 760 1200 190 CONVERTED
+              SETTING BACKCOLOR 255 255 255
+              SETTING BORDERCOLOR 220 225 230
+              SETTING POINTSIZE 7
+          END
+        END
+      END
+    END
+
+    SPACER 0 10
+
+    ###########################################################################
+    # CHANNELS (A/B) + TREND (más limpio)
+    ###########################################################################
+    LABEL "  CHANNELS (A / B)"
+      SETTING BACKCOLOR 15 76 129
+      SETTING TEXTCOLOR 255 255 255
+      SETTING FONT "bold"
+      SETTING FONTSIZE 12
+    SPACER 0 6
+
+    VERTICALBOX "Channel Selector"
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+
+      TABBOOK
+        TABITEM "Channel A"
+          HORIZONTAL 10
+            VERTICALBOX "A Telemetry"
+              SETTING BACKCOLOR 248 250 252
+              SETTING BORDERCOLOR 220 225 230
+              SETTING WIDTH 330
+
+              LABELVALUELIMITSBAR CHASQUI_II COMM CHANNEL_A_FREQ CONVERTED 12
+            END
+
+            VERTICALBOX "Trend"
+              SETTING BACKCOLOR 248 250 252
+              SETTING BORDERCOLOR 220 225 230
+
+              LINEGRAPH CHASQUI_II COMM CHANNEL_A_FREQ 760 1200 190 CONVERTED
+                SETTING BACKCOLOR 255 255 255
+                SETTING BORDERCOLOR 220 225 230
+                SETTING POINTSIZE 7
+            END
+          END
+        END
+
+        TABITEM "Channel B"
+          HORIZONTAL 10
+            VERTICALBOX "B Telemetry"
+              SETTING BACKCOLOR 248 250 252
+              SETTING BORDERCOLOR 220 225 230
+              SETTING WIDTH 330
+
+              LABELVALUELIMITSBAR CHASQUI_II COMM CHANNEL_B_FREQ CONVERTED 12
+            END
+
+            VERTICALBOX "Trend"
+              SETTING BACKCOLOR 248 250 252
+              SETTING BORDERCOLOR 220 225 230
+
+              LINEGRAPH CHASQUI_II COMM CHANNEL_B_FREQ 760 1200 190 CONVERTED
+                SETTING BACKCOLOR 255 255 255
+                SETTING BORDERCOLOR 220 225 230
+                SETTING POINTSIZE 7
+            END
+          END
+        END
+      END
+    END
+
+    SPACER 0 10
+
+    ###########################################################################
+    # TX HEALTH (barras claras)
+    ###########################################################################
+    LABEL "  TX HEALTH"
+      SETTING BACKCOLOR 15 76 129
+      SETTING TEXTCOLOR 255 255 255
+      SETTING FONT "bold"
+      SETTING FONTSIZE 12
+    SPACER 0 6
+
+    HORIZONTALBOX
+      SETTING BACKCOLOR 255 255 255
+      SETTING BORDERCOLOR 200 210 220
+      SETTING HEIGHT 160
+
+      MATRIXBYCOLUMNS 2 10 8
+        VERTICALBOX "TX Measurements"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 220 225 230
+
+          LABELVALUELIMITSBAR CHASQUI_II COMM TX_CURRENT CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II COMM TX_VOLTAGE CONVERTED 12
+          LABELVALUELIMITSBAR CHASQUI_II COMM TX_TEMPERATURE CONVERTED 12
+        END
+
+        VERTICALBOX "Uptime"
+          SETTING BACKCOLOR 248 250 252
+          SETTING BORDERCOLOR 220 225 230
+
+          LABELVALUELIMITSBAR CHASQUI_II COMM UPTIME CONVERTED 12
+        END
+      END
+    END
+
+    SPACER 0 12
+  END
+END
